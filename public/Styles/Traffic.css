@@ -1,0 +1,47 @@
+.cardContainer {
+    position: relative;
+    display: inline-block; /* Or 'block', depending on layout needs */
+  }
+  
+  .cardContainer img {
+    width: 100%; /* Adjust as necessary */
+    height: auto; /* Adjust if you need specific sizing or aspect ratios */
+  }
+  
+  .overlayText {
+    position: absolute;
+    top: 70%; /* Adjust these values to position the text as desired */
+    left: 40%;
+    transform: translate(-50%, -50%); /* Centers the text */
+    color: black; /* Choose text color that stands out over your image */
+    /* Add more styling here for text appearance: font size, font family, etc. */
+  }
+  
+.outerConatiner {
+    margin: 1em;
+}
+
+.layoutContainer {
+    display: flex; /* Enables Flexbox layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    gap: 20px; /* Adjust as needed, adds space between the containers */
+  }
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Background color */
+    color: white; /* Text color */
+  }
+
+  .imageContainer {
+    /* Adjust based on your needs */
+    max-width: 100%;
+  }
+  
+  .imageContainer img {
+    width: 100%; /* This makes the image responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
