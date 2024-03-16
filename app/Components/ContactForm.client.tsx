@@ -1,10 +1,15 @@
+'use client'
+
 import React, { useState } from 'react';
 import ContactField from './ContactField.client';
+import '../../public/Styles/Contact.css';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
+    firstName: '',
+    lastName: '',
     email: '',
+    telegramNickname: '',
     message: '',
   });
 
@@ -35,30 +40,56 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <ContactField
-        id="name"
-        label="Name"
-        type="text"
-        value={formData.name}
-        onChange={handleChange}
-      />
-      <ContactField
-        id="email"
-        label="Email"
-        type="email"
-        value={formData.email}
-        onChange={handleChange}
-      />
-      <ContactField
-        id="message"
-        label="Message"
-        type="text"
-        value={formData.message}
-        onChange={handleChange}
-      />
-      <button type="submit">Submit</button>
-    </form>
+  <div>
+    <div className='contact-form-container'>
+      <img src="https://static.wixstatic.com/media/1c47da_da2794fb5ff246e7ba55a11348c021af~mv2.png/v1/crop/x_181,y_77,w_746,h_914/fill/w_323,h_396,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/1c47da_da2794fb5ff246e7ba55a11348c021af~mv2.png" alt="Decorative" className="form-image"></img>
+      <form onSubmit={handleSubmit} className='contact-form'>
+      <h1>Contact us</h1>
+        <div className='form-row'>
+          <ContactField
+            id="firstName"
+            label="First name"
+            type="text"
+            value={formData.firstName}
+            onChange={handleChange}
+          />
+          <ContactField
+            id="lastName"
+            label="Last name"
+            type="text"
+            value={formData.lastName}
+            onChange={handleChange}
+          />
+        </div>
+        <div className='form-row'>
+          <ContactField
+            id="email"
+            label="Email"
+            type="email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+          <ContactField
+            id="telegramNickname"
+            label="Telegram Nickname"
+            type="text"
+            value={formData.telegramNickname}
+            onChange={handleChange}
+          />
+        </div>
+        <div className='form-row'>
+          <ContactField
+            id="message"
+            label="Message"
+            type="text"
+            value={formData.message}
+            onChange={handleChange}
+          />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
   );
 };
 

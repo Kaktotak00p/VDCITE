@@ -1,4 +1,4 @@
-.cardContainer {
+.cardontainer {
     position: relative;
     display: inline-block; /* Or 'block', depending on layout needs */
     display: flex; /* Makes the card container also a flex container */
@@ -33,7 +33,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black; /* Background color */
+    background-color: rgb(var(--background)); /* Background color */
     color: white; /* Text color */
   }
 
@@ -64,6 +64,23 @@
     border-top: solid whitesmoke 1px;
     border-bottom: solid whitesmoke 1px;
   }
+
+button {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0f0; /* Brighter pink */
+}
+
+p {
+  color: grey;
+}
 
   @media (max-width: 768px) {
     .layoutContainer {

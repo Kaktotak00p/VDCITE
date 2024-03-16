@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black; /* Background color */
+    background-color: rgb(var(--background)); /* Background color */
     color: white; /* Text color */
   }
 
@@ -26,4 +26,9 @@
   .imageContainer img {
     width: 100%; /* This makes the image responsive */
     height: auto; /* Maintain aspect ratio */
+  }
+  .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }

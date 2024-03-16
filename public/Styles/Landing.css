@@ -1,0 +1,66 @@
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(var(--background)); /* Background color */
+    color: white; /* Text color */
+  }
+  
+  .textContainer {
+    text-align: left;
+    max-width: 50%; /* Adjust based on your layout needs */
+  }
+  
+  .header {
+    font-family: 'Fifaks10Dev1';
+    font-size: 24px; /* Adjust the size as needed */
+    margin-bottom: 20px; /* Adjust spacing as needed */
+  }
+  
+  h1 {
+    font-size: 48px; /* Adjust the size as needed */
+    margin-bottom: 20px; /* Adjust spacing as needed */
+  }
+  
+  p {
+    font-size: 24px; /* Adjust the size as needed */
+    margin-bottom: 20px; /* Adjust spacing as needed */
+  }
+  
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .tag {
+    background-color: #4CAF50; /* Background color */
+    color: rgb(var(--background)); /* Text color */
+    padding: 10px; /* Padding */
+    border-radius: 5px; /* Border radius */
+  }
+  
+  button {
+    background-color: transparent;
+    border: 2px solid #4CAF50; /* Border color */
+    color: #4CAF50; /* Text color */
+    padding: 10px 20px; /* Padding */
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #4CAF50; /* Hover background color */
+    color: black; /* Hover text color */
+  }
+  
+  .imageContainer {
+    /* Adjust based on your needs */
+    max-width: 50%;
+  }
+  
+  .imageContainer img {
+    width: 100%; /* This makes the image responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+  

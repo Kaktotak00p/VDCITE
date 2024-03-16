@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../public/Styles/Contact.css';
 
 interface ContactFieldProps {
   id: string;

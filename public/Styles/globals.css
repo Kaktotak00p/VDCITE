@@ -2,29 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: 'Avenir Next Condensed';
+  src: url('../fonts/Avenir\ Next\ Condensed.ttc') format('ttc');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('../fonts/Avenir\ Next.ttc') format('ttc');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fifaks10Dev1';
+  src: url('../fonts/Fifaks10Dev1.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background: 16,16,16;
 }
 
 body {
-  margin-top: 1em;
+  margin-top: 6em;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background));
+}
+
+.outerConatiner {
+  height: 50em;
+  margin: 1em;
 }
 
 @layer utilities {
