@@ -39,4 +39,9 @@
   width: 50%; /* Adjust for size inside the frame */
   height: 50%; /* Adjust for size inside the frame */
   z-index: 2; /* Ensure logo appears above the frame image */
+  transition: transform 0.3s ease-in-out;
+}
+
+.logoImage:hover{
+  transform: scale(1.2);
 }

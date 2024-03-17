@@ -45,6 +45,11 @@
   width: fit-content; /* Adjust for size inside the frame */
   height: auto; /* Adjust for size inside the frame */
   z-index: 2; /* Ensure logo appears above the frame image */
+  transition: transform 0.3s ease-in-out;
+}
+
+.logoImage:hover{
+  transform: scale(1.2);
 }
   .row{
     display: flex;

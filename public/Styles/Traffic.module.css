@@ -3,6 +3,11 @@
     display: inline-block; /* Or 'block', depending on layout needs */
     display: flex; /* Makes the card container also a flex container */
     gap: 20px; /* Space between the two columns */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .cardContainer:hover{
+    transform: scale(1.2);
   }
   
   .cardContainer img {
