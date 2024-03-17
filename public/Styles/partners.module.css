@@ -27,8 +27,8 @@
 
 .logoContainer {
   position: relative;
-  width: 100%; /* Adjust based on your frame size */
-  height: 100%; /* Adjust based on your frame size */
+  width: 250px; /* Adjust based on your frame size */
+  height: auto; /* Adjust based on your frame size */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,8 +42,8 @@
 
 .logoImage {
   position: absolute;
-  width: 50%; /* Adjust for size inside the frame */
-  height: 50%; /* Adjust for size inside the frame */
+  width: fit-content; /* Adjust for size inside the frame */
+  height: auto; /* Adjust for size inside the frame */
   z-index: 2; /* Ensure logo appears above the frame image */
 }
   .row{
