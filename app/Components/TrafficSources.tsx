@@ -2,7 +2,7 @@ import React from 'react';
 import '../../public/Styles/trafSources.css';
 import '../../public/Styles/globals.css';
 
-const TrafSources = () => {
+const TrafSources:React.FC = () => {
     return (
         <div className='outerConatiner'>
             <div className='mainContainer'>
