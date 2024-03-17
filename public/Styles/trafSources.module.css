@@ -1,0 +1,42 @@
+.outerContainer {
+  margin-top: var(--global-margin);
+  margin-bottom: var(--global-margin);
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(var(--background)); /* Background color */
+    color: white; /* Text color */
+}
+
+.imageContainer {
+    margin: auto;
+    max-width: 10%;
+    min-width: 30%;
+    flex-shrink: 0;
+    display: flex; /* Align the logo containers in a row */
+    justify-content: center; /* Center the logo containers */
+}
+
+.logoContainer {
+  position: relative;
+  width: 100%; /* Adjust based on your frame size */
+  height: 100%; /* Adjust based on your frame size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frameImage {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 1; /* Ensure it's under the logo image */
+}
+
+.logoImage {
+  position: absolute;
+  width: 50%; /* Adjust for size inside the frame */
+  height: 50%; /* Adjust for size inside the frame */
+  z-index: 2; /* Ensure logo appears above the frame image */
+}

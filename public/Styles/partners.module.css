@@ -1,0 +1,89 @@
+.outerConatiner {
+    margin-top: var(--global-margin);
+    margin-bottom: var(--global-margin);
+}
+
+.layoutContainer {
+    display: flex;
+    align-items: flex-start; /* Align items at the start of the container */
+    gap: 20px; /* Adjust based on your design */
+  }
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(var(--background)); /* Background color */
+    color: white; /* Text color */
+  }
+
+  .imageContainer {
+    margin: auto;
+    width: 50%;
+    flex-shrink: 0;
+    display: flex; /* Align the logo containers in a row */
+    justify-content: center; /* Center the logo containers */
+}
+
+.logoContainer {
+  position: relative;
+  width: 100%; /* Adjust based on your frame size */
+  height: 100%; /* Adjust based on your frame size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frameImage {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 1; /* Ensure it's under the logo image */
+}
+
+.logoImage {
+  position: absolute;
+  width: 50%; /* Adjust for size inside the frame */
+  height: 50%; /* Adjust for size inside the frame */
+  z-index: 2; /* Ensure logo appears above the frame image */
+}
+  .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .outer-image {
+    position: relative; /* Establishes a positioning context for inner elements */
+    width: 15em; /* Set to the size of your outer image */
+    height: 15em; /* Set to the size of your outer image */
+  }
+  
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
+  
+  .inner-image {
+    height: auto;
+    width: 20em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Optional: Set specific width and height for the inner image if required */
+  }
+  
+  .inner-image img {
+    display: block; /* Removes bottom space/margin under the image */
+    max-width: 100%; /* Ensures the image does not exceed its container */
+    height: auto; /* Keeps the aspect ratio of the image */
+  }
+  

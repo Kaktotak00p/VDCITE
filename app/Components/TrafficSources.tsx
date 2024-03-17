@@ -1,20 +1,30 @@
 import React from 'react';
-import '../../public/Styles/trafSources.css';
+import Styles from '../../public/Styles/trafSources.module.css';
 import '../../public/Styles/globals.css';
 
-const TrafSources:React.FC = () => {
+const TrafSources: React.FC = () => {
     return (
-        <div className='outerConatiner'>
-            <div className='mainContainer'>
-            <h1>Источники Траффика</h1>
+        <div className={Styles.outerContainer}>
+            <div className={Styles.mainContainer}>
+                <h1>Источники Траффика</h1>
             </div>
-            <div className='imageContainer row'>
-                <img src='https://static.wixstatic.com/media/1c47da_7f6f0dd1df8f48218c630a6da4a5451f~mv2.png/v1/fill/w_121,h_121,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1c47da_7f6f0dd1df8f48218c630a6da4a5451f~mv2.png' alt='Лого компаний'></img>
-                <img src='https://static.wixstatic.com/media/1c47da_5d363d31eb7943928ffa3d6a2985d5c7~mv2.png/v1/fill/w_121,h_121,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1c47da_5d363d31eb7943928ffa3d6a2985d5c7~mv2.png' alt='Лого компаний'></img>
-                <img src='https://static.wixstatic.com/media/1c47da_c74b47dd5c2a490aac1e828499dd535e~mv2.png/v1/fill/w_121,h_121,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/1c47da_c74b47dd5c2a490aac1e828499dd535e~mv2.png' alt='Лого компаний'></img>
+            <div className={`${Styles.imageContainer} ${Styles.row}`}>
+                {/* Each set now includes an outer frame image and an inner logo image */}
+                <div className={Styles.logoContainer}>
+                    <img className={Styles.frameImage} src='./partners/elements/square(3).png' alt='Frame'></img>
+                    <img className={Styles.logoImage} src='./partners/elements/tt.png' alt='Лого компаний'></img>
+                </div>
+                <div className={Styles.logoContainer}>
+                    <img className={Styles.frameImage} src='./partners/elements/square(3).png' alt='Frame'></img>
+                    <img className={Styles.logoImage} src='./partners/elements/fb.png' alt='Лого компаний'></img>
+                </div>
+                <div className={Styles.logoContainer}>
+                    <img className={Styles.frameImage} src='./partners/elements/square(3).png' alt='Frame'></img>
+                    <img className={Styles.logoImage} src='./partners/elements/google.png' alt='Лого компаний'></img>
+                </div>
             </div>
         </div>
-    )
+    );
 };
 
 export default TrafSources;

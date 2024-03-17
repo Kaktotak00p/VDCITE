@@ -1,4 +1,4 @@
-.cardContainer {
+.cardontainer {
     position: relative;
     display: inline-block; /* Or 'block', depending on layout needs */
     display: flex; /* Makes the card container also a flex container */
@@ -20,7 +20,8 @@
   }
   
 .outerConatiner {
-    margin: 1em;
+  margin-top: var(--global-margin);
+  margin-bottom: var(--global-margin);
 }
 
 .layoutContainer {
@@ -33,12 +34,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black; /* Background color */
+    background-color: rgb(var(--background)); /* Background color */
     color: white; /* Text color */
   }
 
   .imageContainer {
-    /* Adjust based on your needs */
     max-width: 100%;
     min-width: 30%;
     flex-shrink: 0;
@@ -52,10 +52,37 @@
   .row {
     display: flex;
     flex-direction: row;
-    gap: 20px; /* Space between cards in the same column */
+    justify-content: center;
+    align-items: center;
+    gap: 5em; /* Space between cards in the same column */
     margin: auto;
-    /* Optional: set a fixed width to ensure columns are even */
   }
+
+  .entry{
+    margin: auto;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    border-top: solid whitesmoke 1px;
+    border-bottom: solid whitesmoke 1px;
+  }
+
+  .button {
+    background-color: transparent;
+    border: 2px solid #4CAF50; /* Border color */
+    color: #4CAF50; /* Text color */
+    padding: 10px 20px; /* Padding */
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #4CAF50; /* Hover background color */
+    color: black; /* Hover text color */
+  }
+
+.p {
+  color: grey;
+}
 
   @media (max-width: 768px) {
     .layoutContainer {

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../public/Styles/Contact.css';
+import Styles  from '../../public/Styles/Contact.module.css';
 
 interface ContactFieldProps {
   id: string;
@@ -10,8 +10,8 @@ interface ContactFieldProps {
 }
 
 const ContactField: React.FC<ContactFieldProps> = ({ id, label, type, value, onChange }) => (
-  <div className="contact-field">
-    <label htmlFor={id}>{label}</label>
+  <div className={Styles.contactfield}>
+    <label className={Styles.label} htmlFor={id}>{label}</label>
     <input id={id} type={type} value={value} onChange={onChange} />
   </div>
 );
