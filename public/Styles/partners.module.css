@@ -92,3 +92,22 @@
     height: auto; /* Keeps the aspect ratio of the image */
   }
   
+  .scrollContainer {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden; /* Hide the logos moving in and out */
+    position: relative;
+}
+
+.fadeInRight {
+    animation: slideInRight 3s linear infinite;
+    position: relative;
+    opacity: 0; /* Start with logos fully transparent */
+}
+
+@keyframes slideInRight {
+    0%, 100% { opacity: 0; }
+    10%, 90% { opacity: 1; }
+    33%, 66% { opacity: 1; }
+}
+  
