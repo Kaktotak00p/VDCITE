@@ -45,7 +45,6 @@
   width: fit-content; /* Adjust for size inside the frame */
   height: auto; /* Adjust for size inside the frame */
   z-index: 2; /* Ensure logo appears above the frame image */
-  transition: transform 0.3s ease-in-out;
 }
 
 .logoImage:hover{
@@ -99,15 +98,34 @@
     position: relative;
 }
 
-.fadeInRight {
-    animation: slideInRight 3s linear infinite;
-    position: relative;
-    opacity: 0; /* Start with logos fully transparent */
+.carouselContainer {
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
 }
 
-@keyframes slideInRight {
-    0%, 100% { opacity: 0; }
-    10%, 90% { opacity: 1; }
-    33%, 66% { opacity: 1; }
+.logoContainer {
+  flex: 0 0 auto;
+  opacity: 0; /* Start with invisible logos */
+  transform: translateX(-100%); /* Start off-screen */
 }
-  
+
+.animateLogo {
+  animation: slideFadeInOut 5s infinite linear;
+}
+
+@keyframes slideFadeInOut {
+  0% {
+      opacity: 0;
+      transform: translateX(100%);
+  }
+  20%, 80% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+}
+

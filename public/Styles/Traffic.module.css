@@ -1,4 +1,6 @@
 .cardContainer {
+  width: auto;
+  height: 25%;
     position: relative;
     display: inline-block; /* Or 'block', depending on layout needs */
     display: flex; /* Makes the card container also a flex container */
@@ -43,6 +45,10 @@
     color: white; /* Text color */
   }
 
+  .mainContainer h1{
+    margin-bottom:5em;
+  }
+
   .imageContainer {
     /* Adjust based on your needs */
     max-width: 100%;
@@ -63,6 +69,9 @@
   }
 
   .column {
+    height: auto;
+    width: 80%;
+    margin: 20em;
     display: flex;
     flex-direction: column;
     gap: 20px; /* Space between cards in the same column */

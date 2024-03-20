@@ -3,38 +3,62 @@ import React, { useState, useEffect } from 'react';
 import styles from '../../public/Styles/partners.module.css';
 import '../../public/Styles/globals.css';
 
+interface PartnerLogo {
+    src: string;
+    alt: string;
+}
+
+const logoData: PartnerLogo[] = [
+    { src: './partners/247.png', alt: 'Company Logo' },
+    { src: './partners/betman.png', alt: 'Company Logo' },
+    { src: './partners/chilli.png', alt: 'Company Logo' },
+    { src: './partners/glory.png', alt: 'Company Logo' },
+    { src: './partners/mostb.png', alt: 'Company Logo' },
+    { src: './partners/mrbet.png', alt: 'Company Logo' },
+    { src: './partners/v.png', alt: 'Company Logo' },
+];
+
 const Partners: React.FC = () => {
-    const [visibleLogos, setVisibleLogos] = useState<number[]>([0, 1, 2, 3, 4]);
-    const logoData = [
-        './partners/247.png',
-        './partners/betman.png',
-        './partners/chilli.png',
-        './partners/glory.png',
-        './partners/mostb.png',
-        './partners/mrbet.png',
-        './partners/v.png',
-    ];
+    const [visibleLogos, setVisibleLogos] = useState<PartnerLogo[]>([]);
+    const [animate, setAnimate] = useState<boolean>(false);
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            setVisibleLogos(prevVisibleLogos => 
-                prevVisibleLogos.map(index => (index + 1) % logoData.length)
-            );
-        }, 3000); // Rotate logos every 3 seconds
+        // Initialize the visible logos
+        setVisibleLogos(logoData.slice(0, 5));
 
+        const updateLogos = () => {
+            setAnimate(false); // Reset animation
+            setTimeout(() => {
+                setVisibleLogos((prevLogos) => {
+                    // Determine new logos, cycling through the array
+                    const startIndex = logoData.indexOf(prevLogos[0]);
+                    const nextIndex = (startIndex + 1) % logoData.length;
+                    return [
+                        logoData[nextIndex],
+                        logoData[(nextIndex + 1) % logoData.length],
+                        logoData[(nextIndex + 2) % logoData.length],
+                        logoData[(nextIndex + 3) % logoData.length],
+                        logoData[(nextIndex + 4) % logoData.length],
+                    ];
+                });
+                setAnimate(true); // Trigger new animation
+            }, 100); // Short delay to reset animation
+        };
+
+        const interval = setInterval(updateLogos, 5000); // Update logos every 5 seconds
         return () => clearInterval(interval);
     }, []);
 
     return (
         <div className={styles.outerContainer}>
             <div className={styles.mainContainer}>
-                <h1>Партнеры</h1>
+                <h1>Partners</h1>
             </div>
-            <div className={styles.scrollContainer}>
-                {visibleLogos.map((index) => (
-                    <div key={index} className={`${styles.logoContainer} ${styles.fadeInRight}`}>
-                        <img className={styles.frameImage} src='./partners/elements/square(1).png' alt='Frame' />
-                        <img className={styles.logoImage} src={logoData[index]} alt='Logo' />
+            <div className={styles.carouselContainer}>
+                {visibleLogos.map((logo, i) => (
+                    <div key={i} className={`${styles.logoContainer} ${animate ? styles.animateLogo : ''}`}>
+                        <img className={styles.frameImage} src='./partners/elements/square(1).png' alt='Frame'></img>
+                        <img className={styles.logoImage} src={logo.src} alt={logo.alt}></img>
                     </div>
                 ))}
             </div>

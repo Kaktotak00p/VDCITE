@@ -37,6 +37,9 @@
     background-color: rgb(var(--background)); /* Background color */
     color: white; /* Text color */
   }
+  .mainContainer h1{
+    margin-bottom:5em;
+  }
 
   .imageContainer {
     max-width: 100%;
@@ -84,7 +87,12 @@
   color: grey;
 }
 
-  @media (max-width: 768px) {
+.img{
+  height: auto;
+  width: 30%;
+}
+
+@media (max-width: 768px) {
     .layoutContainer {
       flex-direction: column;
     }

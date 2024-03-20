@@ -4,8 +4,10 @@
     align-items: center;
     background-color: rgb(var(--background)); /* Background color */
     color: white; /* Text color */
-    margin-top: 5em;
-    margin-bottom: 5em;
+    margin: 2em;
+    border-radius: 3em;
+    padding: 3em;
+    border: #4CAF50 2px solid;
   }
   
   .textContainer {
@@ -54,7 +56,7 @@
   }
   
   .imageContainer img {
-    width: 100%; /* This makes the image responsive */
+    width: 80%; /* This makes the image responsive */
     height: auto; /* Maintain aspect ratio */
   }
   
