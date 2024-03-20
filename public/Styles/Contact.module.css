@@ -91,7 +91,7 @@
   background-color: rgb(var(--background));
   box-shadow: 2px 0 5px rgba(0,0,0,0.5);
   transform: translateX(-200%);
-  transition: transform 0.3s ease-out;
+  transition: transform 1s ease-out;
   z-index: 3;
 }
 
