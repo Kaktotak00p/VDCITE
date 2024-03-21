@@ -51,6 +51,7 @@ const Partners: React.FC = () => {
 
     return (
         <div className={styles.outerContainer}>
+            <h1 className='mainText' style={{paddingLeft:"3em"}}>://Partners</h1>
             <div className={styles.mainContainer}>
                 <h1>Partners</h1>
             </div>

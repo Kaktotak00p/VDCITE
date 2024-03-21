@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: 'Fifaks10Dev1';
-  src: url('../fonts/Fifaks10Dev1.ttf') format('ttf');
+  src: url('../fonts/Fifaks10Dev1.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -38,6 +38,26 @@ body {
 .outerConatiner {
   height: 50em;
   margin: 1em;
+}
+
+.mainText{
+  color: rgb(0, 255, 0);
+  font-family: 'Fifaks10Dev1', arial;
+  font-size: large;
+}
+
+h1{
+  font-size: 3em;
+}
+
+p{
+  font-family: 'Avenir Next Condensed', arial;
+}
+
+@media (max-width: 768px){
+  h1{
+    font-size: 2em;
+  }
 }
 
 @layer utilities {

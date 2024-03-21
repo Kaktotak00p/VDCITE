@@ -6,6 +6,7 @@ import CardGreen from '../pictures/CardGreenShort.png'
 const trafic: React.FC = () => {
     return (
         <div className={Styles.outerConatiner}>
+            <h1 className='mainText' style={{paddingLeft:"3em"}}>://Traffic</h1>
             <div className={Styles.mainContainer}>
                 <h1>НАШИ ПРЕИМУЩЕСТВА</h1>
             </div>

@@ -5,11 +5,13 @@ import '../../public/Styles/globals.css';
 const HeadHunter = () => {
     return (
         <div className={Styles.outerConatiner}>
+            <h1 className='mainText' style={{paddingLeft:"3em"}}>://HeadHunter</h1>
             <div className={Styles.mainContainer}>
                 <h1>Охота за головами</h1>
             </div>
             <div className={Styles.row}>
             <img className={Styles.img} src='./partners/elements/005.png'></img>
+                <div className={Styles.ol}>
                 <ol>
                     <li className={Styles.layoutContainer}>
                         <div className={`${Styles.row} ${Styles.entry}`}>
@@ -47,6 +49,7 @@ const HeadHunter = () => {
                         </div>
                     </li>
                 </ol>
+                </div>
             </div>
         </div>
     )

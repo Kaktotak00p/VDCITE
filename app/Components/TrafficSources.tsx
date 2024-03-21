@@ -5,6 +5,7 @@ import '../../public/Styles/globals.css';
 const TrafSources: React.FC = () => {
     return (
         <div className={Styles.outerContainer}>
+            <h1 className='mainText' style={{paddingLeft:"3em"}}>://TrafficSources</h1>
             <div className={Styles.mainContainer}>
                 <h1>Источники Траффика</h1>
             </div>
