@@ -117,3 +117,13 @@
   margin: auto;
 }
 
+@media (max-width:768px) {
+  .row {
+    position: relative; /* Absolute positioning within the imageContainer */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Adjust alignment as needed */
+    gap: 20px; /* Space between items */
+    width: auto;
+}
+}

@@ -100,17 +100,27 @@
     .layoutContainer {
       flex-direction: column;
     }
+    .img{
+      display: none;
+    }
   
     .cardsContainer {
       flex-direction: column;
     }
   
     .row {
-      width: 100%; /* Each column takes full width on smaller screens */
+      width: 100%; 
+    }
+    .entry{
+      margin: auto;
+      padding-top: .2em;
+      padding-bottom: .2em;
+      border-top: solid whitesmoke 1px;
+      border-bottom: solid whitesmoke 1px;
+      gap: 0em;
     }
   
     .imageContainer {
-      /* Adjustments for smaller screens */
       width: 100%;
     }
   }

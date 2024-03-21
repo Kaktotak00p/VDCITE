@@ -24,7 +24,7 @@ const Partners: React.FC = () => {
 
     useEffect(() => {
         // Initialize the visible logos
-        setVisibleLogos(logoData.slice(0, 5));
+        setVisibleLogos(logoData.slice(0, 3));
 
         const updateLogos = () => {
             setAnimate(false); // Reset animation
@@ -37,8 +37,6 @@ const Partners: React.FC = () => {
                         logoData[nextIndex],
                         logoData[(nextIndex + 1) % logoData.length],
                         logoData[(nextIndex + 2) % logoData.length],
-                        logoData[(nextIndex + 3) % logoData.length],
-                        logoData[(nextIndex + 4) % logoData.length],
                     ];
                 });
                 setAnimate(true); // Trigger new animation

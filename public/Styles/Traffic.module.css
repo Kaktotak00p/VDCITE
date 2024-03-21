@@ -82,6 +82,23 @@
     .layoutContainer {
       flex-direction: column;
     }
+
+    .row {
+      height: auto;
+      width: 80%;
+      margin: 20em;
+      display: flex;
+      flex-direction: column;
+      gap: 20px; /* Space between cards in the same column */
+      margin: auto;
+    }
+
+    .clumn {
+      display: flex;
+      flex-direction: row;
+      gap: 20px; /* Space between cards in the same column */
+      margin: auto;
+    }
   
     .cardsContainer {
       flex-direction: column;
