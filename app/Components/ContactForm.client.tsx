@@ -21,7 +21,7 @@ const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await fetch('YOUR_ENDPOINT_URL', {
+      const response = await fetch('', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -35,7 +35,7 @@ const ContactForm = () => {
       console.log('Form successfully submitted:', result);
       // Clear form or show success message
     } catch (error) {
-      console.error('Error submitting form:', error);
+        console.error('Error submitting form:', error);
       // Show error message to the user
     }
   };
@@ -48,9 +48,8 @@ const ContactForm = () => {
         <div className={`${Styles.slidingPanel} ${isOpen ? Styles.show : ''}`}>
           <div className={Styles.closeBtn} onClick={() => setIsOpen(false)}>&times;</div>
           <div className={Styles.contactformcontainer}>
-            <img src="https://static.wixstatic.com/media/1c47da_da2794fb5ff246e7ba55a11348c021af~mv2.png/v1/crop/x_181,y_77,w_746,h_914/fill/w_323,h_396,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/1c47da_da2794fb5ff246e7ba55a11348c021af~mv2.png" alt="Decorative" className="form-image"></img>
+            <img className={Styles.formImage} src="./partners/elements/002.png" alt="Decorative"></img>
             <form onSubmit={handleSubmit} className={Styles.contactform}>
-              <h1 className={Styles.h1}>Contact us</h1>
               <div className={Styles.formrow}>
                 <ContactField
                   id="firstName"

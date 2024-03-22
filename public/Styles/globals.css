@@ -24,7 +24,10 @@
 }
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --purple: 255, 66, 218;
+  /* --green: 209, 253, 0; */
+  --green:189, 253, 0;
+  --white: 255, 255, 255;
   --background: 16,16,16;
   --global-margin: 20em;
 }
@@ -41,12 +44,13 @@ body {
 }
 
 .mainText{
-  color: rgb(0, 255, 0);
+  color: rgb(var(--green));
   font-family: 'Fifaks10Dev1', arial;
   font-size: large;
 }
 
 h1{
+  color: rgb(var(--third-color));
   font-size: 3em;
 }
 

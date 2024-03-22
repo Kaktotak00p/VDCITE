@@ -50,16 +50,14 @@
 
 .button {
     background-color: transparent;
-    border: 2px solid #4CAF50; /* Border color */
-    color: #4CAF50; /* Text color */
+    color: rgb(var(--green)); /* Text color */
     padding: 10px 20px; /* Padding */
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .button:hover {
-    background-color: #4CAF50; /* Hover background color */
-    color: black; /* Hover text color */
+    color: rgb(var(--purple)); /* Hover text color */
 }
 
 .contactfield{
@@ -117,7 +115,16 @@
   margin: auto;
 }
 
+.formImage{
+  height: auto;
+  width: 50%;
+}
+
 @media (max-width:768px) {
+  .formImage{
+    display: none;
+  }
+
   .row {
     position: relative; /* Absolute positioning within the imageContainer */
     display: flex;

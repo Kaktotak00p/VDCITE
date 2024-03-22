@@ -75,7 +75,7 @@
     font-family: 'Fifaks10Dev1', arial;
     margin-top: 1em;
     /* border: 2px solid #4CAF50*/
-    color: #4CAF50; /* Text color */
+    color: rgb(var(--green)); /* Text color */
     padding: 10px 20px; /* Padding */
     cursor: pointer;
     transition: all 0.3s ease;
@@ -83,7 +83,7 @@
   
   .button:hover {
     /* background-color: #4CAF50; */
-    color: #ff43da; /* Hover text color */
+    color: rgb(var(--purple)); /* Hover text color */
   }
 
 .p {

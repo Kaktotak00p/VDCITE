@@ -64,9 +64,8 @@
 
 .button {
   background-color: transparent;
-  border: 2px solid #4CAF50;
   /* Border color */
-  color: #4CAF50;
+  color: rgb(var(--green));
   /* Text color */
   padding: 10px 20px;
   /* Padding */
@@ -78,9 +77,8 @@
 }
 
 .button:hover {
-  background-color: #4CAF50;
   /* Hover background color */
-  color: black;
+  color: rgb(var(--purple));
   /* Hover text color */
 }
 
