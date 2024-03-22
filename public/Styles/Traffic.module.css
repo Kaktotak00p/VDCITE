@@ -12,7 +12,7 @@
     transform: scale(1.2);
   }
   
-  .cardContainer img {
+  .card_bg {
     width: 100%; /* Adjust as necessary */
     height: auto; /* Adjust if you need specific sizing or aspect ratios */
   }
@@ -23,7 +23,6 @@
     left: 40%;
     transform: translate(-50%, -50%); /* Centers the text */
     color: black; /* Choose text color that stands out over your image */
-    /* Add more styling here for text appearance: font size, font family, etc. */
   }
   
 .outerConatiner {
@@ -78,9 +77,28 @@
     margin: auto;
   }
 
+  .innerImage {
+    z-index: 3;
+    height: auto;
+    width: 6em;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+  }
+
   @media (max-width: 768px) {
     .layoutContainer {
       flex-direction: column;
+    }
+
+    .innerImage{
+      display: none;
+    }
+
+    .overlayText{
+      top: 50%;
+      font-size: 1em;
     }
 
     .row {
@@ -93,7 +111,7 @@
       margin: auto;
     }
 
-    .clumn {
+    .column {
       display: flex;
       flex-direction: row;
       gap: 20px; /* Space between cards in the same column */
