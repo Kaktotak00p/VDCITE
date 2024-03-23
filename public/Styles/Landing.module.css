@@ -101,6 +101,13 @@
   height: 40em;
 }
 
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   .mainContainer {
     padding: 0em;

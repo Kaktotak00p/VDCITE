@@ -66,14 +66,14 @@
     margin: auto;
     padding-top: .2em;
     padding-bottom: .2em;
-    border-top: solid whitesmoke 1px;
-    border-bottom: solid whitesmoke 1px;
+    border-top: solid rgb(var(--white)) 1px;
+    border-bottom: solid rgb(var(--white)) 1px;
   }
 
   .button {
     background-color: transparent;
     font-family: 'Fifaks10Dev1', arial;
-    margin-top: 1em;
+    /* margin-top: 1em; */
     /* border: 2px solid #4CAF50*/
     color: rgb(var(--green)); /* Text color */
     padding: 10px 20px; /* Padding */

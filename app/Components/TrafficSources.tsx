@@ -5,7 +5,13 @@ import '../../public/Styles/globals.css';
 const TrafSources: React.FC = () => {
     return (
         <div className={Styles.outerContainer}>
+            <div className={Styles.row}>
             <h1 className='mainText' style={{paddingLeft:"3em"}}>://TrafficSources</h1>
+            <img src='./dec/skull (2).png' style={{
+                width:"auto",
+                height:"2em"
+            }}></img>
+            </div>
             <div className={Styles.mainContainer}>
                 <h1>Источники Траффика</h1>
             </div>

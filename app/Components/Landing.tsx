@@ -22,6 +22,13 @@ return(
   <div className={Style.imageContainer}>
     <img src="./partners/elements/makakich.png" alt="Media Buying Company" />
     <div className={Style.column}>
+      <div className={Style.row}>
+        <h1 className='mainText'>://</h1>
+        <img src="./dec/flower_nobg (4).png" style={{
+          height:'1em',
+          width:'auto'
+        }}></img>
+      </div>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus blanditiis, cumque nam sit unde velit delectus nobis enim voluptatum consequuntur.</p>
       <button className={Style.button}>[ CLICK, ПОСМОТРЕТЬ ]</button>
     </div>

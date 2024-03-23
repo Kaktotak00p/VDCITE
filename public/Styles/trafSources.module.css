@@ -41,6 +41,11 @@
   z-index: 2; /* Ensure logo appears above the frame image */
   transition: transform 0.3s ease-in-out;
 }
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
 .logoImage:hover{
   transform: scale(1.2);

@@ -1,101 +1,123 @@
 .outerConatiner {
-    margin-top: var(--global-margin);
-    margin-bottom: var(--global-margin);
+  margin-top: var(--global-margin);
+  margin-bottom: var(--global-margin);
 }
 
 .layoutContainer {
-    display: flex;
-    align-items: flex-start; /* Align items at the start of the container */
-    gap: 20px; /* Adjust based on your design */
-  }
+  display: flex;
+  align-items: flex-start;
+  /* Align items at the start of the container */
+  gap: 20px;
+  /* Adjust based on your design */
+}
 
 .mainContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(var(--background)); /* Background color */
-    color: white; /* Text color */
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(var(--background));
+  /* Background color */
+  color: white;
+  /* Text color */
+}
 
-  .imageContainer {
-    margin: auto;
-    width: 50%;
-    flex-shrink: 0;
-    display: flex; /* Align the logo containers in a row */
-    justify-content: center; /* Center the logo containers */
+.imageContainer {
+  margin: auto;
+  width: 50%;
+  flex-shrink: 0;
+  display: flex;
+  /* Align the logo containers in a row */
+  justify-content: center;
+  /* Center the logo containers */
 }
 
 .logoContainer {
   position: relative;
-  width: 250px; /* Adjust based on your frame size */
-  height: auto; /* Adjust based on your frame size */
+  width: 250px;
+  /* Adjust based on your frame size */
+  height: auto;
+  /* Adjust based on your frame size */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .frameImage {
-  width: 100%; /* Full width of the container */
-  height: auto; /* Maintain aspect ratio */
-  z-index: 1; /* Ensure it's under the logo image */
+  width: 100%;
+  /* Full width of the container */
+  height: auto;
+  /* Maintain aspect ratio */
+  z-index: 1;
+  /* Ensure it's under the logo image */
 }
 
 .logoImage {
   position: absolute;
-  width: fit-content; /* Adjust for size inside the frame */
-  height: auto; /* Adjust for size inside the frame */
-  z-index: 2; /* Ensure logo appears above the frame image */
+  width: fit-content;
+  /* Adjust for size inside the frame */
+  height: auto;
+  /* Adjust for size inside the frame */
+  z-index: 2;
+  /* Ensure logo appears above the frame image */
 }
 
-.logoImage:hover{
+.logoImage:hover {
   transform: scale(1.2);
 }
-  .row{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
 
-  .column{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
-  .outer-image {
-    position: relative; /* Establishes a positioning context for inner elements */
-    width: 15em; /* Set to the size of your outer image */
-    height: 15em; /* Set to the size of your outer image */
-  }
-  
-  .img-responsive {
-    width: 100%;
-    height: auto;
-  }
-  
-  .inner-image {
-    height: auto;
-    width: 20em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* Optional: Set specific width and height for the inner image if required */
-  }
-  
-  .inner-image img {
-    display: block; /* Removes bottom space/margin under the image */
-    max-width: 100%; /* Ensures the image does not exceed its container */
-    height: auto; /* Keeps the aspect ratio of the image */
-  }
-  
-  .scrollContainer {
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden; /* Hide the logos moving in and out */
-    position: relative;
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer-image {
+  position: relative;
+  /* Establishes a positioning context for inner elements */
+  width: 15em;
+  /* Set to the size of your outer image */
+  height: 15em;
+  /* Set to the size of your outer image */
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.inner-image {
+  height: auto;
+  width: 20em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Optional: Set specific width and height for the inner image if required */
+}
+
+.inner-image img {
+  display: block;
+  /* Removes bottom space/margin under the image */
+  max-width: 100%;
+  /* Ensures the image does not exceed its container */
+  height: auto;
+  /* Keeps the aspect ratio of the image */
+}
+
+.scrollContainer {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  /* Hide the logos moving in and out */
+  position: relative;
 }
 
 .carouselContainer {
@@ -106,33 +128,43 @@
 
 .logoContainer {
   flex: 0 0 auto;
-  opacity: 0; /* Start with invisible logos */
-  transform: translateX(-100%); /* Start off-screen */
+  opacity: 0;
+  /* Start with invisible logos */
+  transform: translateX(-100%);
+  /* Start off-screen */
 }
 
 .animateLogo {
   animation: slideFadeInOut 5s infinite linear;
 }
 
+.arrow{
+  width:auto;
+  height: 2em;
+  transform: scaleX(-1);
+}
+
 @keyframes slideFadeInOut {
   0% {
-      opacity: 0;
-      transform: translateX(100%);
+    opacity: 0;
+    transform: translateX(100%);
   }
-  20%, 80% {
+
+  20%,
+  80% {
     opacity: 1;
     transform: translateX(0);
   }
+
   100% {
-      opacity: 0;
-      transform: translateX(-100%);
+    opacity: 0;
+    transform: translateX(-100%);
   }
 }
 
 @media (max-width:768px) {
-  .carouselContainer{
+  .carouselContainer {
     flex-wrap: wrap;
   }
-  
-}
 
+}
