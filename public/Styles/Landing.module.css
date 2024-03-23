@@ -13,6 +13,8 @@
 }
 
 .textContainer {
+  display: flex;
+  flex-direction: column;
   text-align: left;
   max-width: 50%;
   /* Adjust based on your layout needs */
@@ -28,6 +30,7 @@
 
 
 .footer {
+  padding-top: 5em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -50,17 +53,6 @@
   max-width: 30%;
 }
 
-
-.tag {
-  background-color: #4CAF50;
-  /* Background color */
-  color: rgb(var(--background));
-  /* Text color */
-  padding: 10px;
-  /* Padding */
-  border-radius: 5px;
-  /* Border radius */
-}
 
 .button {
   background-color: transparent;
