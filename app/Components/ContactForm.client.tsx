@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
+import axios from 'axios';
 import ContactField from './ContactField.client';
 import Styles from '../../public/Styles/Contact.module.css';
 
@@ -22,20 +23,10 @@ const ContactForm = () => {
     e.preventDefault();
     try {
       console.log('Form successfully submitted:', formData);
-      const response = await fetch('', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+      const response = await axios.post('http://localhost:3001/send-to-telegram', formData);
         body: JSON.stringify(formData),
         
-      });
-      if (!response.ok) {
-        throw new Error(`Error: ${response.status}`);
-      }
-      const result = await response.json();
-      console.log('Form successfully submitted:', result);
-      // Clear form or show success message
+        console.log('Form successfully submitted:', response);
     } catch (error) {
         console.error('Error submitting form:', error);
       // Show error message to the user
