@@ -5,6 +5,7 @@ import HeadHunter from "./Components/HeadHunter"
 import TrafSources from "./Components/TrafficSources"
 import Partners from "./Components/Partners"
 import type { ReactElement } from 'react'
+import ContactNew from "./Components/ContactNEW"
 
 
 import dynamic from 'next/dynamic';
@@ -22,6 +23,7 @@ const Home = () => {
     <TrafSources />
     <Partners />
     <ContactFormClient />
+    <ContactNew/>
     </>
     )
 };

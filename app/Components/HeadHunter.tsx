@@ -25,6 +25,7 @@ const HeadHunter = () => {
             </div>
             <div className={Styles.row}>
                 <img className={Styles.img} src='./partners/elements/005.png' alt='Decorative' />
+                <img className={Styles.dec} src='./partners/elements/square(2).png' alt='Decorative' />
                 <div className={Styles.ol}>
                     <ol>
                         {jobListings.map((job, index) => (

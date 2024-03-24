@@ -122,6 +122,14 @@
   margin-bottom: auto;
 }
 
+.dec{
+  position: absolute;
+  top: 265%;
+  right: 5%;
+  width: auto;
+  height: 10em;
+}
+
 @media (max-width: 768px) {
     .layoutContainer {
       flex-direction: column;

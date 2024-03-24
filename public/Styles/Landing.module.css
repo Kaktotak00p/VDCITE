@@ -7,9 +7,9 @@
   color: white;
   /* Text color */
   margin: 2em;
-  border-radius: 3em;
+  border-radius: 1em;
   padding: 3em;
-  border: #4CAF50 2px solid;
+  border: rgb(var(--green)) 2px solid;
 }
 
 .textContainer {
@@ -66,6 +66,9 @@
   width: fit-content;
   height: fit-content;
   overflow: hidden;
+  font-family: 'Fifaks10Dev1';
+  height: auto;
+  width: fit-content;
 }
 
 .button:hover {
@@ -98,6 +101,10 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
+}
+.row p{
+  text-align: center;
 }
 
 @media (max-width: 768px) {

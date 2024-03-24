@@ -1,0 +1,93 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+  
+  .contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .contactLabel {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contactLabel::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: lime;
+    margin-left: 10px;
+  }
+  
+  .email {
+    font-size: 16px;
+  }
+  
+  .logo {
+    font-size: 80px;
+    font-weight: bold;
+  }
+  
+  .socialAndCompany {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .social {
+    margin-bottom: 20px;
+  }
+  
+  .social a {
+    margin: 0 5px;
+  }
+  
+  .links {
+    margin-bottom: 20px;
+  }
+  
+  .links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .companyInfo {
+    font-size: 12px;
+    text-align: right;
+  }
+  
+  .company {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Media queries for responsive adjustments */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .contactInfo, .socialAndCompany {
+      align-items: center;
+      margin-bottom: 20px;
+    }
+  
+    .social a, .links a {
+      margin: 0 10px;
+    }
+  }
+  
