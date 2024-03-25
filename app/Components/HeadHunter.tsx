@@ -25,14 +25,14 @@ const HeadHunter = () => {
             <h1 className='mainText' style={{ paddingLeft: "3em" }}>://HeadHunter</h1>
             <div className={Styles.mainContainer}>
                 <h1 style={{
-                    fontSize:"4em",
+                    fontSize:"5em",
                     width:"100%",
                     textAlign:"left",
                     textWrap:"nowrap",
                     paddingRight:"3em",
                 }}>Охота за</h1>
                 <h1 style={{
-                    fontSize:"4em",
+                    fontSize:"5em",
                     width:"100%",
                     textAlign:"right",
                     paddingLeft:"3em",
@@ -53,7 +53,7 @@ const HeadHunter = () => {
                 }}>
                 <h2 style={{
                     color: "white",
-                    fontSize:"3em",
+                    fontSize:"4em",
                     marginTop:"1em",
                     marginBottom:"1em"
                 }}>Вакансии:</h2>
@@ -62,11 +62,14 @@ const HeadHunter = () => {
                         {jobListings.map((job, index) => (
                             <li key={index} className={Styles.layoutContainer}>
                                 <div className={`${Styles.row} ${Styles.entry}`}>
-                                    <p className={`${Styles.p} ${Styles.jobName}`} style={{textAlign:'left'}}><span style={{color:"rgb(var(--green))"}}>//{index}  </span>{job.title}</p>
+                                    <p className={`${Styles.p} ${Styles.jobName}`} style={{textAlign:'left'}}><span style={{
+                                        color:"rgb(var(--green))",
+                                        fontSize:".8em"
+                                        }}>//{index}  </span>{job.title}</p>
                                     <div className={`${Styles.description} ${visibleDescription[index] ? Styles.expanded : ''}`}>
                                         <p className={Styles.p}>{job.description}</p>
                                     </div>
-                                    <button className={Styles.button} onClick={() => toggleDescription(index)} style={{alignSelf:"end"}}>Вакансия</button>
+                                    <button className={Styles.button} onClick={() => toggleDescription(index)} style={{alignSelf:"end"}}>[ Вакансия ]</button>
                                 </div>
                             </li>
                         ))}
