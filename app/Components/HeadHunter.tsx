@@ -25,12 +25,14 @@ const HeadHunter = () => {
             <h1 className='mainText' style={{ paddingLeft: "3em" }}>://HeadHunter</h1>
             <div className={Styles.mainContainer}>
                 <h1 style={{
+                    fontSize:"3em",
                     width:"100%",
                     textAlign:"left",
                     textWrap:"nowrap",
                     paddingRight:"3em",
                 }}>Охота за</h1>
                 <h1 style={{
+                    fontSize:"3em",
                     width:"100%",
                     textAlign:"right",
                     paddingLeft:"3em",
@@ -45,11 +47,14 @@ const HeadHunter = () => {
                     alignSelf:"baseline",
                     marginRight:"5em"
                 }}/>
-                <div>
+                <div style={{
+                    marginLeft:"5%",
+                    marginRight:"-5%"
+                }}>
                 <h2 style={{
                     color: "white",
-                    fontSize:"2em",
-                    marginTop:"2em",
+                    fontSize:"3em",
+                    marginTop:"1em",
                     marginBottom:"1em"
                 }}>Вакансии:</h2>
                 <div className={Styles.ol}>

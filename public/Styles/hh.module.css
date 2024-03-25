@@ -95,6 +95,7 @@
   }
 
 .p {
+  font-size: 1.3em;
   color: grey;
 }
 
@@ -108,7 +109,7 @@
 .ol{
   /* box-shadow: 0em 0em 2.5em .5em rgba(0, 0, 0, 1); */
   width: 60em;
-  margin-right: 5%;
+  margin-right: 0%;
   background-color: transparent;
 }
 
@@ -135,7 +136,7 @@
 
 .dec{
   position: absolute;
-  top: 230%;
+  top: 220%;
   right: 5%;
   width: auto;
   height: 10em;
