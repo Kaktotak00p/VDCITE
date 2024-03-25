@@ -197,7 +197,7 @@
     right: 20px;
     cursor: pointer;
     font-size: 24px;
-    color: #0f0;
+    color: rgb(var(--green));
   }
   
   .row {
@@ -223,6 +223,22 @@
     gap: 20px; /* Space between cards in the same column */
     margin: auto;
   }
+
+  .svgContainer {
+    width: auto; /* Set to the original width of the SVG */
+    height: 10em; /* Set to the original height of the SVG */
+    position: relative; /* This enables absolute positioning for contained elements */
+    overflow: hidden; /* This ensures the SVG does not spill out if it's larger than the container */
+}
+
+.svgContainer img {
+    position: absolute;
+    top: 50%;  /* Center the SVG in the container */
+    left: 50%; /* Center the SVG in the container */
+    transform: translate(-50%, -50%); /* Adjust scale as needed */
+    transform-origin: center; /* Ensures the SVG scales from its center */
+}
+
   
   @media (max-width:768px) {
     .formImage{

@@ -31,7 +31,10 @@ const ContactSection: React.FC = () => {
       // Show error message to the user
     }
   };
-  return (
+  return (<>
+  <div className={styles.svgContainer}>
+      <img src='./svg/палка3.svg' className='svg-img'/>
+  </div>
     <div className={styles.container}>
       <div className={styles.column}>
       <div className={styles.contactInfo}>
@@ -86,7 +89,7 @@ const ContactSection: React.FC = () => {
                   type="text"
                   value={formData.lastName}
                   onChange={handleChange}
-                />
+                  />
               </div>
               <div className={styles.formrow}>
                 <ContactField
@@ -95,14 +98,14 @@ const ContactSection: React.FC = () => {
                   type="email"
                   value={formData.email}
                   onChange={handleChange}
-                />
+                  />
                 <ContactField
                   id="telegramNickname"
                   label="Telegram Nickname"
                   type="text"
                   value={formData.telegramNickname}
                   onChange={handleChange}
-                />
+                  />
               </div>
               <div className={styles.formrow}>
                 <ContactField
@@ -111,7 +114,7 @@ const ContactSection: React.FC = () => {
                   type="text"
                   value={formData.message}
                   onChange={handleChange}
-                />
+                  />
               </div>
               <button type="submit" className={styles.button}>Submit</button>
             </form>
@@ -119,6 +122,7 @@ const ContactSection: React.FC = () => {
         </div>
 
     </div>
+                  </>
   );
 };
 
