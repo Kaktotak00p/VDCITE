@@ -55,11 +55,17 @@ const Partners: React.FC = () => {
                     alignItems: "center",
             }}>
             <h1 className='mainText' style={{paddingLeft:"3em"}}>://Partners</h1>
+            </div>
+            <div className={styles.mainContainer}>
+                <div style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+            }}>
+                <h1>Партнеры</h1>
             <img src='./dec/arrow (2).png' className={styles.arrow}></img>
             <img src='./dec/arrow (2).png' className={styles.arrow}></img>
             </div>
-            <div className={styles.mainContainer}>
-                <h1>Partners</h1>
             </div>
             <div className={styles.carouselContainer}>
                 {visibleLogos.map((logo, i) => (

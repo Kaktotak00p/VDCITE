@@ -13,7 +13,8 @@
 
 .mainContainer {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  padding-left: 2em;
   align-items: center;
   background-color: rgb(var(--background));
   /* Background color */

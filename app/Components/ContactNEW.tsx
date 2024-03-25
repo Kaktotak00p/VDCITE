@@ -42,15 +42,23 @@ const ContactSection: React.FC = () => {
         <div className={styles.email}>TRAFFHUB@GMAIL.COM</div>
       </div>
       <div className={styles.logo}>
-        <button className={styles.button} onClick={() => setIsOpen(true)}>CONTACT</button>
+        <button className={styles.button} onClick={() => setIsOpen(true)} style={{
+          fontFamily: "NuMono",
+        }}>CONTACT</button>
       </div>
         <div className={styles.links}>
-          <h2>Discover mode</h2>
+          <h2>Social</h2>
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+        </div>
+        {/* <div className={styles.links}>
+          <h2>Discover <br/>mode</h2>
           <a href="/story">/ STORY</a>
           <a href="/aboutus">/ ABOUT US</a>
           <a href="/events">/ EVENTS</a>
           <a href="/media">/ MEDIA</a>
-        </div>
+        </div> */}
       </div>
       <div className={styles.socialAndCompany}>
         {/* <div className={styles.social}>
@@ -60,13 +68,15 @@ const ContactSection: React.FC = () => {
           <a href="http://facebook.com"><img src="/path-to-your-icon/facebook.svg" alt="Facebook" /></a>
         </div> */}
         <div className={styles.companyInfo}>
-          <div className={styles.company}>COMPANY</div>
-          <p>ТУТ МОЖНО ЕБАНУТЬ <br/>
-            /// ПРИДУМАТЬ НАШ СЛОГАН <br/>
-            EREFFSFG AND JEJXK YOU <br/>
-            BLA BLA PERFECT OP <br/>
+          <h2 className={styles.company}>TRAFFHUB</h2>
+          <p style={{
+            color:"grey"
+          }}>ТУТ МОЖНО ЕБАНУТЬ <br/>
+            /// ПРИДУМАТЬ <span style={{color:"white"}}>НАШ СЛОГАН</span> <br/>
+            <span style={{color:"white"}}>EREFFSFG</span> AND JEJXK YOU <br/>
+            <span style={{color:"white"}}>BLA BLA PERFECT OP</span> <br/>
             KDKSJAFSD TO DKF TJA <br/>
-            TRAFFHUB.
+            <span style={{color:"white"}}>TRAFFHUB.</span>
           </p>
         </div>
       </div>
