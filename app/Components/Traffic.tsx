@@ -11,50 +11,38 @@ const trafic: React.FC = () => {
             <div className={Styles.mainContainer}>
                 <h1>НАШИ ПРЕИМУЩЕСТВА</h1>
             </div>
-                <div className={Styles.column}>
-                    <div className={Styles.row} style={{
-                    }}>
-                        <div className={Styles.cardContainer} style={{ opacity: '0'}}>
-                            <img className={Styles.card_bg} src="./partners/elements/CardGreenShort.png" alt="Descriptive Alt Text" />
-                            <div className={Styles.overlayText}>Лей Без Лимитов</div>
-                        </div>
-                        <div className={Styles.cardContainer}>
+                <div className={Styles.cardGrid}>
+                        <div className={`${Styles.cardContainer} ${Styles.item1}`}>
                             <img className={Styles.card_bg} src="./partners/elements/CardGreenShort.png" alt="Descriptive Alt Text" />
                             <img className={Styles.innerImage} src="./dec/flower (4).png" ></img>
                             <div className={Styles.overlayText}>Лей Без Лимитов</div>
                         </div>
-                        <div className={Styles.cardContainer}>
+                        <div className={`${Styles.cardContainer} ${Styles.item2}`}>
                             <img className={Styles.card_bg} src="./partners/elements/CardGreenShort.png" alt="Descriptive Alt Text" />
                             <img className={Styles.innerImage} src="./dec/flower_nobg (3).png" ></img>
                             <div className={Styles.overlayText}>Высокие Ставки</div>
                         </div>
-                        <div className={Styles.cardContainer}>
+                        <div className={`${Styles.cardContainer} ${Styles.item3}`}>
                             <img className={Styles.card_bg} src="./partners/elements/CardGreenShort.png" alt="Descriptive Alt Text" />
                             <img className={Styles.innerImage} src="./dec/petals (3).png" ></img>
                             <div className={Styles.overlayText}>Дружная Команда</div>
-                        </div>
                     </div>
-                    <div className={Styles.row} style={{
-                    }}>
-                        <div className={Styles.cardContainer}>
+                    <div className={`${Styles.row} ${Styles.secondRow}`}>
+                        </div>
+                        <div className={`${Styles.cardContainer} ${Styles.item4}`}>
+                            <img className={Styles.card_bg} src="./partners/elements/CardPinkShort.png" alt="Descriptive Alt Text" />
+                            <img className={Styles.innerImage} src="./dec/petals (1).png" ></img>
+                            <div className={Styles.overlayText}>Лучшее качество траффика</div>
+                        </div>
+                        <div className={`${Styles.cardContainer} ${Styles.item5}`}>
+                            <img className={Styles.card_bg} src="./partners/elements/CardPinkShort.png" alt="Descriptive Alt Text" />
+                            <img className={Styles.innerImage} src="./dec/flower_nobg (1).png" ></img>
+                            <div className={Styles.overlayText}>Лучшее качество траффика</div>
+                        </div>
+                        <div className={`${Styles.cardContainer} ${Styles.item6}`}>
                             <img className={Styles.card_bg} src="./partners/elements/CardPinkShort.png" alt="Descriptive Alt Text" />
                             <img className={Styles.innerImage} src="./dec/flower (1).png" ></img>
                             <div className={Styles.overlayText}>Лучшее качество траффика</div>
-                        </div>
-                        <div className={Styles.cardContainer}>
-                            <img className={Styles.card_bg} src="./partners/elements/CardPinkShort.png" alt="Descriptive Alt Text" />
-                            <img className={Styles.innerImage} src="./dec/flower (1).png" ></img>
-                            <div className={Styles.overlayText}>Лучшее качество траффика</div>
-                        </div>
-                        <div className={Styles.cardContainer}>
-                            <img className={Styles.card_bg} src="./partners/elements/CardPinkShort.png" alt="Descriptive Alt Text" />
-                            <img className={Styles.innerImage} src="./dec/flower (1).png" ></img>
-                            <div className={Styles.overlayText}>Лучшее качество траффика</div>
-                        </div>
-                        <div className={Styles.cardContainer} style={{ opacity: '0'}}>
-                            <img className={Styles.card_bg} src="./partners/elements/CardPinkShort.png" alt="Descriptive Alt Text" />
-                            <div className={Styles.overlayText}>Лучшее качество траффика</div>
-                        </div>
                     </div>
                 </div>
             </div>

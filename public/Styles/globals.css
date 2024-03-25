@@ -23,6 +23,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'NuMono';
+  src: url('../fonts/NuMonoFree.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --purple: 255, 66, 218;
   /* --green: 209, 253, 0; */

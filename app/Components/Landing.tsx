@@ -8,13 +8,14 @@ const landing = () => {
     <>
       <div className={Style.outerConatiner}>
         <div className={Style.mainContainer}>
-          <div className={Style.textContainer}>
             <div className={`${Style.header} mainText`}>TRAFFHUB</div>
-            <h1>Медиабайинговая Компания</h1>
-            <p>& Text text text Text Text text Text Text text</p>
           <div className={Style.footer}>
             <UserCountDisplay />
           </div>
+          <div className={Style.textContainer}>
+            <h1 style={{textAlign:"right"}}>Медиабайинговая </h1>
+            <h1>Компания</h1>
+            <p>& Text text text Text Text text Text Text text</p>
           </div>
           <div className={Style.imageContainer}>
             <img src="./partners/elements/makakich.png" alt="Media Buying Company" />

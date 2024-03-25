@@ -1,6 +1,6 @@
 .cardContainer {
   width: auto;
-  height: 25%;
+  height: 100%;
     position: relative;
     display: inline-block; /* Or 'block', depending on layout needs */
     display: flex; /* Makes the card container also a flex container */
@@ -44,10 +44,6 @@
     color: white; /* Text color */
   }
 
-  .mainContainer h1{
-    margin-bottom:5em;
-  }
-
   .imageContainer {
     /* Adjust based on your needs */
     max-width: 100%;
@@ -77,14 +73,48 @@
     margin: auto;
   }
 
+  .cardGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15em 15em;
+    margin-left: 5em;
+    margin-right: 5em;
+    gap: 1em;
+  }
+
   .innerImage {
     z-index: 3;
     height: auto;
-    width: 6em;
+    width: 30%;
     position: absolute;
     top: 35%;
     left: 20%;
     transform: translate(-50%, -50%);
+  }
+
+  .item1{
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .item2{
+    grid-row: 1;
+    grid-column: 3;
+  }
+  .item3{
+    grid-row: 1;
+    grid-column: 4;
+  }
+  .item4{
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .item5{
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .item6{
+    grid-row: 2;
+    grid-column: 3;
   }
 
   @media (max-width: 768px) {
@@ -130,6 +160,41 @@
       /* Adjustments for smaller screens */
       width: 100%;
     }
+
+    .cardGrid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 15em 15em;
+      margin-left: 5em;
+      margin-right: 5em;
+      gap: 1em;
+    }
+
+    .item1{
+      grid-column: 1;
+      grid-row: 2;
+  }
+  .item2{
+      grid-column: 1;
+      grid-row: 3;
+  }
+  .item3{
+      grid-column: 1;
+      grid-row: 4;
+  }
+  .item4{
+      grid-column: 2;
+      grid-row: 1;
+  }
+  .item5{
+      grid-column: 2;
+      grid-row: 2;
+  }
+  .item6{
+      grid-column: 2;
+      grid-row: 3;
+  }
+  
   }
 
   

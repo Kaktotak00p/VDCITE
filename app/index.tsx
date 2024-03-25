@@ -22,7 +22,7 @@ const Home = () => {
     <HeadHunter />
     <TrafSources />
     <Partners />
-    <ContactFormClient />
+    {/* <ContactFormClient /> */}
     <ContactNew/>
     </>
     )
