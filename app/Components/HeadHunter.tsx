@@ -27,16 +27,23 @@ const HeadHunter = () => {
                 <h1 style={{
                     width:"100%",
                     textAlign:"left",
+                    textWrap:"nowrap",
+                    paddingRight:"3em",
                 }}>Охота за</h1>
                 <h1 style={{
                     width:"100%",
-                    textAlign:"right"
+                    textAlign:"right",
+                    paddingLeft:"3em",
+                    marginTop:"-0.5em"
                 }}> головами</h1>
             </div>
                 <img className={Styles.dec} src='./partners/elements/square(2).png' alt='Decorative' />
-            <div className={Styles.row}>
+            <div className={Styles.row} style={{
+                marginRight:"-5em",
+            }}>
                 <img className={Styles.img} src='./partners/elements/005.png' alt='Decorative' style={{
-                    alignSelf:"baseline"
+                    alignSelf:"baseline",
+                    marginRight:"5em"
                 }}/>
                 <div>
                 <h2 style={{
@@ -50,7 +57,7 @@ const HeadHunter = () => {
                         {jobListings.map((job, index) => (
                             <li key={index} className={Styles.layoutContainer}>
                                 <div className={`${Styles.row} ${Styles.entry}`}>
-                                    <p className={`${Styles.p} ${Styles.jobName}`} style={{textAlign:'left'}}>{job.title}</p>
+                                    <p className={`${Styles.p} ${Styles.jobName}`} style={{textAlign:'left'}}><span style={{color:"rgb(var(--green))"}}>//{index}  </span>{job.title}</p>
                                     <div className={`${Styles.description} ${visibleDescription[index] ? Styles.expanded : ''}`}>
                                         <p className={Styles.p}>{job.description}</p>
                                     </div>

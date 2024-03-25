@@ -35,12 +35,14 @@
     display: flex;
     justify-self: center;
     flex-direction: column;
-    width: 21%;
+    width: 25%;
+    padding-right: 50%;
     justify-content: center;
     align-items: center;
     background-color: rgb(var(--background)); /* Background color */
     color: white; /* Text color */
-    margin-left:30% ;
+    margin:auto;
+    margin-bottom: 1em;
   }
 
   .imageContainer {
@@ -67,8 +69,8 @@
   .entry{
     width: 100%;
     margin: auto;
-    padding-top: .2em;
-    padding-bottom: .2em;
+    padding-top: .4em;
+    padding-bottom: .4em;
     border-top: solid rgb(var(--white)) 1px;
     border-bottom: solid rgb(var(--white)) 1px;
   }
@@ -97,7 +99,7 @@
 }
 
 .img{
-  margin-top: -4%;
+  margin-top: -2%;
   margin-left: -10%;
   height: auto;
   width: 15%;
