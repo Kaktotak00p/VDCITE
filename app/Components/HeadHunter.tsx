@@ -25,14 +25,14 @@ const HeadHunter = () => {
             <h1 className='mainText' style={{ paddingLeft: "3em" }}>://HeadHunter</h1>
             <div className={Styles.mainContainer}>
                 <h1 style={{
-                    fontSize:"3em",
+                    fontSize:"4em",
                     width:"100%",
                     textAlign:"left",
                     textWrap:"nowrap",
                     paddingRight:"3em",
                 }}>Охота за</h1>
                 <h1 style={{
-                    fontSize:"3em",
+                    fontSize:"4em",
                     width:"100%",
                     textAlign:"right",
                     paddingLeft:"3em",

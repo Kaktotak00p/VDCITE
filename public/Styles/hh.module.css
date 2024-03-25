@@ -95,7 +95,7 @@
   }
 
 .p {
-  font-size: 1.3em;
+  font-size: 1.5em;
   color: grey;
 }
 
@@ -129,7 +129,7 @@
 
 .jobName{
   text-wrap: nowrap;
-  padding-top: 10px;
+  padding-top: .2em;
   margin-bottom: auto;
   margin-left: 0;
 }
