@@ -47,7 +47,7 @@ const ContactSection: React.FC = () => {
         }}>CONTACT</button>
       </div>
         <div className={styles.links}>
-          <h2>Social</h2>
+          <h2>SOCIAL</h2>
           <a href=""></a>
           <a href=""></a>
           <a href=""></a>
