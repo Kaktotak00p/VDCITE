@@ -35,7 +35,16 @@ const HeadHunter = () => {
             </div>
                 <img className={Styles.dec} src='./partners/elements/square(2).png' alt='Decorative' />
             <div className={Styles.row}>
-                <img className={Styles.img} src='./partners/elements/005.png' alt='Decorative' />
+                <img className={Styles.img} src='./partners/elements/005.png' alt='Decorative' style={{
+                    alignSelf:"baseline"
+                }}/>
+                <div>
+                <h2 style={{
+                    color: "white",
+                    fontSize:"2em",
+                    marginTop:"2em",
+                    marginBottom:"1em"
+                }}>Вакансии:</h2>
                 <div className={Styles.ol}>
                     <ol>
                         {jobListings.map((job, index) => (
@@ -51,6 +60,7 @@ const HeadHunter = () => {
                         ))}
                     </ol>
                 </div>
+                        </div>
             </div>
         </div>
     );

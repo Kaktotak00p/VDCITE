@@ -31,17 +31,17 @@ const trafic: React.FC = () => {
                         </div>
                         <div className={`${Styles.cardContainer} ${Styles.item4}`}>
                             <img className={Styles.card_bg} src="./partners/elements/CardPinkShort.png" alt="Descriptive Alt Text" />
-                            <img className={Styles.innerImage} src="./dec/petals (1).png" ></img>
+                            <img className={Styles.innerImage} src="./dec/petals (3).png" ></img>
                             <div className={Styles.overlayText}>Лучшее качество траффика</div>
                         </div>
                         <div className={`${Styles.cardContainer} ${Styles.item5}`}>
                             <img className={Styles.card_bg} src="./partners/elements/CardPinkShort.png" alt="Descriptive Alt Text" />
-                            <img className={Styles.innerImage} src="./dec/flower_nobg (1).png" ></img>
+                            <img className={Styles.innerImage} src="./dec/flower_nobg (3).png" ></img>
                             <div className={Styles.overlayText}>Лучшее качество траффика</div>
                         </div>
                         <div className={`${Styles.cardContainer} ${Styles.item6}`}>
                             <img className={Styles.card_bg} src="./partners/elements/CardPinkShort.png" alt="Descriptive Alt Text" />
-                            <img className={Styles.innerImage} src="./dec/flower (1).png" ></img>
+                            <img className={Styles.innerImage} src="./dec/flower (4).png" ></img>
                             <div className={Styles.overlayText}>Лучшее качество траффика</div>
                     </div>
                 </div>

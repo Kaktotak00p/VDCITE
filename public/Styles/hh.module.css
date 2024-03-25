@@ -121,6 +121,7 @@
 }
 
 .jobName{
+  text-wrap: nowrap;
   padding-top: 10px;
   margin-bottom: auto;
 }
