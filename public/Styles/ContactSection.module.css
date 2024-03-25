@@ -241,6 +241,16 @@
     transform-origin: center; /* Ensures the SVG scales from its center */
 }
 
+.links a img{
+  height: auto;
+  width: 2em;
+}
+
+.links a{
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
   
   @media (max-width:768px) {
     .formImage{

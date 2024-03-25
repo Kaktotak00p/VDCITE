@@ -48,9 +48,8 @@ const ContactSection: React.FC = () => {
       </div>
         <div className={styles.links}>
           <h2>SOCIAL</h2>
-          <a href=""></a>
-          <a href=""></a>
-          <a href=""></a>
+          <a href=""><img src='./partners/elements/tg.png'/></a>
+          <a href=""><img src='./partners/elements/inst.png'/></a>
         </div>
         {/* <div className={styles.links}>
           <h2>Discover <br/>mode</h2>
