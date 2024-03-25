@@ -50,11 +50,11 @@ const HeadHunter = () => {
                         {jobListings.map((job, index) => (
                             <li key={index} className={Styles.layoutContainer}>
                                 <div className={`${Styles.row} ${Styles.entry}`}>
-                                    <p className={`${Styles.p} ${Styles.jobName}`}>{job.title}</p>
+                                    <p className={`${Styles.p} ${Styles.jobName}`} style={{textAlign:'left'}}>{job.title}</p>
                                     <div className={`${Styles.description} ${visibleDescription[index] ? Styles.expanded : ''}`}>
                                         <p className={Styles.p}>{job.description}</p>
                                     </div>
-                                    <button className={Styles.button} onClick={() => toggleDescription(index)}>Вакансия</button>
+                                    <button className={Styles.button} onClick={() => toggleDescription(index)} style={{alignSelf:"end"}}>Вакансия</button>
                                 </div>
                             </li>
                         ))}
