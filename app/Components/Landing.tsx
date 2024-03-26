@@ -27,7 +27,7 @@ const landing = () => {
                   width: 'auto'
                 }}></img>
               </div>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p style={{textAlign:"center"}}>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
               <button className={Style.button}>[CLICK,ПОСМОТРЕТЬ]</button>
             </div>
           </div>
