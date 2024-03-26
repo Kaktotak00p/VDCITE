@@ -13,7 +13,7 @@ p.overlayText {
     transform: translate(-50%, 50%);
     font-size: 1.3em;
     font-family: "Fifaks10dev1";
-    text-wrap: nowrap;
+    white-space: nowrap;
     color: rgb(var(--background));
     /* Choose text color that stands out over your image */
 }
@@ -25,7 +25,7 @@ h2.overlayText {
     left: 50%;
     font-family: "Fifaks10dev1";
     transform: translate(-50%, 50%);
-    text-wrap: nowrap;
+    white-space: nowrap;
     color: rgb(var(--background));
     /* Choose text color that stands out over your image */
 }
