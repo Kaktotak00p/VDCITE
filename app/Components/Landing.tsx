@@ -19,7 +19,8 @@ const landing = () => {
           </div>
           <div className={Style.imageContainer}>
             <img style={{
-              width:"40em"
+              width:"40em",
+              marginLeft:"-20%"
             }} src="./partners/elements/makakich.png" alt="Media Buying Company" />
             <div className={Style.column}>
               <div className={Style.row}>
@@ -29,7 +30,7 @@ const landing = () => {
                   width: 'auto'
                 }}></img>
               </div>
-              <p style={{textAlign:"center"
+              <p style={{textAlign:"left"
               }}>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
               <button className={Style.button}>[CLICK,ПОСМОТРЕТЬ]</button>
             </div>

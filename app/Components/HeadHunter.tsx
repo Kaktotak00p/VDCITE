@@ -60,7 +60,7 @@ const HeadHunter = () => {
                                 <div className={`${Styles.row} ${Styles.entry}`}>
                                     <p className={`${Styles.p} ${Styles.jobName}`} style={{textAlign:'left'}}><span style={{
                                         color:"rgb(var(--green))",
-                                        fontSize:".8em",
+                                        fontSize:".6em",
                                         fontFamily:"Fifaks10dev1"
                                         }}>//{index}  </span>{job.title}</p>
                                     <div className={`${Styles.description} ${visibleDescription[index] ? Styles.expanded : ''}`}>
