@@ -21,7 +21,7 @@
     font-family: "Fifaks10dev1";
     font-size: 1.5em;
     position: absolute;
-    top: 70%; /* Adjust these values to position the text as desired */
+    top: 75%; /* Adjust these values to position the text as desired */
     left: 40%;
     transform: translate(-50%, -50%); /* Centers the text */
     color: black; /* Choose text color that stands out over your image */
@@ -81,7 +81,7 @@
     grid-template-rows: 1fr 1fr;
     margin-left: 10%;
     margin-right: 2%;
-    gap: 1em;
+    gap: 2em;
   }
 
   .innerImage {
@@ -89,8 +89,8 @@
     height: auto;
     width: 30%;
     position: absolute;
-    top: 35%;
-    left: 20%;
+    top: 30%;
+    left: 17%;
     transform: translate(-50%, -50%);
   }
 
