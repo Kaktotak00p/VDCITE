@@ -18,6 +18,8 @@
   }
   
   .overlayText {
+    font-family: "Fifaks10dev1";
+    font-size: 1.5em;
     position: absolute;
     top: 70%; /* Adjust these values to position the text as desired */
     left: 40%;

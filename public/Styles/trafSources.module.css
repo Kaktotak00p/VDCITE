@@ -5,13 +5,14 @@
 
 .mainContainer {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-content: center;
+    padding-left: 2%;
     background-color: rgb(var(--background)); /* Background color */
     color: white; /* Text color */
 }
 
 .imageContainer {
-    margin: auto;
     max-width: 10%;
     min-width: 30%;
     flex-shrink: 0;

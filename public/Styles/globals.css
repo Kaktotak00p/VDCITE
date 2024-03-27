@@ -40,6 +40,7 @@
 }
 
 body {
+  width: auto;
   overflow-x: hidden;
   margin-top: 2em;
   color: rgb(var(--foreground-rgb));

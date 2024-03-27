@@ -30,33 +30,29 @@ const HeadHunter = () => {
                     textAlign:"left",
                     textWrap:"nowrap",
                     paddingRight:"3em",
-                }}>Охота за</h1>
+                }}>ОХОТА ЗА</h1>
                 <h1 style={{
                     fontSize:"5em",
                     width:"100%",
                     textAlign:"right",
                     paddingLeft:"3em",
                     marginTop:"-0.5em"
-                }}> головами</h1>
+                }}> ГОЛОВАМИ</h1>
             </div>
                 <img className={Styles.dec} src='./partners/elements/square(2).png' alt='Decorative' />
             <div className={Styles.row} style={{
                 marginRight:"-5em",
             }}>
-                <img className={Styles.img} src='./partners/elements/005.png' alt='Decorative' style={{
-                    alignSelf:"baseline",
-                    marginRight:"5em"
-                }}/>
+                <img className={Styles.img} src='./partners/elements/005.png' alt='Decorative' />
                 <div style={{
-                    marginLeft:"5%",
-                    marginRight:"-5%"
+                    marginRight:"-15%"
                 }}>
                 <h2 style={{
                     color: "white",
                     fontSize:"4em",
                     marginTop:"1em",
                     marginBottom:"1em"
-                }}>Вакансии:</h2>
+                }}>ВАКАНСИИ:</h2>
                 <div className={Styles.ol}>
                     <ol>
                         {jobListings.map((job, index) => (
@@ -64,7 +60,8 @@ const HeadHunter = () => {
                                 <div className={`${Styles.row} ${Styles.entry}`}>
                                     <p className={`${Styles.p} ${Styles.jobName}`} style={{textAlign:'left'}}><span style={{
                                         color:"rgb(var(--green))",
-                                        fontSize:".8em"
+                                        fontSize:".8em",
+                                        fontFamily:"Fifaks10dev1"
                                         }}>//{index}  </span>{job.title}</p>
                                     <div className={`${Styles.description} ${visibleDescription[index] ? Styles.expanded : ''}`}>
                                         <p className={Styles.p}>{job.description}</p>
