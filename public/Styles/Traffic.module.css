@@ -78,8 +78,9 @@
   .cardGrid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 45% 45%;
-    margin: 0 10em;
+    grid-template-rows: 1fr 1fr;
+    margin-left: 10%;
+    margin-right: 2%;
     gap: 1em;
   }
 

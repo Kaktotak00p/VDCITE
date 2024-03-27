@@ -9,7 +9,7 @@ const TrafSources: React.FC = () => {
             <h1 className='mainText' style={{paddingLeft:"3em"}}>://TrafficSources</h1>
             </div>
             <div className={Styles.mainContainer}>
-                <h1>Источники Траффика</h1>
+                <h1>ИСТОЧНИКИ ТРАФИКА</h1>
             <img src='./dec/skull (2).png' style={{
                 width:"auto",
                 height:"2em"

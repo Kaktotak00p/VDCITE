@@ -32,7 +32,7 @@
   left:8%;
   font-family: 'Fifaks10Dev1';
   color: white;
-  font-size: 3em;
+  font-size: 2.5em;
   /* Adjust the size as needed */
   margin-bottom: 20px;
   /* Adjust spacing as needed */
@@ -63,7 +63,7 @@
   /* Adjust alignment as needed */
   gap: 20px;
   /* Space between items */
-  max-width: 30%;
+  max-width: 50%;
 }
 
 
@@ -93,11 +93,12 @@
 
 .imageContainer img {
   width: 80%;
-  min-width: 50%;
+  min-width: 70%;
   /* This makes the image responsive */
   height: auto;
   /* Maintain aspect ratio */
 }
+
 
 .imageContainer {
   display: flex;

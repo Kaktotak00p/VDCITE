@@ -13,12 +13,14 @@ const landing = () => {
             <UserCountDisplay />
           </div>
           <div className={Style.textContainer}>
-            <h1 style={{textAlign:"right"}}>Медиабайинговая </h1>
-            <h1>Компания</h1>
+            <h1 style={{textAlign:"right"}}>МЕДИАБАИНГОВАЯ </h1>
+            <h1>КОМПАНИЯ</h1>
             <p>& Text text text Text Text text Text Text text</p>
           </div>
           <div className={Style.imageContainer}>
-            <img src="./partners/elements/makakich.png" alt="Media Buying Company" />
+            <img style={{
+              width:"40em"
+            }} src="./partners/elements/makakich.png" alt="Media Buying Company" />
             <div className={Style.column}>
               <div className={Style.row}>
                 <h1 className='mainText'>://</h1>
@@ -27,7 +29,8 @@ const landing = () => {
                   width: 'auto'
                 }}></img>
               </div>
-              <p style={{textAlign:"center"}}>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p style={{textAlign:"center"
+              }}>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
               <button className={Style.button}>[CLICK,ПОСМОТРЕТЬ]</button>
             </div>
           </div>
