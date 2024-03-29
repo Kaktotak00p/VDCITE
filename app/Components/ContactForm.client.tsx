@@ -41,7 +41,6 @@ const ContactForm = () => {
         <div className={`${Styles.slidingPanel} ${isOpen ? Styles.show : ''}`}>
           <div className={Styles.closeBtn} onClick={() => setIsOpen(false)}>&times;</div>
           <div className={Styles.contactformcontainer}>
-            <img className={Styles.formImage} src="./partners/elements/002.png" alt="Decorative"></img>
             <form onSubmit={handleSubmit} className={Styles.contactform}>
               <div className={Styles.formrow}>
                 <ContactField

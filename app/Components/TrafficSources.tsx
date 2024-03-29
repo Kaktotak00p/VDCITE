@@ -15,17 +15,15 @@ const TrafSources: React.FC = () => {
                 height:"2em"
             }}/>
             <div className={`${Styles.imageContainer} ${Styles.row}`}>
+                <img className={Styles.logoBorder} src='./partners/elements/traffSourcesborder.png'/>
                 {/* Each set now includes an outer frame image and an inner logo image */}
                 <div className={Styles.logoContainer}>
-                    <img className={Styles.frameImage} src='./partners/elements/square(3).png' alt='Frame'></img>
                     <img className={Styles.logoImage} src='./partners/elements/tt.png' alt='Лого компаний'></img>
                 </div>
                 <div className={Styles.logoContainer}>
-                    <img className={Styles.frameImage} src='./partners/elements/square(3).png' alt='Frame'></img>
                     <img className={Styles.logoImage} src='./partners/elements/fb.png' alt='Лого компаний'></img>
                 </div>
                 <div className={Styles.logoContainer}>
-                    <img className={Styles.frameImage} src='./partners/elements/square(3).png' alt='Frame'></img>
                     <img className={Styles.logoImage} src='./partners/elements/google.png' alt='Лого компаний'></img>
                 </div>
             </div>
