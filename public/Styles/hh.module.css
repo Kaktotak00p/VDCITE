@@ -72,8 +72,8 @@
     margin: auto;
     padding-top: .4em;
     padding-bottom: .4em;
-    border-top: solid rgb(var(--white)) 1px;
-    border-bottom: solid rgb(var(--white)) 1px;
+    border-top: solid grey 1px;
+    border-bottom: solid grey 1px;
   }
 
   .button {
@@ -138,7 +138,7 @@
 
 .dec{
   position: absolute;
-  top: 220%;
+  top: 130em;
   right: 5%;
   width: auto;
   height: 10em;

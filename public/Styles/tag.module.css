@@ -11,7 +11,7 @@ p.overlayText {
     top: -10%;
     left: 50%;
     transform: translate(-50%, 50%);
-    font-size: 1.3em;
+    font-size: 1em;
     font-family: "Fifaks10dev1";
     white-space: nowrap;
     color: rgb(var(--background));
@@ -19,6 +19,7 @@ p.overlayText {
 }
 
 h2.overlayText {
+    font-size: .7em;
     position: absolute;
     text-wrap: nowrap;
     top: 40%;
