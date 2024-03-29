@@ -2,7 +2,7 @@
     position: relative;
     display: inline-block; /* Or 'block', depending on layout needs */
     display: flex; /* Makes the card container also a flex container */
-    gap: 20px; /* Space between the two columns */
+    gap: 1.1em; 
   }
   
   .cardContainer img {
@@ -72,20 +72,20 @@
     margin: auto;
     padding-top: .4em;
     padding-bottom: .4em;
-    border-top: solid grey 1px;
-    border-bottom: solid grey 1px;
+    border-top: solid grey .02em;
+    border-bottom: solid grey .02em;
   }
 
   .button {
     text-wrap: nowrap;
     background-color: transparent;
     font-family: 'Fifaks10Dev1', arial;
-    padding-top: 10px;
+    padding-top: 0.8em;
     margin-bottom: auto;
     /* margin-top: 1em; */
     /* border: 2px solid #4CAF50*/
     color: rgb(var(--green)); /* Text color */
-    padding: 10px 20px; /* Padding */
+    padding: .8em 1.2em; /* Padding */
     cursor: pointer;
     transition: all 0.3s ease;
   }

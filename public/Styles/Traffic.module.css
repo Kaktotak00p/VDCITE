@@ -4,7 +4,7 @@
     position: relative;
     display: inline-block; /* Or 'block', depending on layout needs */
     display: flex; /* Makes the card container also a flex container */
-    gap: 20px; /* Space between the two columns */
+    gap: 1.2em; /* Space between the two columns */
     transition: transform 0.3s ease-in-out;
   }
   
@@ -44,7 +44,7 @@
 .layoutContainer {
     display: flex;
     align-items: flex-start; /* Align items at the start of the container */
-    gap: 20px; /* Adjust based on your design */
+    gap: 1.2em; /* Adjust based on your design */
   }
 
 .mainContainer {
@@ -70,7 +70,7 @@
   .row {
     display: flex;
     flex-direction: row;
-    gap: 20px; /* Space between cards in the same column */
+    gap: 1.2em; /* Space between cards in the same column */
     margin: auto;
   }
 
@@ -80,7 +80,7 @@
     margin: 20em;
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Space between cards in the same column */
+    gap: 1.2em; /* Space between cards in the same column */
     margin: auto;
   }
 
@@ -148,14 +148,14 @@
       margin: 20em;
       display: flex;
       flex-direction: column;
-      gap: 20px; /* Space between cards in the same column */
+      gap: 1.2em; /* Space between cards in the same column */
       margin: auto;
     }
 
     .column {
       display: flex;
       flex-direction: row;
-      gap: 20px; /* Space between cards in the same column */
+      gap: 1.2em; /* Space between cards in the same column */
       margin: auto;
     }
   

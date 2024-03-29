@@ -6,10 +6,10 @@
   /* Background color */
   color: white;
   /* Text color */
-  margin: 2em;
+  margin: 2.5em;
   border-radius: 1em;
   padding: 3em;
-  border: rgb(var(--green)) 2px solid;
+  border: rgb(var(--green)) .01em solid;
 }
 
 .textContainer {
@@ -34,7 +34,7 @@
   color: white;
   font-size: 2.5em;
   /* Adjust the size as needed */
-  margin-bottom: 20px;
+  margin-bottom: 1.2em;
   /* Adjust spacing as needed */
 }
 
@@ -63,7 +63,7 @@
   flex-direction: column;
   align-items: center;
   /* Adjust alignment as needed */
-  gap: 20px;
+  gap: 1.2em;
   /* Space between items */
   max-width: 50%;
 }
@@ -74,7 +74,7 @@
   /* Border color */
   color: rgb(var(--green));
   /* Text color */
-  padding: 10px 20px;
+  padding: .8em 1.2em;
   /* Padding */
   cursor: pointer;
   transition: all 0.3s ease;
