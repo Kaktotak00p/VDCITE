@@ -31,7 +31,7 @@
     font-size: 1.5em;
     position: absolute;
     top: 80%; /* Adjust these values to position the text as desired */
-    left: 30%;
+    left: 37%;
     transform: translate(-50%, -50%); /* Centers the text */
     color: black; /* Choose text color that stands out over your image */
   }
