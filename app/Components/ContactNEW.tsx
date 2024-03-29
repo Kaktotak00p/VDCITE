@@ -81,61 +81,63 @@ const ContactSection: React.FC = () => {
       </div>
       <div className={`${styles.slidingPanel} ${isOpen ? styles.show : ''}`}>
         <div className={styles.closeBtn} onClick={() => setIsOpen(false)}>&times;</div>
-              <h1 style={{
-                margin:"1em"
-              }}>ЗАПОЛНИТЕ ФОРМУ</h1>
-                  <div className={styles.svgContainer}>
-      <img src='./svg/палка3.svg' className='svg-img' />
-    </div>
-          <form onSubmit={handleSubmit} className={`${styles.contactform} ${styles.row}`}>
-            <div style={{
-              width:"30%"
-            }}>
-              <ContactField
-                id="firstName"
-                label="First name"
-                type="text"
-                value={formData.firstName}
-                onChange={handleChange}
-              />
-              <ContactField
-                id="lastName"
-                label="Last name"
-                type="text"
-                value={formData.lastName}
-                onChange={handleChange}
-              />
-              <ContactField
-                id="email"
-                label="Email"
-                type="email"
-                value={formData.email}
-                onChange={handleChange}
-              />
-              <ContactField
-                id="telegramNickname"
-                label="Telegram Nickname"
-                type="text"
-                value={formData.telegramNickname}
-                onChange={handleChange}
-              />
-            </div>
-            <div style={{
-              width: "50%",
-              textAlign:"center"
-            }}>
-              <ContactField
-                id="message"
-                label="Message"
-                type="message"
-                value={formData.message}
-                onChange={handleChange}
-              />
-              <button type="submit" className={styles.button}>Submit</button>
-            </div>
-          </form>
+        <h1 style={{
+          margin: "1em"
+        }}>ЗАПОЛНИТЕ ФОРМУ</h1>
+        <div className={styles.svgContainer} style={{
+          
+        }}>
+          <img src='./svg/палка3.svg' className='svg-img' />
         </div>
+        <form onSubmit={handleSubmit} className={`${styles.contactform} ${styles.row}`}>
+          <div style={{
+            width: "30%"
+          }}>
+            <ContactField
+              id="firstName"
+              label="First name"
+              type="text"
+              value={formData.firstName}
+              onChange={handleChange}
+            />
+            <ContactField
+              id="lastName"
+              label="Last name"
+              type="text"
+              value={formData.lastName}
+              onChange={handleChange}
+            />
+            <ContactField
+              id="email"
+              label="Email"
+              type="email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+            <ContactField
+              id="telegramNickname"
+              label="Telegram Nickname"
+              type="text"
+              value={formData.telegramNickname}
+              onChange={handleChange}
+            />
+          </div>
+          <div style={{
+            width: "50%",
+            textAlign: "center"
+          }}>
+            <ContactField
+              id="message"
+              label="Message"
+              type="message"
+              value={formData.message}
+              onChange={handleChange}
+            />
+            <button type="submit" className={styles.button}>Submit</button>
+          </div>
+        </form>
       </div>
+    </div>
   </>
   );
 };

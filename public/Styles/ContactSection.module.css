@@ -232,7 +232,7 @@
 
   .svgContainer {
     width: auto; /* Set to the original width of the SVG */
-    height: 30em; /* Set to the original height of the SVG */
+    height: 25em; /* Set to the original height of the SVG */
     position: relative; /* This enables absolute positioning for contained elements */
     overflow: hidden; /* This ensures the SVG does not spill out if it's larger than the container */
 }
