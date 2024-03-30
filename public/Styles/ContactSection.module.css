@@ -135,7 +135,7 @@
   
   .contactfield input[type="text"],
   .contactfield input[type="email"],
-  .contactfield input {
+  .contactfield textarea {
       border-radius: .3em;
       width: 80%;
       padding: .1em;
@@ -144,19 +144,16 @@
       border-bottom: .1em solid #f0f; /* Pink border */
       color: #0f0; /* Neon green text */
       outline: none;
+      resize: none;
   }
 
-  .contactfield input[type="message"]{
-    height: 100%;
+  .contactfield textarea{
+    height: 11em;
   }
   
   .contactform input::placeholder,
   .contactform textarea::placeholder {
       color: #9f9; /* Lighter green text */
-  }
-  
-  .contactfield[id="message"]{
-    height: 100%;
   }
 
   .contactfield{

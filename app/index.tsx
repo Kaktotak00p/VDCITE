@@ -11,7 +11,6 @@ import ContactNew from "./Components/ContactNEW"
 import dynamic from 'next/dynamic';
 import RootLayout from './layout';
 
-const ContactFormClient = dynamic(() => import('./Components/ContactForm.client'), { ssr: false });
 
 
 const Home = () => {
@@ -22,7 +21,6 @@ const Home = () => {
     <HeadHunter />
     <TrafSources />
     <Partners />
-    {/* <ContactFormClient /> */}
     <ContactNew/>
     </>
     )

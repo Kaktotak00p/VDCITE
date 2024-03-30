@@ -19,15 +19,19 @@ const landing = () => {
           </div>
           <div className={Style.imageContainer}>
             <img style={{
+              marginBottom:"-2em",
               width:"40em",
               marginLeft:"-20%"
             }} src="./partners/elements/makakich.png" alt="Media Buying Company" />
             <div className={Style.column}>
-              <div className={Style.row}>
+              <div className={Style.row} style={{
+                justifySelf:"left"
+              }}>
                 <h1 className='mainText'>://</h1>
                 <img src="./dec/flower_nobg (4).png" style={{
                   height: '2em',
-                  width: 'auto'
+                  width: '2em',
+                  minWidth:"0%"
                 }}></img>
               </div>
               <p style={{textAlign:"left"

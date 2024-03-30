@@ -12,8 +12,6 @@ import type { ReactElement } from 'react'
 import dynamic from 'next/dynamic';
 import RootLayout from '../layout';
 
-const ContactFormClient = dynamic(() => import('../Components/ContactForm.client'), { ssr: false });
-
 
 const Home = () => {
   const [jobs, setJobs] = useState([
@@ -27,7 +25,6 @@ const Home = () => {
     <HeadHunter />
     <TrafSources />
     <Partners />
-    <ContactFormClient />
     </>
     )
 };

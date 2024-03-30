@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import styles from '../../public/styles/ContactSection.module.css';
+import styles from '../../public/Styles/ContactSection.module.css';
 import ContactField from './ContactField.client';
 import axios from 'axios';
 
