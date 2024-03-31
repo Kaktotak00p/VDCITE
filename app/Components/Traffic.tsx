@@ -10,20 +10,8 @@ const trafic: React.FC = () => {
                 <h1>НАШИ ПРЕИМУЩЕСТВА</h1>
             </div>
                 <div className={Styles.cardGrid}>
-                    <h1 className='mainText' style={{
-                        marginTop:"-2em",
-                        marginLeft:"40%",
-                        gridRow:"1",
-                        gridColumn:"1",
-                        color:"white",
-                        fontFamily:"Fifaks10Dev1",
-                        fontSize:"2em"}}>://Traffic</h1>
-                    <h1 className='mainText' style={{
-                        marginLeft:"40%",
-                        gridRow:"1",
-                        gridColumn:"1",
-                        fontSize:"2em"
-                        }}>://♠</h1>
+                    <h1 className={`mainText ${Styles.traffic}`} >://Traffic</h1>
+                    <h1 className={`mainText ${Styles.piki}`} >://♠</h1>
                         <div className={`${Styles.cardContainer} ${Styles.item1}`}>
                             <img className={Styles.card_bg} src="./partners/elements/CardGreenShort.png" alt="Descriptive Alt Text" />
                             <img className={Styles.innerImage} src="./dec/petals (3).png" ></img>

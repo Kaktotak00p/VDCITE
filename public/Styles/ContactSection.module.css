@@ -265,10 +265,6 @@
       /* gap: 20px;  */
       width: auto;
   }
-  }
-  
-  /* Media queries for responsive adjustments */
-  @media (max-width: 768px) {
     .container {
       flex-direction: column;
       text-align: center;
@@ -279,8 +275,17 @@
       /* margin-bottom: 20px; */
     }
   
-    .social a, .links a {
-      /* margin: 0 10px; */
+    .logo{
+      margin: 0;
+    }
+    .button{
+      font-size: 1em;
+    }
+    .companyInfo{
+      text-align: center;
+    }
+    .company{
+      text-align: center;
     }
   }
   

@@ -61,6 +61,15 @@
 
 @media (max-width: 768px){
   .imageContainer{
+    margin-top: 5em;
     max-width: 100%;
+  }
+
+  .mainContainer{
+    flex-direction: column;
+  }
+
+  .dec{
+    display: none;
   }
 }

@@ -1,3 +1,6 @@
+.company{
+  text-align: center;
+}
 .mainContainer {
   display: flex;
   justify-content: center;
@@ -44,7 +47,7 @@
   width: 40em;
   height: auto;
   position: absolute;
-  top: 37em;
+  top: 75vh;
   left: 5%;
   padding-top: 5em;
   display: flex;
@@ -100,7 +103,7 @@
   min-width: 70%;
   /* This makes the image responsive */
   height: auto;
-  /* Maintain aspect ratio */
+  margin-left:-20%;
 }
 
 
@@ -125,54 +128,94 @@
   text-align: center;
 }
 
+
 @media (max-width: 768px) {
-  .mainContainer {
-    padding: 0em;
-    border: none;
-    display: flex;
-    flex-direction: column;
+  .company{
+    text-align: left;
   }
-  .footer{
-    position: absolute;
-    top: 80em;
+  .outerContainer {
+    padding: 0;
+    margin: 0;
   }
 
-  .imageContainer img {
-    display: none;
+  .mainContainer {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    padding: 1em;
+    border: none;
+  }
+
+  .header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 2em;
+    margin: 0.5em 0;
+  }
+
+  .textContainer {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 1em;
+    padding: 0;
+  }
+
+  .textContainer h1 {
+    font-size: 2em;
+  }
+
+  .textContainer p {
+    text-align: center;
+    font-size: 1em;
   }
 
   .imageContainer {
-    max-width: 100%;
-    padding: 1em;
+    margin-top: 13em;
+    width: 100%;
+    max-width: max-content;
+    height: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .imageContainer img {
+    width: 60%;
+    margin: 0 auto;
   }
 
   .column {
     position: relative;
-    /* Absolute positioning within the imageContainer */
+    max-width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* Adjust alignment as needed */
-    gap: 20px;
-    /* Space between items */
-    width: auto;
+    align-items: start;
+    gap: 1em;
   }
 
-  .column{
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .textContainer {
-    align-self: start;
-  }
-
-  .header{
-    position: relative;
-    font-size: 10em;
+  .button {
+    font-size: 1em;
+    margin-left: 0;
+    padding: 0.6em 1em;
     margin-left: auto;
     margin-right: auto;
-    top: 0;
-    left: 0;
+  }
+
+  .footer {
+    position: absolute;
+    top: 20em;
+    left: -1em;
+    width: 100%;
+    padding-top: 1em;
+    justify-content: center;
+  }
+
+
+  .row img {
+    width: 1.5em;
+    height: 1.5em;
   }
 }

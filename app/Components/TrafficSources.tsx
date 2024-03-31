@@ -9,11 +9,16 @@ const TrafSources: React.FC = () => {
             <h1 className='mainText' style={{paddingLeft:"3em"}}>://TrafficSources</h1>
             </div>
             <div className={Styles.mainContainer}>
+                <div style={{
+                    display:"flex",
+                    flexDirection:"row",
+                }}>
                 <h1>ИСТОЧНИКИ ТРАФИКА</h1>
             <img src='./dec/skull (2).png' style={{
                 width:"auto",
                 height:"2em"
             }}/>
+                </div>
             <div className={`${Styles.imageContainer} ${Styles.row}`}>
                 <img className={Styles.logoBorder} src='./partners/elements/traffSourcesborder.png'/>
                 {/* Each set now includes an outer frame image and an inner logo image */}

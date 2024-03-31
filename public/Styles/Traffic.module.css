@@ -128,7 +128,34 @@
     grid-column: 3;
   }
 
+  .traffic{
+    margin-top:-2em;
+    margin-left:40%;
+    grid-row:1;
+    grid-column:1;
+    color:white;
+    font-family:"Fifaks10Dev1";
+    font-size:2em;
+  }
+
+  .piki{
+    margin-left:40%;
+    grid-row:1;
+    grid-column:1;
+    font-size:2em;
+  }
+
   @media (max-width: 768px) {
+    .traffic{
+      margin-left: 0;
+      margin-top: 0;
+    }
+
+    .piki{
+      margin-left: 0;
+      margin-top: 2em;
+    }
+
     .layoutContainer {
       flex-direction: column;
     }
@@ -137,9 +164,13 @@
       display: none;
     }
 
-    .overlayText{
+    .overlayTextGreen{
       top: 50%;
-      font-size: 1em;
+      font-size: 2em;
+    }
+    .overlayTextPurple{
+      top: 50%;
+      font-size: 1.5em;
     }
 
     .row {

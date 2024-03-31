@@ -14,14 +14,13 @@ const landing = () => {
           </div>
           <div className={Style.textContainer}>
             <h1 style={{textAlign:"right"}}>МЕДИАБАИНГОВАЯ </h1>
-            <h1>КОМПАНИЯ</h1>
+            <h1 className={Style.company}>КОМПАНИЯ</h1>
             <p>& Text text text Text Text text Text Text text</p>
           </div>
           <div className={Style.imageContainer}>
             <img style={{
               marginBottom:"-2em",
               width:"40em",
-              marginLeft:"-20%"
             }} src="./partners/elements/makakich.png" alt="Media Buying Company" />
             <div className={Style.column}>
               <div className={Style.row} style={{

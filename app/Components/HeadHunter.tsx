@@ -24,35 +24,16 @@ const HeadHunter = () => {
         <div className={Styles.outerContainer}>
             <h1 className='mainText' style={{ paddingLeft: "3em" }}>://HeadHunter</h1>
             <div className={Styles.mainContainer}>
-                <h1 style={{
-                    fontSize:"5em",
-                    width:"100%",
-                    textAlign:"left",
-                    textWrap:"nowrap",
-                    paddingRight:"3em",
-                }}>ОХОТА ЗА</h1>
-                <h1 style={{
-                    fontSize:"5em",
-                    width:"100%",
-                    textAlign:"right",
-                    paddingLeft:"3em",
-                    marginTop:"-0.5em"
-                }}> ГОЛОВАМИ</h1>
+                <h1 className={Styles.hunt}>ОХОТА ЗА</h1>
+                <h1 className={Styles.heads}> ГОЛОВАМИ</h1>
             </div>
                 <img className={Styles.dec} src='./partners/elements/square(2).png' alt='Decorative' />
-            <div className={Styles.row} style={{
-                marginRight:"-5em",
-            }}>
+            <div className={Styles.row} >
                 <img className={Styles.img} src='./partners/elements/005.png' alt='Decorative' />
                 <div style={{
                     marginRight:"-15%"
                 }}>
-                <h2 style={{
-                    color: "white",
-                    fontSize:"4em",
-                    marginTop:"1em",
-                    marginBottom:"1em"
-                }}>ВАКАНСИИ:</h2>
+                <h2 className={Styles.vacancies}>ВАКАНСИИ:</h2>
                 <div className={Styles.ol}>
                     <ol>
                         {jobListings.map((job, index) => (
