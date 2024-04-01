@@ -10,12 +10,14 @@ import ContactNew from "./Components/ContactNEW"
 
 import dynamic from 'next/dynamic';
 import RootLayout from './layout';
+import Header from './Components/header';
 
 
 
 const Home = () => {
   return (
     <>
+    <Header/>
     <Landing />
     <Trafic />
     <HeadHunter />

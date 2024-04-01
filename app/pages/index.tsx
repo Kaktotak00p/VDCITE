@@ -6,6 +6,7 @@ import Trafic from "../Components/Traffic";
 import HeadHunter from "../Components/HeadHunter"
 import TrafSources from "../Components/TrafficSources"
 import Partners from "../Components/Partners"
+import Header from '../Components/header';
 import type { ReactElement } from 'react'
 
 
@@ -20,6 +21,7 @@ const Home = () => {
 ]);
   return (
     <>
+    <Header/>
     <Landing />
     <Trafic />
     <HeadHunter />

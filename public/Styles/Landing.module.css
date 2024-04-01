@@ -1,5 +1,5 @@
 .company{
-  text-align: center;
+  text-align: left;
 }
 .mainContainer {
   display: flex;
@@ -30,17 +30,6 @@
   font-size: 4em;
 }
 
-.header {
-  position: absolute;
-  top:2em;
-  left:2em;
-  font-family: 'Fifaks10Dev1';
-  color: white;
-  font-size: 2.5em;
-  /* Adjust the size as needed */
-  margin-bottom: 1.2em;
-  /* Adjust spacing as needed */
-}
 
 
 .footer {
@@ -173,7 +162,7 @@
   }
 
   .imageContainer {
-    margin-top: 13em;
+    margin-top: 19em;
     width: 100%;
     max-width: max-content;
     height: auto;

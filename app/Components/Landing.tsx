@@ -8,7 +8,6 @@ const landing = () => {
     <>
       <div className={Style.outerConatiner}>
         <div className={Style.mainContainer}>
-            <div className={`${Style.header} mainText`}>TRAFFHUB</div>
           <div className={Style.footer}>
             <UserCountDisplay />
           </div>
