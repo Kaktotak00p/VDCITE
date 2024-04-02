@@ -13,7 +13,7 @@ const TrafSources: React.FC = () => {
                     <h1>ИСТОЧНИКИ ТРАФИКА</h1>
                     <img src='./dec/skull (2).png' style={{
                         width: "auto",
-                        height: "2em"
+                        height: "3em"
                     }} />
                 </div>
                 <div className={`${Styles.imageContainer} ${Styles.row}`}>
