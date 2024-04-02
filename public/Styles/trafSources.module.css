@@ -59,10 +59,20 @@
   height: 32em;
 }
 
+.textContainer{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -4em;
+}
+
 @media (max-width: 768px){
   .imageContainer{
     margin-top: 5em;
     max-width: 100%;
+  }
+
+  .textContainer{
+    margin-bottom: 1em;
   }
 
   .mainContainer{

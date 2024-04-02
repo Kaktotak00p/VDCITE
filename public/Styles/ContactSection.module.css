@@ -251,10 +251,32 @@
   margin-right: 1em;
 }
 
+.singleLines{
+  width: 30%;
+}
+
+.messageContainer{
+  width: 50%;
+  text-align: center;
+}
+
   
   @media (max-width:768px) {
     .formImage{
       display: none;
+    }
+
+    .label{
+      margin-bottom: -.4em;
+      font-size: 1em;
+    }
+
+    .messageContainer{
+      width: 80%;
+    }
+
+    .singleLines{
+      width: 80%;
     }
   
     .row {
@@ -286,6 +308,10 @@
     }
     .company{
       text-align: center;
+    }
+
+    .svgContainer{
+      height: 8em;
     }
   }
   

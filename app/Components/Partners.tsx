@@ -13,7 +13,7 @@ const logoData: PartnerLogo[] = [
     { src: './partners/betman.png', alt: 'Company Logo' },
     { src: './partners/chilli.png', alt: 'Company Logo' },
     { src: './partners/glory.png', alt: 'Company Logo' },
-    { src: './partners/mostb.png', alt: 'Company Logo' },
+    // { src: './partners/mostb.png', alt: 'Company Logo' },
     { src: './partners/mrbet.png', alt: 'Company Logo' },
     { src: './partners/v.png', alt: 'Company Logo' },
 ];
@@ -37,6 +37,7 @@ const Partners: React.FC = () => {
                         logoData[nextIndex],
                         logoData[(nextIndex + 1) % logoData.length],
                         logoData[(nextIndex + 2) % logoData.length],
+                        logoData[(nextIndex + 3) % logoData.length],
                     ];
                 });
                 setAnimate(true); // Trigger new animation

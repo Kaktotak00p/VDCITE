@@ -90,9 +90,7 @@ const ContactSection: React.FC = () => {
           <img src='./svg/палка3.svg' className='svg-img' />
         </div>
         <form onSubmit={handleSubmit} className={`${styles.contactform} ${styles.row}`}>
-          <div style={{
-            width: "30%"
-          }}>
+          <div className={styles.singleLines}>
             <ContactField
               id="firstName"
               label="First name"
@@ -122,10 +120,7 @@ const ContactSection: React.FC = () => {
               onChange={handleChange}
             />
           </div>
-          <div style={{
-            width: "50%",
-            textAlign: "center"
-          }}>
+          <div className={styles.messageContainer}>
             <ContactField
               id="message"
               label="Message"
