@@ -20,7 +20,6 @@
   }
   
 .outerConatiner {
-  white-space: nowrap;
   margin-top: var(--global-margin);
   margin-bottom: var(--global-margin);
 }
@@ -78,6 +77,7 @@
 
   .button {
     text-wrap: nowrap;
+    white-space: nowrap;
     background-color: transparent;
     font-family: 'Fifaks10Dev1', arial;
     padding-top: 0.8em;
@@ -132,6 +132,7 @@
 
 .jobName{
   text-wrap: nowrap;
+  white-space: nowrap;
   padding-top: .2em;
   margin-bottom: auto;
   margin-left: 0;
@@ -150,6 +151,7 @@
   width:100%;
   text-align:left;
   text-wrap:nowrap;
+  white-space: nowrap;
   padding-right:3em;
 }
 
