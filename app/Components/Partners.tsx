@@ -13,7 +13,7 @@ const logoData: PartnerLogo[] = [
     { src: './partners/betman.png', alt: 'Company Logo' },
     { src: './partners/chilli.png', alt: 'Company Logo' },
     { src: './partners/glory.png', alt: 'Company Logo' },
-    // { src: './partners/mostb.png', alt: 'Company Logo' },
+    { src: './partners/mioMedia.png', alt: 'Company Logo' },
     { src: './partners/mrbet.png', alt: 'Company Logo' },
     { src: './partners/v.png', alt: 'Company Logo' },
 ];

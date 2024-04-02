@@ -188,7 +188,7 @@
     box-shadow: .1em 0 .3em rgba(0,0,0,0.5);
     transform: translateX(-200%);
     transition: transform 1s ease-out;
-    z-index: 3;
+    z-index: 10;
   }
   
   .show {
