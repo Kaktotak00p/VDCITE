@@ -14,7 +14,7 @@ const landing = () => {
           <div className={Style.textContainer}>
             <h1 style={{textAlign:"right"}}>МЕДИАБАИНГОВАЯ </h1>
             <h1 className={Style.company}>КОМПАНИЯ</h1>
-            <p>& Text text text Text Text text Text Text text</p>
+            <p className={Style.descr}>& Text text text Text Text text Text Text text</p>
           </div>
           <div className={Style.imageContainer}>
             <img style={{
@@ -32,7 +32,7 @@ const landing = () => {
                   minWidth:"0%"
                 }}></img>
               </div>
-              <p style={{textAlign:"left"
+              <p className={Style.descr} style={{textAlign:"left"
               }}>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
               <button className={Style.button}>[CLICK,ПОСМОТРЕТЬ]</button>
             </div>

@@ -53,6 +53,7 @@
     align-items: center;
     background-color: rgb(var(--background)); /* Background color */
     color: white; /* Text color */
+    margin-bottom: 1em;
   }
 
   .imageContainer {

@@ -63,7 +63,7 @@ const Partners: React.FC = () => {
                     flexDirection: "row",
                     alignItems: "center",
             }}>
-                <h1>ПАРТНЕРЫ</h1>
+                <h1 style={{marginBottom:"-2em"}}>ПАРТНЕРЫ</h1>
             <img src='./dec/arrow (2).png' className={styles.arrow}></img>
             <img src='./dec/arrow (2).png' className={styles.arrow}></img>
             </div>

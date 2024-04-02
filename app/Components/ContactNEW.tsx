@@ -81,9 +81,9 @@ const ContactSection: React.FC = () => {
       </div>
       <div className={`${styles.slidingPanel} ${isOpen ? styles.show : ''}`}>
         <div className={styles.closeBtn} onClick={() => setIsOpen(false)}>&times;</div>
-        <h1 style={{
+        {/* <h1 style={{
           margin: "1em"
-        }}>ЗАПОЛНИТЕ ФОРМУ</h1>
+        }}>ЗАПОЛНИТЕ ФОРМУ</h1> */}
         <div className={styles.svgContainer} style={{
           
         }}>
@@ -128,7 +128,10 @@ const ContactSection: React.FC = () => {
               value={formData.message}
               onChange={handleChange}
             />
-            <button type="submit" className={styles.button}>Submit</button>
+            <div className={styles.svgButton}>
+            <img src='./svg/палка контакты.svg' className={`svg-img`}/>
+            </div>
+            <button type="submit" className={`${styles.button} ${styles.submitButton}`}>ЗАПОЛНИТЕ ФОРМУ</button>
           </div>
         </form>
       </div>
