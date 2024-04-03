@@ -127,6 +127,7 @@
   }
   
   .contactform {
+    margin-top: 6em;
       border-radius: 1em;
   }
   
@@ -139,21 +140,31 @@
   }
   
   .contactfield input[type="text"],
-  .contactfield input[type="email"],
-  .contactfield textarea {
-      border-radius: .3em;
-      width: 80%;
-      padding: .1em;
-      margin: .5em 2em;
-      background-color: #222; /* Darker element background */
-      border-bottom: .1em solid #f0f; /* Pink border */
-      color: #0f0; /* Neon green text */
-      outline: none;
-      resize: none;
+  .contactfield input[type="email"]{
+    border-radius: .3em;
+    width: 80%;
+    padding: .1em;
+    margin: .5em 2em;
+    background-color: transparent;
+    border-bottom: .1em solid white; /* Pink border */
+    color: grey; /* Neon green text */
+    outline: none;
+    resize: none;
   }
-
+  
   .contactfield textarea{
     height: 11em;
+    border-radius: .3em;
+    width: 80%;
+    padding: .1em;
+    margin: .5em 2em;
+    background-color: transparent;
+    border-top: .1em solid rgb(var(--green)); 
+    border-right: .1em solid rgb(var(--green)); 
+    border-left: .1em solid rgb(var(--green)); 
+    color: grey; /* Neon green text */
+    outline: none;
+    resize: none;
   }
   
   .contactform input::placeholder,
@@ -273,7 +284,7 @@
 }
 
 .singleLines{
-  width: 30%;
+  width: 60%;
 }
 
 .messageContainer{
@@ -293,11 +304,11 @@
     }
 
     .messageContainer{
-      width: 80%;
+      width: 100%;
     }
 
     .singleLines{
-      width: 80%;
+      width: 100%;
     }
   
     .row {
@@ -305,8 +316,8 @@
       display: flex;
       flex-direction: column;
       align-items: center; /* Adjust alignment as needed */
-      /* gap: 20px;  */
       width: auto;
+      margin: 0;
   }
     .container {
       flex-direction: column;

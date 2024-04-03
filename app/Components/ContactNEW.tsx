@@ -47,6 +47,9 @@ const ContactSection: React.FC = () => {
         <div className={styles.logo}>
           <button className={styles.button} onClick={() => setIsOpen(true)} style={{
             fontFamily: "NuMono",
+            padding:"0",
+            marginLeft:"auto",
+            marginRight:"auto",
           }}>CONTACT</button>
         </div>
         <div className={styles.links}>
