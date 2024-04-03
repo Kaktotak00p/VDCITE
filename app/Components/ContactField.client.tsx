@@ -17,9 +17,9 @@ const ContactField: React.FC<ContactFieldProps> = ({ id, label, type, value, onC
     <div className={Styles.contactfield} id={id}>
       <label className={Styles.label} htmlFor={id}>{label}</label>
       {isMessageField ? (
-        <textarea id={id} value={value} onChange={onChange as React.ChangeEvent<HTMLTextAreaElement>} />
+        <textarea id={id} value={value} onChange={onChange as React.ChangeEventHandler<HTMLTextAreaElement>} />
       ) : (
-        <input id={id} type={type} value={value} onChange={onChange as React.ChangeEvent<HTMLInputElement>} />
+        <input id={id} type={type} value={value} onChange={onChange as React.ChangeEventHandler<HTMLInputElement>} />
       )}
     </div>
   );

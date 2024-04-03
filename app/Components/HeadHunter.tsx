@@ -16,7 +16,7 @@ const jobListings = [
 const HeadHunter = () => {
     const [visibleDescription, setVisibleDescription] = useState(Array(jobListings.length).fill(false));
 
-    const toggleDescription = (index) => {
+    const toggleDescription = (index: number) => {
         setVisibleDescription(visibleDescription.map((item, idx) => idx === index ? !item : item));
     };
 
@@ -43,7 +43,7 @@ const HeadHunter = () => {
                                         color:"rgb(var(--green))",
                                         fontSize:".6em",
                                         fontFamily:"Fifaks10dev1"
-                                        }}>//{index}  </span>{job.title}</p>
+                                        }}>{index}  </span>{job.title}</p>
                                     <div className={`${Styles.description} ${visibleDescription[index] ? Styles.expanded : ''}`}>
                                         <p className={Styles.p}>{job.description}</p>
                                     </div>

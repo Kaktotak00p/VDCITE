@@ -14,10 +14,13 @@ const ContactSection: React.FC = () => {
     message: '',
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange: React.ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement> = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
+  
 
+
+  
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
@@ -70,8 +73,7 @@ const ContactSection: React.FC = () => {
           <h2 className={styles.company}>TRAFFHUB</h2>
           <p style={{
             color: "grey"
-          }}>ТУТ МОЖНО ЕБАНУТЬ <br />
-            /// ПРИДУМАТЬ <span style={{ color: "white" }}>НАШ СЛОГАН</span> <br />
+          }}>ТУТ МОЖНО ЕБАНУТЬ <br />ПРИДУМАТЬ <span style={{ color: "white" }}>НАШ СЛОГАН</span> <br />
             <span style={{ color: "white" }}>EREFFSFG</span> AND JEJXK YOU <br />
             <span style={{ color: "white" }}>BLA BLA PERFECT OP</span> <br />
             KDKSJAFSD TO DKF TJA <br />
