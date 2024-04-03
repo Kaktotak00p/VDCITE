@@ -22,7 +22,7 @@ const HeadHunter = () => {
 
     return (
         <div className={Styles.outerContainer}>
-            <h1 className='mainText' style={{ paddingLeft: "3em" }}>://HeadHunter</h1>
+            <h1 className='mainText' >://HeadHunter</h1>
             <div className={Styles.mainContainer}>
                 <h1 className={Styles.hunt}>ОХОТА ЗА</h1>
                 <h1 className={Styles.heads}> ГОЛОВАМИ</h1>
@@ -41,9 +41,9 @@ const HeadHunter = () => {
                                 <div className={`${Styles.row} ${Styles.entry}`}>
                                     <p className={`${Styles.p} ${Styles.jobName}`} style={{textAlign:'left'}}><span style={{
                                         color:"rgb(var(--green))",
-                                        fontSize:".6em",
-                                        fontFamily:"Fifaks10dev1"
-                                        }}>{index}  </span>{job.title}</p>
+                                        fontSize:".5em",
+                                        fontFamily:"Fifaks10dev1",
+                                        }}>://{index} </span>{job.title}</p>
                                     <div className={`${Styles.description} ${visibleDescription[index] ? Styles.expanded : ''}`}>
                                         <p className={Styles.p}>{job.description}</p>
                                     </div>

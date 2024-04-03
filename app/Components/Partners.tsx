@@ -55,7 +55,7 @@ const Partners: React.FC = () => {
                     flexDirection: "row",
                     alignItems: "center",
             }}>
-            <h1 className='mainText' style={{paddingLeft:"3em"}}>://Partners</h1>
+            <h1 className={` mainText`} style={{paddingBottom:"3em"}}>://Partners</h1>
             </div>
             <div className={styles.mainContainer}>
                 <div style={{
@@ -63,7 +63,7 @@ const Partners: React.FC = () => {
                     flexDirection: "row",
                     alignItems: "center",
             }}>
-                <h1 style={{marginBottom:"-2em"}}>ПАРТНЕРЫ</h1>
+                <h1 className={styles.partners} >ПАРТНЕРЫ</h1>
             <img src='./dec/arrow (2).png' className={styles.arrow}></img>
             <img src='./dec/arrow (2).png' className={styles.arrow}></img>
             </div>

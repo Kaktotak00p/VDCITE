@@ -6,7 +6,7 @@ const TrafSources: React.FC = () => {
     return (
         <div className={Styles.outerContainer}>
             <div className={Styles.row}>
-                <h1 className='mainText' style={{ paddingLeft: "3em" }}>://TrafficSources</h1>
+                <h1 className='mainText' >://TrafficSources</h1>
             </div>
             <div className={Styles.mainContainer}>
                 <div className={Styles.textContainer}>

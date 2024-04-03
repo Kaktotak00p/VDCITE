@@ -16,9 +16,17 @@
   font-style: normal;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Fifaks10Dev1';
   src: url('../fonts/Fifaks10Dev1.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: 'Fifaks10Dev1';
+  src: local('Minecraft Rus Regular'), local('Minecraft'),
+      url('../fonts/Minecraft.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -54,6 +62,7 @@ body {
 }
 
 .mainText{
+  margin-left: 2em;
   color: rgb(var(--green));
   font-family: 'Fifaks10Dev1', arial;
   font-size: large;

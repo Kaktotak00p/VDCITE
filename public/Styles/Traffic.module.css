@@ -37,8 +37,8 @@
   }
   
 .outerConatiner {
-  margin-top: var(--global-margin);
-  margin-bottom: var(--global-margin);
+  margin-top: 10em;
+  margin-bottom: 10em;
 }
 
 .layoutContainer {
@@ -130,31 +130,44 @@
   }
 
   .traffic{
-    margin-top:-2em;
     margin-left:40%;
     grid-row:1;
     grid-column:1;
     color:white;
     font-family:"Fifaks10Dev1";
-    font-size:2em;
+    font-size:1.5em;
   }
-
+  
   .piki{
+    margin-top:2em;
     margin-left:40%;
     grid-row:1;
     grid-column:1;
-    font-size:2em;
+    font-size:1.5em;
+  }
+
+  .mainContainer h1{
+    font-family: "Fifaks10Dev1";
+    font-size: 3em;
   }
 
   @media (max-width: 768px) {
+    .mainContainer h1{
+      font-family: "Fifaks10Dev1";
+      margin-left: 1em;
+      margin-right: auto;
+      font-size: 2em;
+    }
     .traffic{
+      font-size: 1em;
       margin-left: 0;
       margin-top: 0;
     }
 
     .piki{
+      font-size: 1em;
       margin-left: 0;
-      margin-top: 2em;
+      margin-top: 1.5em;
     }
 
     .layoutContainer {
@@ -165,13 +178,10 @@
       display: none;
     }
 
-    .overlayTextGreen{
-      top: 2em;
-      font-size: 2em;
-    }
+    .overlayTextGreen,
     .overlayTextPurple{
-      top: 2.5em;
-      font-size: 1.5em;
+      top: 4em;
+      font-size: 1em;
     }
 
     .row {

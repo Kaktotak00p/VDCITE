@@ -1,6 +1,6 @@
 .outerContainer {
-  margin-top: var(--global-margin);
-  margin-bottom: var(--global-margin);
+  margin-top: 10em;
+  margin-bottom: 10em;
 }
 
 .mainContainer {
@@ -71,7 +71,12 @@
   }
 
   .textContainer{
+    margin-top: 1em;
     margin-bottom: 1em;
+  }
+
+  .textContainer h1{
+    font-size: 2em;
   }
 
   .mainContainer{

@@ -1,0 +1,18 @@
+.svgleft{
+position: absolute;
+top: 70em;
+left: -47em;
+}
+
+.svgright{
+    position: absolute;
+    top: 125em;
+    right: -47em;
+}
+
+@media (max-width:768px){
+    .svgleft,
+    .svgright{
+        display: none;
+    }
+}

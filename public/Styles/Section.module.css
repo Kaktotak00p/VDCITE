@@ -1,0 +1,63 @@
+.trafficContainer {
+    color: #fff;
+    font-family: 'Consolas', 'Monaco', monospace;
+  }
+  
+  .header {
+    font-family: "Fifaks10dev1";
+    font-size: .5em;
+    margin-bottom: 10em;
+    padding-left: 4em;
+  }
+  
+  .content {
+    font-family: "Avenir Next Condensed";
+    font-size: 1em;
+    white-space: nowrap; 
+    width: min-content;
+    margin-right: auto;
+    margin-left: 30em;
+  }
+  
+  .footer {
+    color: rgb(var(--green));
+    font-size: 0.8em;
+    margin-top: 1em;
+    white-space: nowrap;
+    width: min-content;
+    margin-left: 37.5em;
+    margin-right: auto;
+  }
+  
+  .marker {
+    color: yellow;
+  }
+
+  .dec{
+    position: absolute;
+    top: 75em;
+    right: 32em;
+    width: auto;
+    height: 10em;
+  }
+
+@media (max-width:768px){
+  .trafficContainer{
+    margin-top: 5em;
+  }
+
+  .header{
+    padding-left: 1em;
+    font-size: 1em;
+  }
+
+    .content,
+    .footer{
+        margin-left: 1em;
+    }
+
+    .dec{
+        display: none;
+    }
+}
+  

@@ -166,6 +166,9 @@
 }
 
 @media (max-width:768px) {
+  .partners{
+    font-size: 3em;
+  }
   .carouselContainer {
     flex-wrap: wrap;
   }

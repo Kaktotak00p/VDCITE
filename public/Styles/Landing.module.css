@@ -27,8 +27,14 @@
   /* Adjust based on your layout needs */
 }
 
-.descr{
-  font-size: 2em;
+.descrleft{
+  font-size: 4em;
+  max-width: 7em;
+  margin-bottom: -3em;
+}
+.descrright{
+  font-size: 1em;
+  max-width: 10em;
 }
 
 
@@ -36,9 +42,8 @@
   width: 40em;
   height: auto;
   position: absolute;
-  top: 75vh;
+  top: 83vh;
   left: 5%;
-  padding-top: 5em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -117,12 +122,29 @@
   text-align: center;
 }
 
+.mediabuy{
+  font-size: 4em;
+  text-align:right;
+}
+
 
 @media (max-width: 768px) {
   .company{
     text-align: left;
     font-size: 3em;
   }
+
+
+  .descrright{
+    font-size: 2em;
+    text-align: center;
+    margin-left: 2em;
+  }
+
+  .mediabuy{
+    font-size: 3em;
+  }
+
   .outerContainer {
     padding: 0;
     margin: 0;
@@ -174,6 +196,7 @@
   }
 
   .column {
+    margin-top: 3em;
     position: relative;
     max-width: 100%;
     display: flex;
@@ -183,20 +206,24 @@
   }
 
   .button {
-    font-size: 1em;
-    margin-left: 0;
-    padding: 0.6em 1em;
+    margin-top: .2em;
+    font-size: 2em;
     margin-left: auto;
+    padding: 0.6em 1em;
     margin-right: auto;
   }
 
   .footer {
     position: absolute;
-    top: 20em;
+    top: 30em;
     left: -1em;
     width: 100%;
     padding-top: 1em;
     justify-content: center;
+  }
+  .row{
+    margin-left: auto;
+    margin-right: auto;
   }
 
 

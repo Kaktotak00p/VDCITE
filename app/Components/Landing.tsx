@@ -12,9 +12,9 @@ const landing = () => {
             <UserCountDisplay />
           </div>
           <div className={Style.textContainer}>
-            <h1 style={{textAlign:"right"}}>МЕДИАБАИНГОВАЯ </h1>
+            <h1 className={Style.mediabuy}>МЕДИАБАИНГОВАЯ </h1>
             <h1 className={Style.company}>КОМПАНИЯ</h1>
-            <p className={Style.descr}>& Text text text Text Text text Text Text text</p>
+            <p className={Style.descrleft}>& Text text text Text Text text Text Text text</p>
           </div>
           <div className={Style.imageContainer}>
             <img style={{
@@ -32,8 +32,7 @@ const landing = () => {
                   minWidth:"0%"
                 }}></img>
               </div>
-              <p className={Style.descr} style={{textAlign:"left"
-              }}>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p className={Style.descrright}>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
               <button className={Style.button}>[CLICK,ПОСМОТРЕТЬ]</button>
             </div>
           </div>
