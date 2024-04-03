@@ -29,7 +29,9 @@ const landing = () => {
                 <img src="./dec/flower_nobg (4).png" style={{
                   height: '2em',
                   width: '2em',
-                  minWidth:"0%"
+                  minWidth:"0%",
+                  marginTop:"-.1em",
+                  marginLeft:".1em"
                 }}></img>
               </div>
               <p className={Style.descrright}>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>

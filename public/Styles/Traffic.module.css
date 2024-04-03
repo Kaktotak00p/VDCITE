@@ -147,13 +147,11 @@
   }
 
   .mainContainer h1{
-    font-family: "Fifaks10Dev1";
     font-size: 3em;
   }
 
   @media (max-width: 768px) {
     .mainContainer h1{
-      font-family: "Fifaks10Dev1";
       margin-left: 1em;
       margin-right: auto;
       font-size: 2em;

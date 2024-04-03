@@ -7,7 +7,7 @@ const trafic: React.FC = () => {
     return (
         <div className={Styles.outerConatiner}>
             <div className={Styles.mainContainer}>
-                <h1>://НАШИ ПРЕИМУЩЕСТВА</h1>
+                <h1>НАШИ ПРЕИМУЩЕСТВА</h1>
             </div>
                 <div className={Styles.cardGrid}>
                     <h1 className={`mainText ${Styles.traffic}`} >://Traffic</h1>

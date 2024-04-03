@@ -1,6 +1,5 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const axios = require('axios');
 const { Server } = require('ws');
 const config = require('./config'); // Make sure this path is correct
 
@@ -15,15 +14,22 @@ const server = app.listen(PORT, () => console.log(`Server running on port ${PORT
 
 // Set up WebSocket server
 const wss = new Server({ server });
-let userCount = 0;
+
+// Initialize the counter with the current Unix timestamp
+let vlitoCounter = Math.floor(Date.now());
 
 wss.on('connection', (ws) => {
-  userCount++;
-  wss.clients.forEach(client => client.send(JSON.stringify({ userCount })));
+  // On connection, send the current value of the time counter
+  ws.send(JSON.stringify({ vlitoCounter }));
+
+  // Set an interval to update the time counter every second
+  const interval = setInterval(() => {
+    vlitoCounter = Math.floor(Date.now() / 100000);
+    ws.send(JSON.stringify({ vlitoCounter }));
+  }, 1000);
 
   ws.on('close', () => {
-    userCount--;
-    wss.clients.forEach(client => client.send(JSON.stringify({ userCount })));
+    clearInterval(interval);
   });
 });
 
