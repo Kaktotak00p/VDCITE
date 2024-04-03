@@ -20,7 +20,8 @@ const landing = () => {
             <img style={{
               marginBottom:"-2em",
               width:"40em",
-            }} src="./partners/elements/makakich.png" alt="Media Buying Company" />
+            }} 
+             src="./partners/elements/makakich.png" alt="Media Buying Company" />
             <div className={Style.column}>
               <div className={Style.row} style={{
                 justifySelf:"left"

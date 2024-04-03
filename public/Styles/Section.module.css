@@ -20,6 +20,7 @@
   }
   
   .footer {
+    position: relative;
     color: rgb(var(--green));
     font-size: 0.8em;
     margin-top: 1em;
@@ -35,8 +36,8 @@
 
   .dec{
     position: absolute;
-    top: 75em;
-    right: 32em;
+    top: -5em;
+    right: -40em;
     width: auto;
     height: 10em;
   }
@@ -57,7 +58,8 @@
     }
 
     .dec{
-        display: none;
+      top: 0em;
+      right: -20em;
     }
 }
   

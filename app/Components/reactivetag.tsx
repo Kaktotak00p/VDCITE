@@ -9,6 +9,7 @@ const UserCountDisplay: React.FC = () => {
   return (
     <div className={Style.tagContainer}>
         <img src='./dec/DecorPlashka.png' className={Style.tag_bg}></img>
+        <img className={Style.dec} src="./dec/logo/4.png"/>
         <h2 className={Style.overlayText}>ARBITRAGE TRAFFIC</h2>
         {/* <p className={Style.overlayText}>{lastJsonMessage?.vlitoCounter ?? 0}</p> */}
     </div>

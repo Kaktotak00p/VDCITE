@@ -32,6 +32,7 @@
   }
 
 .mainContainer {
+  position: relative;
     display: flex;
     justify-self: center;
     flex-direction: column;
@@ -140,8 +141,8 @@
 
 .dec{
   position: absolute;
-  top: 130em;
-  right: 5%;
+  top: -2.5em;
+  right: -10em;
   width: auto;
   height: 10em;
 }
@@ -173,6 +174,11 @@
 @media (max-width: 768px) {
     .layoutContainer {
       flex-direction: column;
+    }
+
+    .dec{
+      top: 6em;
+      left: 15em;
     }
 
     .jobName span{

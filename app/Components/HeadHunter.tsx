@@ -26,8 +26,8 @@ const HeadHunter = () => {
             <div className={Styles.mainContainer}>
                 <h1 className={Styles.hunt}>ОХОТА ЗА</h1>
                 <h1 className={Styles.heads}> ГОЛОВАМИ</h1>
-            </div>
                 <img className={Styles.dec} src='./partners/elements/square(2).png' alt='Decorative' />
+            </div>
             <div className={Styles.row} >
                 <img className={Styles.img} src='./partners/elements/005.png' alt='Decorative' />
                 <div style={{

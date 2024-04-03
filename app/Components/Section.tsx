@@ -19,8 +19,8 @@ const TrafficSection: React.FC = () => {
       <p style={{
         fontFamily:"Fifaks10dev1",
       }}>://ПРИДУМАТЬ СЮДА ТЕКСТ ...</p>
-      </div>
       <img className={styles.dec} src='./partners/elements/square(2).png' alt='Decorative' />
+      </div>
     </div>
   );
 };

@@ -43,7 +43,8 @@
   /* --green: 209, 253, 0; */
   --green:189, 253, 0;
   --white: 255, 255, 255;
-  --background: 16,16,16;
+  /* --background: 16,16,16; */
+  --background: 0,0,0;
   --global-margin: 20em;
 }
 
