@@ -139,6 +139,7 @@ const ContactSection: React.FC = () => {
             <button type="submit" className={`${styles.button} ${styles.submitButton}`}>ЗАПОЛНИТЕ ФОРМУ</button>
           </div>
         </form>
+        <img className={styles.dec} src="./dec/logo/1.png"/>
       </div>
     </div>
   </>
