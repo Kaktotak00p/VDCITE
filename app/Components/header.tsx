@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import styles from '../../public/Styles/header.module.css';
+import Link from 'next/link';
 
 interface Props {}
 
@@ -27,7 +28,8 @@ const Header: React.FC<Props> = (props) => {
         <header className={headerClass}>
             <div className={`${styles.traffhub}`}>TRAFFHUB</div>
             <nav>
-                {/* Navigation items or branding */}
+            <Link href="/"> <a>Home</a></Link>
+            <Link href="/admin"><a>Admin</a></Link>
             </nav>
         </header>
     );
