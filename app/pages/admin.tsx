@@ -1,25 +1,11 @@
-'use client'
+import type { NextPage } from 'next'
 
-import React, { useState } from 'react';
-import JobEditor from "../Components/JobEditor"
-import type { ReactElement } from 'react'
-
-
-import dynamic from 'next/dynamic';
-import RootLayout from '../layout';
-
-
-const Home = () => {
-  const [jobs, setJobs] = useState([
-    { title: 'Sample Job 1', description: 'Sample Description 1' },
-    // Add initial job listings as needed
-]);
+const Admin: NextPage = () => {
   return (
-  <>
-    <JobEditor jobs={jobs} setJobs={setJobs} />
-  </>
-    )
-};
+    <div>
+      <h1>nothing to see here ... yet</h1>
+    </div>
+  )
+}
 
-
-export default Home;
+export default Admin;

@@ -2,9 +2,11 @@
 position: absolute;
 top: 70em;
 left: -47em;
+pointer-events: none;
 }
 
 .svgright{
+    pointer-events: none;
     position: absolute;
     top: 125em;
     right: -47em;
