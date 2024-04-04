@@ -71,7 +71,7 @@ const Partners: React.FC = () => {
             <div className={styles.carouselContainer}>
                 {visibleLogos.map((logo, i) => (
                     <div key={i} className={`${styles.logoContainer} ${animate ? styles.animateLogo : ''}`}>
-                        <img className={styles.frameImage} src='./partners/elements/square(1).png' alt='Frame'></img>
+                        <img className={styles.frameImage} src='./partners/elements/square_empty.png' alt='Frame'></img>
                         <img className={styles.logoImage} src={logo.src} alt={logo.alt}></img>
                     </div>
                 ))}

@@ -10,7 +10,7 @@ const Header: React.FC<Props> = (props) => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const offset = window.scrollY > 10;
+            const offset = window.scrollY > 20;
             setIsScrolled(offset);
         };
 

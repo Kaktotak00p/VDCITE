@@ -21,8 +21,8 @@ import Link from 'next/link';
 const Home: NextPage = () => {
   return (
     <RootLayout>
-    <img src='./svg/палка1.svg' className={Styles.svgleft}/>
-    <img src='./svg/палка2.svg' className={Styles.svgright}/>
+    <img src='./svg/stick1.svg' className={Styles.svgleft}/>
+    <img src='./svg/stick2.svg' className={Styles.svgright}/>
     <Header/>
     <Landing />
     <TrafficSection/>

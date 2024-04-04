@@ -17,10 +17,10 @@ const ContactSection: React.FC = () => {
   const handleChange: React.ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement> = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
-  
 
 
-  
+
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
@@ -36,7 +36,7 @@ const ContactSection: React.FC = () => {
   };
   return (<>
     <div className={styles.svgContainer}>
-      <img src='./svg/палка3.svg' className='svg-img' />
+      <img src='./svg/stick3.svg' className='svg-img' />
     </div>
     <div className={styles.container}>
       <div className={styles.column}>
@@ -45,12 +45,7 @@ const ContactSection: React.FC = () => {
           <div className={styles.email}>TRAFFHUB@GMAIL.COM</div>
         </div>
         <div className={styles.logo}>
-          <button className={styles.button} onClick={() => setIsOpen(true)} style={{
-            fontFamily: "NuMono",
-            padding:"0",
-            marginLeft:"auto",
-            marginRight:"auto",
-          }}>CONTACT</button>
+          <button className={`${styles.button} ${styles.contactButton}`} onClick={() => setIsOpen(true)} >CONTACT</button>
         </div>
         <div className={styles.links}>
           <h2>SOCIAL</h2>
@@ -90,9 +85,9 @@ const ContactSection: React.FC = () => {
           margin: "1em"
         }}>ЗАПОЛНИТЕ ФОРМУ</h1> */}
         <div className={styles.svgContainer} style={{
-          
+
         }}>
-          <img src='./svg/палка3.svg' className='svg-img' />
+          <img src='./svg/stick3.svg' className='svg-img' />
         </div>
         <form onSubmit={handleSubmit} className={`${styles.contactform} ${styles.row}`}>
           <div className={styles.singleLines}>
@@ -134,12 +129,12 @@ const ContactSection: React.FC = () => {
               onChange={handleChange}
             />
             <div className={styles.svgButton}>
-            <img src='./svg/палка контакты.svg' className={`svg-img`}/>
+              <img src='./svg/stickCont.svg' className={`svg-img`} />
             </div>
             <button type="submit" className={`${styles.button} ${styles.submitButton}`}>ЗАПОЛНИТЕ ФОРМУ</button>
           </div>
         </form>
-        <img className={styles.dec} src="./dec/logo/1.png"/>
+        <img className={styles.dec} src="./dec/logo/1.png" />
       </div>
     </div>
   </>

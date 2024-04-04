@@ -37,6 +37,14 @@
     margin-left: -8em;
   }
 
+  .contactButton{
+    font-family: "NuMono";
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: underline rgb(var(--green));
+  }
+
   .contactLabel {
     text-wrap: nowrap;
     font-size: 1em;
