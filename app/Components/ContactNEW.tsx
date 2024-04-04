@@ -36,7 +36,7 @@ const ContactSection: React.FC = () => {
   };
   return (<>
     <div className={styles.svgContainer}>
-      <img src='./svg/палка3.svg' className='svg-img' />
+      <img src='./svg/Stick3.svg' className='svg-img' />
     </div>
     <div className={styles.container}>
       <div className={styles.column}>
@@ -92,7 +92,7 @@ const ContactSection: React.FC = () => {
         <div className={styles.svgContainer} style={{
           
         }}>
-          <img src='./svg/палка3.svg' className='svg-img' />
+          <img src='./svg/Stick3.svg' className='svg-img' />
         </div>
         <form onSubmit={handleSubmit} className={`${styles.contactform} ${styles.row}`}>
           <div className={styles.singleLines}>
@@ -134,7 +134,7 @@ const ContactSection: React.FC = () => {
               onChange={handleChange}
             />
             <div className={styles.svgButton}>
-            <img src='./svg/палка контакты.svg' className={`svg-img`}/>
+            <img src='./svg/StickContacts.svg' className={`svg-img`}/>
             </div>
             <button type="submit" className={`${styles.button} ${styles.submitButton}`}>ЗАПОЛНИТЕ ФОРМУ</button>
           </div>

@@ -19,8 +19,8 @@ import TrafficSection from './Components/Section';
 const Home = () => {
   return (
     <>
-    <img src='./svg/палка1.svg' className={Styles.svgleft}/>
-    <img src='./svg/палка2.svg' className={Styles.svgright}/>
+    <img src='./svg/Stick1.svg' className={Styles.svgleft}/>
+    <img src='./svg/Stick2.svg' className={Styles.svgright}/>
     <Header/>
     <Landing />
     <TrafficSection/>
