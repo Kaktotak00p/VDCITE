@@ -10,7 +10,7 @@ const Header: React.FC<Props> = (props) => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const offset = window.scrollY > 1000;
+            const offset = window.scrollY > 10;
             setIsScrolled(offset);
         };
 
@@ -28,8 +28,8 @@ const Header: React.FC<Props> = (props) => {
         <header className={headerClass}>
             <div className={`${styles.traffhub}`}>TRAFFHUB</div>
             <nav>
-            <Link href="/"> <a>Home</a></Link>
-            <Link href="/admin"><a>Admin</a></Link>
+            <Link href="/"> Home</Link>
+            <Link href="/admin">Admin</Link>
             </nav>
         </header>
     );
