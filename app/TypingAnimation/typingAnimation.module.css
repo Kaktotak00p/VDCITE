@@ -1,0 +1,13 @@
+
+.typinganimation {
+    font-family: 'Courier New', monospace; /* Gives it a terminal-like appearance */
+    white-space: pre; /* Maintains spacing and newlines */
+    border-right: .1em solid; /* The blinking cursor */
+    animation: blinkCursor 0.75s step-end infinite;
+  }
+  
+  @keyframes blinkCursor {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+  }
+  

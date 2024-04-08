@@ -69,11 +69,11 @@
 
   .entry{
     width: 100%;
-    margin: auto;
+    margin-top: -.15em;
     padding-top: .4em;
     padding-bottom: .4em;
-    border-top: solid grey .02em;
-    border-bottom: solid grey .02em;
+    border-top: solid grey .15em;
+    border-bottom: solid grey .15em;
   }
 
   .button {
@@ -117,8 +117,6 @@
   background-color: transparent;
 }
 
-/* Add these styles to your hh.module.css */
-
 .description {
   width: 60%;
   max-height: 3.4em;
@@ -134,7 +132,6 @@
 .jobName{
   text-wrap: nowrap;
   white-space: nowrap;
-  padding-top: .2em;
   margin-bottom: auto;
   margin-left: 0;
 }
@@ -220,8 +217,8 @@
       margin: auto;
       padding-top: .2em;
       padding-bottom: .2em;
-      border-top: solid whitesmoke 1px;
-      border-bottom: solid whitesmoke 1px;
+      border-top: solid whitesmoke .2em;
+      border-bottom: solid whitesmoke .2em;
       gap: 0em;
     }
   

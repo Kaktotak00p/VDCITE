@@ -3,9 +3,10 @@
 import React, { useState } from 'react';
 import Styles from '../../public/Styles/hh.module.css';
 import '../../public/Styles/globals.css';
+import TypingAnimation from '../TypingAnimation/typingAnimation';
 
 const jobListings = [
-  { title: 'Junior Media Buyer', description: 'Lorem ipsum dolor sit amet.' },
+  { title: 'Junior Media Buyer', description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, molestiae." },
   { title: 'Senior Media Buyer', description: 'Consectetur adipiscing elit.' },
   { title: 'Senior Media Buyer', description: 'Consectetur adipiscing elit.' },
   { title: 'Senior Media Buyer', description: 'Consectetur adipiscing elit.' },
@@ -21,8 +22,8 @@ const HeadHunter = () => {
     };
 
     return (
-        <div className={Styles.outerContainer}>
-            <h1 className='mainText' >://HeadHunter</h1>
+        <div className={Styles.outerContainer} id="hh">
+            <TypingAnimation text="://HeadHunter" typingSpeed={50} />
             <div className={Styles.mainContainer}>
                 <h1 className={Styles.hunt}>ОХОТА ЗА</h1>
                 <h1 className={Styles.heads}> ГОЛОВАМИ</h1>
@@ -43,6 +44,7 @@ const HeadHunter = () => {
                                         color:"rgb(var(--green))",
                                         fontSize:".5em",
                                         fontFamily:"Fifaks10dev1",
+                                        marginRight:"1em"
                                         }}>://{index} </span>{job.title}</p>
                                     <div className={`${Styles.description} ${visibleDescription[index] ? Styles.expanded : ''}`}>
                                         <p className={Styles.p}>{job.description}</p>

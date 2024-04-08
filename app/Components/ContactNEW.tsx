@@ -38,7 +38,7 @@ const ContactSection: React.FC = () => {
     <div className={styles.svgContainer}>
       <img src='./svg/stick3.svg' className='svg-img' />
     </div>
-    <div className={styles.container}>
+    <div className={styles.container} id="Contact">
       <div className={styles.column}>
         <div className={styles.contactInfo}>
           <div className={styles.contactLabel}>CONTACT US</div>

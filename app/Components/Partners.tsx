@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../../public/Styles/partners.module.css';
 import '../../public/Styles/globals.css';
+import TypingAnimation from '../TypingAnimation/typingAnimation';
 
 interface PartnerLogo {
     src: string;
@@ -55,7 +56,7 @@ const Partners: React.FC = () => {
                     flexDirection: "row",
                     alignItems: "center",
             }}>
-            <h1 className={` mainText`} style={{paddingBottom:"3em"}}>://Partners</h1>
+            <TypingAnimation text="://Partners" typingSpeed={50} style={{paddingBottom:"3em"}}/>
             </div>
             <div className={styles.mainContainer}>
                 <div style={{
@@ -71,7 +72,7 @@ const Partners: React.FC = () => {
             <div className={styles.carouselContainer}>
                 {visibleLogos.map((logo, i) => (
                     <div key={i} className={`${styles.logoContainer} ${animate ? styles.animateLogo : ''}`}>
-                        <img className={styles.frameImage} src='./partners/elements/square_empty.png' alt='Frame'></img>
+                        <img className={styles.frameImage} src='./partners/elements/square_empty(2).png' alt='Frame'></img>
                         <img className={styles.logoImage} src={logo.src} alt={logo.alt}></img>
                     </div>
                 ))}

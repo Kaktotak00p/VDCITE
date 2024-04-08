@@ -53,7 +53,7 @@
     align-items: center;
     background-color: rgb(var(--background)); /* Background color */
     color: white; /* Text color */
-    margin-bottom: 1em;
+    margin-bottom: 3em;
   }
 
   .imageContainer {
@@ -130,7 +130,6 @@
   }
 
   .traffic{
-    margin-left:40%;
     grid-row:1;
     grid-column:1;
     color:white;
@@ -140,7 +139,6 @@
   
   .piki{
     margin-top:2em;
-    margin-left:40%;
     grid-row:1;
     grid-column:1;
     font-size:1.5em;

@@ -1,12 +1,14 @@
+"use client"
 import React from 'react';
 import Styles from '../../public/Styles/trafSources.module.css';
 import '../../public/Styles/globals.css';
+import TypingAnimation from '../TypingAnimation/typingAnimation';
 
 const TrafSources: React.FC = () => {
     return (
-        <div className={Styles.outerContainer}>
+        <div className={Styles.outerContainer} id="TSources">
             <div className={Styles.row}>
-                <h1 className='mainText' >://TrafficSources</h1>
+                <TypingAnimation text='://TrafficSources' typingSpeed={50} />
             </div>
             <div className={Styles.mainContainer}>
                 <div className={Styles.textContainer}>

@@ -15,6 +15,8 @@
 .imageContainer {
     min-width: 35%;
     flex-shrink: 0;
+    margin-left: 2em;
+
     display: flex; /* Align the logo containers in a row */
     justify-content: center; /* Center the logo containers */
 }
@@ -37,8 +39,8 @@
 .logoImage {
   position: absolute;
   transform: rotate(30deg);
-  width: 6em; /* Adjust for size inside the frame */
-  height: 6em; /* Adjust for size inside the frame */
+  width: 8em; /* Adjust for size inside the frame */
+  height: 8em; /* Adjust for size inside the frame */
   z-index: 2; /* Ensure logo appears above the frame image */
   transition: transform 0.3s ease-in-out;
 }
@@ -55,13 +57,13 @@
 .logoBorder{
   position: absolute;
   width: auto;
-  height: 40em;
+  height: 45em;
 }
 
 .textContainer{
   display: flex;
   flex-direction: row;
-  margin-bottom: -4em;
+  /* margin-bottom: -4em; */
 }
 
 @media (max-width: 768px){

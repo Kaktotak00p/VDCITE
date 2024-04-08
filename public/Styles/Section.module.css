@@ -30,14 +30,11 @@
     margin-right: auto;
   }
   
-  .marker {
-    color: yellow;
-  }
 
   .dec{
     position: absolute;
     top: -5em;
-    right: -40em;
+    right: -44em;
     width: auto;
     height: 10em;
   }

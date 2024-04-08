@@ -5,7 +5,7 @@ import CardGreen from '../pictures/CardGreenShort.png'
 
 const trafic: React.FC = () => {
     return (
-        <div className={Styles.outerConatiner}>
+        <div className={Styles.outerConatiner} id="Traffic">
             <div className={Styles.mainContainer}>
                 <h1>НАШИ ПРЕИМУЩЕСТВА</h1>
             </div>
@@ -31,17 +31,17 @@ const trafic: React.FC = () => {
                         </div>
                         <div className={`${Styles.cardContainer} ${Styles.item4}`}>
                             <img className={Styles.card_bg} src="./partners/elements/CardPinkShort.png" alt="Descriptive Alt Text" />
-                            <img className={Styles.innerImage} src="./dec/flower (4).png" ></img>
+                            <img className={Styles.innerImage} src="./dec/heart (1).png" ></img>
                             <div className={Styles.overlayTextPurple}>ЛУЧШЕЕ КАЧЕСТВО ТРАФФИКА</div>
                         </div>
                         <div className={`${Styles.cardContainer} ${Styles.item5}`}>
                             <img className={Styles.card_bg} src="./partners/elements/CardPinkShort.png" alt="Descriptive Alt Text" />
-                            <img className={Styles.innerImage} src="./dec/flower_nobg (3).png" ></img>
+                            <img className={Styles.innerImage} src="./dec/heart (3).png" ></img>
                             <div className={Styles.overlayTextPurple}>ЛУЧШЕЕ КАЧЕСТВО ТРАФФИКА</div>
                         </div>
                         <div className={`${Styles.cardContainer} ${Styles.item6}`}>
                             <img className={Styles.card_bg} src="./partners/elements/CardPinkShort.png" alt="Descriptive Alt Text" />
-                            <img className={Styles.innerImage} src="./dec/petals (3).png" ></img>
+                            <img className={Styles.innerImage} src="./dec/heart (2).png" ></img>
                             <div className={Styles.overlayTextPurple}>ЛУЧШЕЕ КАЧЕСТВО ТРАФФИКА</div>
                     </div>
                 </div>

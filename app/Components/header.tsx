@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../../public/Styles/header.module.css';
 import Link from 'next/link';
+import ScrollLink from './ScrollLink';
 
 interface Props {}
 
@@ -28,8 +29,14 @@ const Header: React.FC<Props> = (props) => {
         <header className={headerClass}>
             <div className={`${styles.traffhub}`}>TRAFFHUB</div>
             <nav>
-            <Link href="/"> Home</Link>
-            <Link href="/admin">Admin</Link>
+            {/* <Link href="/"> Home</Link>
+            <Link href="/admin">Admin</Link> */}
+            <ScrollLink targetId='Landing'>HOME</ScrollLink>
+            <ScrollLink targetId='Section'>О НАС</ScrollLink>
+            <ScrollLink targetId='Traffic'>ПРЕИМУЩЕСТВА</ScrollLink>
+            <ScrollLink targetId='hh'>ВАКАНСИИ</ScrollLink>
+            <ScrollLink targetId='TSources'>ИСТОЧНИКИ</ScrollLink>
+            <ScrollLink targetId='Contact'>Contact</ScrollLink>
             </nav>
         </header>
     );

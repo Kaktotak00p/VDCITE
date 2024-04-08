@@ -14,7 +14,7 @@
   margin-bottom: 4em;
   border-radius: 1em;
   padding: 3em;
-  border: rgb(var(--green)) .01em solid;
+  border: rgb(var(--green)) .2em solid;
   height: 90vh;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .descrleft{
-  font-size: 4em;
+  font-size: 3em;
   max-width: 7em;
   margin-bottom: -3em;
 }
@@ -98,7 +98,7 @@
   min-width: 70%;
   /* This makes the image responsive */
   height: auto;
-  margin-left:-20%;
+  margin-left:-10%;
 }
 
 
@@ -126,7 +126,7 @@
 
 .mediabuy{
   font-size: 4em;
-  text-align:right;
+  text-align:left;
 }
 
 

@@ -6,7 +6,7 @@ import UserCountDisplay from './reactivetag';
 const landing = () => {
   return (
     <>
-      <div className={Style.outerConatiner}>
+      <div className={Style.outerConatiner} id="Landing">
         <div className={Style.mainContainer}>
           <div className={Style.footer}>
             <UserCountDisplay />
@@ -18,8 +18,9 @@ const landing = () => {
           </div>
           <div className={Style.imageContainer}>
             <img style={{
-              marginBottom:"-2em",
-              width:"40em",
+              marginBottom:"-7%",
+              width:"50em",
+              zIndex:"0"
             }} 
              src="./partners/elements/makakich.png" alt="Media Buying Company" />
             <div className={Style.column}>
