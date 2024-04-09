@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import styles from '../../public/Styles/partners.module.css';
 import '../../public/Styles/globals.css';
 import TypingAnimation from '../TypingAnimation/typingAnimation';
-import ScrollingBanner from '../rollingtext/rollingText';
+// import ScrollingBanner from '../rollingtext/rollingText';
 
 interface PartnerLogo {
     src: string;

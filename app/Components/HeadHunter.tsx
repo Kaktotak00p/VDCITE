@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Styles from '../../public/Styles/hh.module.css';
 import '../../public/Styles/globals.css';
 import TypingAnimation from '../TypingAnimation/typingAnimation';
-import ScrollingBanner from '../rollingtext/rollingText';
+// import ScrollingBanner from '../rollingtext/rollingText';
 
 const jobListings = [
   { title: 'Junior Media Buyer', description: "-МЕГА ВИСОКА бонусна сітка\n-Офісний/віддалений формат\n-Реальний вплив на робочий процес\n-Ідеально налагоджена інфраструктура\n-Все, що потрібно для твоєї комфортної роботи та розвитку\nГоловне завдання баєра в команді - заливатися в плюс, все інше беремо на себе\n\n✨Якщо ти справжній профі, який:\n- має досвід на позиції Media Buyer в вертикалі Gambling від 8 місяців\n-може похизуватися успішними кейсами та актуальною статистикою за останній час\n-працював з великими бюджетами\n-вміє шукати зв’язки та унікальні підходи\n\nТоді ми точно підходимо один одному!" },
