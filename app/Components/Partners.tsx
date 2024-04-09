@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import styles from '../../public/Styles/partners.module.css';
 import '../../public/Styles/globals.css';
 import TypingAnimation from '../TypingAnimation/typingAnimation';
+import ScrollingBanner from '../rollingtext/rollingText';
 
 interface PartnerLogo {
     src: string;
@@ -56,7 +57,7 @@ const Partners: React.FC = () => {
                     flexDirection: "row",
                     alignItems: "center",
             }}>
-            <TypingAnimation text="://Partners" typingSpeed={50} style={{paddingBottom:"3em"}}/>
+            <ScrollingBanner text="://Partners" style={{paddingBottom:"3em"}} className='mainText'/>
             </div>
             <div className={styles.mainContainer}>
                 <div style={{

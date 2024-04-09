@@ -1,0 +1,6 @@
+.scrollingBanner {
+    white-space: nowrap;
+    /* overflow: hidden; */
+    display: flex;
+  }
+  

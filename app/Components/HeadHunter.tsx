@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Styles from '../../public/Styles/hh.module.css';
 import '../../public/Styles/globals.css';
 import TypingAnimation from '../TypingAnimation/typingAnimation';
+import ScrollingBanner from '../rollingtext/rollingText';
 
 const jobListings = [
   { title: 'Junior Media Buyer', description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, molestiae." },
@@ -23,7 +24,7 @@ const HeadHunter = () => {
 
     return (
         <div className={Styles.outerContainer} id="hh">
-            <TypingAnimation text="://HeadHunter" typingSpeed={50} />
+            <ScrollingBanner text="://HeadHunter" className="mainText" />
             <div className={Styles.mainContainer}>
                 <h1 className={Styles.hunt}>ОХОТА ЗА</h1>
                 <h1 className={Styles.heads}> ГОЛОВАМИ</h1>
