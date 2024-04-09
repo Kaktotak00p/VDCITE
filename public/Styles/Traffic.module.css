@@ -214,8 +214,8 @@
       display: grid;
       grid-template-columns: 1fr 1fr ;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      margin-left: 5em;
-      margin-right: 5em;
+      margin-left: 3em;
+      margin-right: 1em;
       gap: 1em;
     }
 

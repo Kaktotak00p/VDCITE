@@ -31,12 +31,12 @@ const Header: React.FC<Props> = (props) => {
             <nav>
             {/* <Link href="/"> Home</Link>
             <Link href="/admin">Admin</Link> */}
-            <ScrollLink targetId='Landing'>HOME</ScrollLink>
-            <ScrollLink targetId='Section'>О НАС</ScrollLink>
-            <ScrollLink targetId='Traffic'>ПРЕИМУЩЕСТВА</ScrollLink>
-            <ScrollLink targetId='hh'>ВАКАНСИИ</ScrollLink>
-            <ScrollLink targetId='TSources'>ИСТОЧНИКИ</ScrollLink>
-            <ScrollLink targetId='Contact'>Contact</ScrollLink>
+            <ScrollLink targetId='Landing'>[ HOME ]</ScrollLink>
+            <ScrollLink targetId='Section'>[ О НАС ]</ScrollLink>
+            <ScrollLink targetId='Traffic'>[ ПРЕИМУЩЕСТВА ]</ScrollLink>
+            <ScrollLink targetId='hh'>[ ВАКАНСИИ ]</ScrollLink>
+            <ScrollLink targetId='TSources'>[ ИСТОЧНИКИ ]</ScrollLink>
+            <ScrollLink targetId='Contact'>[ CONTACT ]</ScrollLink>
             </nav>
         </header>
     );

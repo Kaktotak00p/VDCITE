@@ -8,7 +8,7 @@
 p.overlayText {
     position: absolute;
     text-wrap: nowrap;
-    top: -18%;
+    top: -5%;
     left: 50%;
     transform: translate(-50%, 50%);
     font-size: 1.5em;
@@ -19,7 +19,7 @@ p.overlayText {
 }
 
 h2.overlayText {
-    font-size: 1em;
+    font-size: .9em;
     position: absolute;
     text-wrap: nowrap;
     top: 50%;
@@ -41,9 +41,10 @@ h2.overlayText {
 
 .dec{
     top: .7em;
+    left: .5em;
     position: absolute;
     width: auto;
-    height: 4em;
+    height: 2.5em;
   }
 
 @media (max-width: 768px){
@@ -87,4 +88,11 @@ h2.overlayText {
         height: auto;
         width: 80%;
     }   
+    .dec{
+        top: 1.3em;
+        left: .8em;
+        position: absolute;
+        width: auto;
+        height: 4em;
+      }
 }

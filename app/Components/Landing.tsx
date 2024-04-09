@@ -1,7 +1,9 @@
+'use client'
 import React from 'react';
 import Style from '../../public/Styles/Landing.module.css';
 import '../../public/Styles/globals.css';
 import UserCountDisplay from './reactivetag';
+import ScrollLink from './ScrollLink';
 
 const landing = () => {
   return (
@@ -37,7 +39,8 @@ const landing = () => {
                 }}></img>
               </div>
               <p className={Style.descrright}>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <button className={Style.button}>[CLICK,ПОСМОТРЕТЬ]</button>
+              {/* <button className={Style.button}>[CLICK,ПОСМОТРЕТЬ]</button> */}
+              <ScrollLink targetId='Contact' className={Style.button}>[ НАПИШИ НАМ ! ]</ScrollLink>
             </div>
           </div>
         </div>

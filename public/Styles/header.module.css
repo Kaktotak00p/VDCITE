@@ -14,14 +14,25 @@
     pointer-events: none;
   }
   .header nav{
-    margin-left: 7%;
-    width: 50%;
+    margin-top: 1em;
+    margin-left: 0;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: end;
+    gap: 2em;
   }
   .header nav a{
-    font-size: 2em;
+    font-size: 1em;
     pointer-events: all;
-    margin-left: 20%;
+    transition: color .3s;
   }
+
+  .header nav a:hover{
+    color: rgb(var(--green));
+  }
+
 .traffhub {
     margin-left:2.4em;
     font-family: 'Fifaks10Dev1';
@@ -34,14 +45,20 @@
 
   .scrolled {
     padding-top: 1em;
-    background-color: rgba(16, 16, 16, 0.8); 
+    /* background-color: rgba(16, 16, 16, 0.8);  */
+    background-color: rgba(0, 0, 0, 1);
+    border-bottom: .1em solid white; 
   }
 
 
   @media (max-width:768px){
     .traffhub{
         margin-left: .5em;
-        margin-top: .25em;
+        margin-top: -1em;
+        margin-bottom: 0;
+    }
+    .scrolled{
+      display: none;
     }
     .header{
       margin-top: 0;

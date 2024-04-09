@@ -33,10 +33,10 @@
 
   .dec{
     position: absolute;
-    top: -5em;
+    top: 0em;
     right: -44em;
     width: auto;
-    height: 10em;
+    height: 13em;
   }
 
 @media (max-width:768px){

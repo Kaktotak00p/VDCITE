@@ -8,6 +8,7 @@
   }
   
   .contactInfo {
+    margin-left: -2em;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -88,6 +89,7 @@
   }
 
   .links {
+    margin-left: -2em;
     display: flex;
     flex-direction: row;
     margin-bottom: 1.2em;

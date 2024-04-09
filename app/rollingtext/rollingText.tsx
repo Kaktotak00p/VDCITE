@@ -51,7 +51,7 @@ const ScrollingBanner: React.FC<ScrollingBannerProps> = ({
       cancelAnimationFrame(requestRef.current);
     };
   // Include scrollSpeed in the dependency array; you might also monitor the size of the container or text
-  }, [scrollSpeed]);
+  }, [scrollSpeed, text]);
 
   const combinedClassName = `${styles.scrollingBanner} ${className}`.trim();
 

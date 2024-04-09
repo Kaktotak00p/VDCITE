@@ -35,7 +35,7 @@
 }
 .descrright{
   font-size: 1em;
-  max-width: 10em;
+  max-width: 15em;
 }
 
 
@@ -126,7 +126,7 @@
 
 .mediabuy{
   font-size: 4em;
-  text-align:left;
+  text-align:right;
 }
 
 
@@ -134,13 +134,17 @@
   .company{
     text-align: left;
     font-size: 3em;
+    margin-right: -1em;
   }
 
+  .descrleft{
+    margin-left: 2em;
+  }
 
   .descrright{
     font-size: 2em;
     text-align: center;
-    margin-left: 2em;
+    margin-left: 0em;
   }
 
   .mediabuy{
@@ -183,7 +187,7 @@
   }
 
   .imageContainer {
-    margin-top: 19em;
+    margin-top: 25em;
     width: 100%;
     max-width: max-content;
     height: auto;
@@ -198,6 +202,7 @@
   }
 
   .column {
+    margin-left: 2em;
     margin-top: 3em;
     position: relative;
     max-width: 100%;
@@ -218,7 +223,7 @@
   .footer {
     position: absolute;
     top: 30em;
-    left: -1em;
+    left: 1em;
     width: 100%;
     padding-top: 1em;
     justify-content: center;
