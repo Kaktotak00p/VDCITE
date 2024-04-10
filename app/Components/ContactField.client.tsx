@@ -5,21 +5,41 @@ interface ContactFieldProps {
   id: string;
   label: string;
   type: string;
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>) => void;
+  value?: string; // Make value optional since file inputs do not use value prop
+  onChange: (e: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement> | React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const ContactField: React.FC<ContactFieldProps> = ({ id, label, type, value, onChange }) => {
-  // Determine whether to use an input or a textarea based on the type
   const isMessageField = type === 'message';
+  const isFileField = type === 'file';
   
   return (
     <div className={Styles.contactfield} id={id}>
-      <label className={Styles.label} htmlFor={id}>{label}</label>
       {isMessageField ? (
-        <textarea id={id} value={value} onChange={onChange as React.ChangeEventHandler<HTMLTextAreaElement>} />
+        // Use textarea for 'message' type, with label text as placeholder
+        <textarea
+          id={id}
+          value={value}
+          onChange={onChange as React.ChangeEventHandler<HTMLTextAreaElement>}
+          placeholder={label}
+        />
+      ) : isFileField ? (
+        // Use input type file for 'file', without using the value prop
+        <input
+          id={id}
+          type="file"
+          onChange={onChange as React.ChangeEventHandler<HTMLInputElement>}
+          placeholder={label} // Placeholder won't actually work for file inputs but kept for consistency
+        />
       ) : (
-        <input id={id} type={type} value={value} onChange={onChange as React.ChangeEventHandler<HTMLInputElement>} />
+        // Use input for other types, with label text as placeholder
+        <input
+          id={id}
+          type={type}
+          value={value}
+          onChange={onChange as React.ChangeEventHandler<HTMLInputElement>}
+          placeholder={label}
+        />
       )}
     </div>
   );

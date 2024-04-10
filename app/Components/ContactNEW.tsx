@@ -85,11 +85,26 @@ const ContactSection: React.FC = () => {
           margin: "1em"
         }}>ЗАПОЛНИТЕ ФОРМУ</h1> */}
         <div className={styles.svgContainer} style={{
-
+          
         }}>
           <img src='./svg/stick3.svg' className='svg-img' />
         </div>
+        <div className={styles.formheader}>
+          <button className={styles.decButton}>ОТПРАВИТЬ РЕЗЮМЕ</button>
+          <img src='./dec/heart_contact.png'  className={styles.heart}/>
+        </div>
         <form onSubmit={handleSubmit} className={`${styles.contactform} ${styles.row}`}>
+          <div>
+          <h1 className={styles.formlogo}>ЗАПОЛНИТЕ ФОРМУ</h1>
+          <button type="submit" className={`${styles.button} ${styles.submitButton}`}>ОТПРАВТЕ РЕЗЮМЕ</button>
+            {/* <ContactField
+              id="file"
+              label="file"
+              type="file"
+              value={formData.firstName}
+              onChange={handleChange}
+            /> */}
+          </div>
           <div className={styles.singleLines}>
             <ContactField
               id="firstName"
@@ -119,8 +134,6 @@ const ContactSection: React.FC = () => {
               value={formData.telegramNickname}
               onChange={handleChange}
             />
-          </div>
-          <div className={styles.messageContainer}>
             <ContactField
               id="message"
               label="Message"
@@ -128,13 +141,12 @@ const ContactSection: React.FC = () => {
               value={formData.message}
               onChange={handleChange}
             />
-            <div className={styles.svgButton}>
-              <img src='./svg/stickCont.svg' className={`svg-img`} />
-            </div>
-            <button type="submit" className={`${styles.button} ${styles.submitButton}`}>ЗАПОЛНИТЕ ФОРМУ</button>
           </div>
         </form>
         <img className={styles.dec} src="./dec/logo/1.png" />
+        <div className={styles.footer}>
+          <h1>TRAFFHUB</h1>
+        </div>
       </div>
     </div>
   </>

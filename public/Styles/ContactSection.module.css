@@ -17,11 +17,9 @@
 
   .button {
     background-color: transparent;
-    font-family: 'Fifaks10dev1', arial;
-    font-size: 1.5em;
+    /* font-family: 'Fifaks10dev1', arial; */
+    font-size: 2em;
     margin-bottom: auto;
-    /* margin-top: 1em; */
-    /* border: 2px solid #4CAF50*/
     color: white; /* Text color */
     padding: 1em 2em; /* Padding */
     cursor: pointer;
@@ -33,9 +31,44 @@
     color: rgb(var(--green)); /* Hover text color */
   }
   
+.formlogo{
+  font-size: 4em;
+  white-space: nowrap;
+  margin-left: 5em;
+}
+
   .submitButton{
-    margin-top: -2em;
-    margin-left: -8em;
+    color: rgb(var(--green));
+    text-decoration: underline;
+    padding:  0em .5em;
+    font-size: 4em;
+  }
+
+  .submitButton:hover{
+    color: rgb(var(--purple));
+  }
+
+  .decButton{
+    height: 2em;
+    margin-left: 1em;
+    font-family: "Fifaks10dev1";
+    padding: .2em;
+    border-top-left-radius: .3em;
+    border-bottom-right-radius: .3em;
+    background-color: rgb(var(--green));
+    color: rgb(var(--background));
+  }
+  .heart{
+    width: auto;
+    height: 5em;
+  }
+
+  .formheader{
+    /* margin-top: -9em; */
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
   }
 
   .contactButton{
@@ -137,7 +170,7 @@
   }
   
   .contactform {
-    margin-top: 6em;
+    margin-top: 0em;
       border-radius: 1em;
   }
   
@@ -152,7 +185,7 @@
   .contactfield input[type="text"],
   .contactfield input[type="email"]{
     border-radius: .3em;
-    width: 80%;
+    width: 60%;
     padding: .1em;
     margin: .5em 2em;
     background-color: transparent;
@@ -163,9 +196,9 @@
   }
   
   .contactfield textarea{
-    height: 11em;
+    height: 5em;
     border-radius: .3em;
-    width: 80%;
+    width: 60em;
     padding: .1em;
     margin: .5em 2em;
     background-color: transparent;
@@ -179,14 +212,13 @@
   
   .contactform input::placeholder,
   .contactform textarea::placeholder {
-      color: #9f9; /* Lighter green text */
+      color: rgba(128, 128, 128, 0.493); /* Lighter green text */
   }
 
   .contactfield{
-      /* height: 100%; */
       display: flex; /* Enable Flexbox */
       flex-direction: column; /* Stack children vertically */
-      align-items: center; /* Center children horizontally */
+      align-items: end; /* Center children horizontally */
       justify-content: center;
   }
   .formimage {
@@ -195,7 +227,7 @@
       object-fit: cover;
   }
     .label{
-      width: 80%;
+      width: 84%;
       text-align: left;
       color: grey;
     }
@@ -203,7 +235,24 @@
     .h1{
       color: whitesmoke;
     }
-    /* YourCSSFile.module.css */
+
+    .footer{
+      position: fixed;
+      bottom: 0;
+      border-top: .1em solid grey;
+      margin-top: 3em; 
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .footer h1{
+      font-size: 2em;
+      font-family: "Fifaks10dev1";
+    }
+
   .slidingPanel { /* Note: Using camelCase for consistency with CSS Modules convention */
     position: fixed;
     top: 0;
@@ -253,7 +302,7 @@
   }
 
   .svgContainer {
-    margin-top: 0em;
+    margin-top: 4em;
     pointer-events: none;
     width: auto; /* Set to the original width of the SVG */
     height: 8em; /* Set to the original height of the SVG */
@@ -294,6 +343,8 @@
 }
 
 .singleLines{
+  margin-left: -15em;
+  margin-top: 5em;
   width: 60%;
 }
 
@@ -303,6 +354,7 @@
 }
 
 .dec{
+  margin-top: -5em;
   margin-left: 4em;
   width: auto;
   height: 5em;
