@@ -68,7 +68,7 @@
     justify-content: space-between;
     align-items: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
 
   .contactButton{
@@ -367,7 +367,7 @@
     }
 
     .dec{
-      margin-top: 3em;
+      margin-top: 1em;
       margin-left:auto;
       margin-right:auto;
       width: auto;
@@ -384,7 +384,10 @@
     }
 
     .singleLines{
-      width: 100%;
+      font-size: 1.3em;
+      width: 125%;
+      margin-top: 1em;
+      margin-left: -10em;
     }
   
     .row {
@@ -420,6 +423,22 @@
 
     .svgContainer{
       height: 8em;
+    }
+
+    .formlogo{
+      margin-left: auto;
+      text-align: end;
+      width: 100%;
+      font-size: 3em;
+      margin-left: 0;
+    }
+    .submitButton{
+      margin-right: 2.3em;
+      font-size: 3em;
+    }
+    
+    .contactfield textarea{
+      max-width: 60%;
     }
   }
   

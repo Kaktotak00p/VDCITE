@@ -85,25 +85,17 @@ const ContactSection: React.FC = () => {
           margin: "1em"
         }}>ЗАПОЛНИТЕ ФОРМУ</h1> */}
         <div className={styles.svgContainer} style={{
-          
+
         }}>
           <img src='./svg/stick3.svg' className='svg-img' />
         </div>
         <div className={styles.formheader}>
-          <button className={styles.decButton}>ОТПРАВИТЬ РЕЗЮМЕ</button>
-          <img src='./dec/heart_contact.png'  className={styles.heart}/>
+          <img src='./dec/heart_contact.png' className={styles.heart} />
         </div>
         <form onSubmit={handleSubmit} className={`${styles.contactform} ${styles.row}`}>
           <div>
-          <h1 className={styles.formlogo}>ЗАПОЛНИТЕ ФОРМУ</h1>
-          <button type="submit" className={`${styles.button} ${styles.submitButton}`}>ОТПРАВТЕ РЕЗЮМЕ</button>
-            {/* <ContactField
-              id="file"
-              label="file"
-              type="file"
-              value={formData.firstName}
-              onChange={handleChange}
-            /> */}
+            <h1 className={styles.formlogo}>ЗАПОЛНИТЕ ФОРМУ</h1>
+            <button type="submit" className={`${styles.button} ${styles.submitButton}`}>ОТКЛИКНУТЬСЯ</button>
           </div>
           <div className={styles.singleLines}>
             <ContactField
@@ -139,6 +131,13 @@ const ContactSection: React.FC = () => {
               label="Message"
               type="message"
               value={formData.message}
+              onChange={handleChange}
+            />
+            <ContactField
+              id="file"
+              label="file"
+              type="file"
+              value={formData.firstName}
               onChange={handleChange}
             />
           </div>

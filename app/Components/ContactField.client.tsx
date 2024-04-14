@@ -1,5 +1,6 @@
 import React from 'react';
 import Styles from '../../public/Styles/ContactSection.module.css';
+import FileInput from './FileInput';
 
 interface ContactFieldProps {
   id: string;
@@ -25,12 +26,16 @@ const ContactField: React.FC<ContactFieldProps> = ({ id, label, type, value, onC
         />
       ) : isFileField ? (
         // Use input type file for 'file', without using the value prop
-        <input
+        <>
+        {/* <input
           id={id}
           type="file"
+          name='file-upload'
           onChange={onChange as React.ChangeEventHandler<HTMLInputElement>}
           placeholder={label} // Placeholder won't actually work for file inputs but kept for consistency
-        />
+          /> */}
+        <FileInput id={id} label="РЕЗЮМЕ" onChange={onChange as React.ChangeEventHandler<HTMLInputElement>}/>
+          </>
       ) : (
         // Use input for other types, with label text as placeholder
         <input

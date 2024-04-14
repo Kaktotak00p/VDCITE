@@ -1,0 +1,43 @@
+.fileuploadcontainer {
+    /* font-family: "Fifaks10dev1"; */
+    align-items: center;
+    justify-content: center;
+    width: 20em;
+    position: relative;
+    color: rgb(var(--background));
+    display: flex;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: rgb(var(--green));
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px; /* Adjust as needed */
+    font-family: sans-serif; /* This should match the font of your app */
+    transition: background-color 0.5s ease;
+}
+
+/* You might want to add :hover and :active pseudo-classes for better UX */
+.fileuploadcontainer:hover {
+    background-color: rgb(var(--purple));
+}
+
+.hiddenEl{
+    height: 3em;
+    width: 20em;
+    left: 9.9em;
+    top: 1em;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    opacity: 0%;
+}
+
+.outerContainer{
+    font-family: "Fifaks10dev1";
+}
+@media (max-width:768px){
+    .outerContainer{
+        margin-top: .5em;
+        margin-right: 1em;
+    }
+}
+  
