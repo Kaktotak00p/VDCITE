@@ -17,6 +17,7 @@ const FileInput: React.FC<FileInputProps> = ({ id, label, onChange }) => {
                 type="file"
                 onChange={onChange} // Use the passed down onChange function
                 className={style.hiddenEl} // This hides the actual input element
+                accept='.pdf'
             />
         </label>
     </div>

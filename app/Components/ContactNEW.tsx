@@ -6,6 +6,7 @@ import axios from 'axios';
 
 const ContactSection: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [file, setFile] = useState<File | null>(null);
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -15,23 +16,43 @@ const ContactSection: React.FC = () => {
   });
 
   const handleChange: React.ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement> = (e) => {
-    setFormData({ ...formData, [e.target.id]: e.target.value });
-  };
-
-
-
+    const target = e.target as HTMLInputElement;  // Cast to HTMLInputElement
+    if (target.type === 'file') {
+        // Handle file inputs with a type assertion
+        const file = target.files && target.files.length > 0 ? target.files[0] : null;
+        setFile(file);
+    } else {
+        // Handle other inputs (text, email, etc.)
+        setFormData({ ...formData, [target.id]: target.value });
+    }
+};
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+  
+    const dataToSend = new FormData();
+    // Append text fields to FormData
+    Object.entries(formData).forEach(([key, value]) => {
+      dataToSend.append(key, value);
+    });
+    // Append file to FormData if it exists
+    if (file) {
+      dataToSend.append('file', file);
+    }
+  
+    // Send the form data with the file
     try {
-      console.log('Form successfully submitted:', formData);
-      const response = await axios.post('http://localhost:3001/send-to-telegram', formData);
-      body: JSON.stringify(formData),
-
-        console.log('Form successfully submitted:', response);
+      const response = await axios({
+        method: 'post',
+        url: 'http://localhost:3001/send-to-telegram',
+        data: dataToSend,
+        headers: { 'Content-Type': 'multipart/form-data' },
+      });
+      console.log('Form successfully submitted:', response.data);
+      // Handle success, reset form, etc.
     } catch (error) {
       console.error('Error submitting form:', error);
-      // Show error message to the user
+      // Handle error
     }
   };
   return (<>
