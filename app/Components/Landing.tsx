@@ -5,7 +5,13 @@ import '../../public/Styles/globals.css';
 import UserCountDisplay from './reactivetag';
 import ScrollLink from './ScrollLink';
 
+import { useTranslation } from "react-i18next";
+import './i18n.js';
+
+
+
 const landing = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className={Style.outerConatiner} id="Landing">
@@ -14,9 +20,9 @@ const landing = () => {
             <UserCountDisplay />
           </div>
           <div className={Style.textContainer}>
-            <h1 className={Style.mediabuy}>МЕДИАБАИНГОВАЯ </h1>
-            <h1 className={Style.company}>КОМПАНИЯ</h1>
-            <p className={Style.descrleft}>& Text text text Text Text text Text Text text</p>
+            <h1 className={Style.mediabuy}>{t('landing.MEDIABUY')}</h1>
+            <h1 className={Style.company}>{t("landing.COMPANY")}</h1>
+            <p className={Style.descrleft}>{t("landing.Dscr")}</p>
           </div>
           <div className={Style.imageContainer}>
             <img style={{
@@ -38,9 +44,9 @@ const landing = () => {
                   marginLeft:".1em"
                 }}></img>
               </div>
-              <p className={Style.descrright}>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p className={Style.descrright}>{t("landing.RIGHTDOWN")}</p>
               {/* <button className={Style.button}>[CLICK,ПОСМОТРЕТЬ]</button> */}
-              <ScrollLink targetId='Contact' className={Style.button}>[ НАПИШИ НАМ ! ]</ScrollLink>
+              <ScrollLink targetId='Contact' className={Style.button}>{t("landing.BUTTON")}</ScrollLink>
             </div>
           </div>
         </div>

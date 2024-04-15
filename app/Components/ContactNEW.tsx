@@ -3,8 +3,11 @@ import React, { useState } from 'react';
 import styles from '../../public/Styles/ContactSection.module.css';
 import ContactField from './ContactField.client';
 import axios from 'axios';
+import { useTranslation } from "react-i18next";
+import './i18n.js';
 
 const ContactSection: React.FC = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [file, setFile] = useState<File | null>(null);
   const [formData, setFormData] = useState({
@@ -115,8 +118,8 @@ const ContactSection: React.FC = () => {
         </div>
         <form onSubmit={handleSubmit} className={`${styles.contactform} ${styles.row}`}>
           <div>
-            <h1 className={styles.formlogo}>ЗАПОЛНИТЕ ФОРМУ</h1>
-            <button type="submit" className={`${styles.button} ${styles.submitButton}`}>ОТКЛИКНУТЬСЯ</button>
+            <h1 className={styles.formlogo}>{t("ContactForm.FillForm")}</h1>
+            <button type="submit" className={`${styles.button} ${styles.submitButton}`}>{t("ContactForm.submit")}</button>
           </div>
           <div className={styles.singleLines}>
             <ContactField
