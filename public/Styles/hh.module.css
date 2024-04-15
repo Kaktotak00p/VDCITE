@@ -98,7 +98,7 @@
 
 .p {
   margin-top: 0.1em;
-  font-size: 2em;
+  font-size: 1em;
   color: white;
 }
 
@@ -118,6 +118,7 @@
 }
 
 .description {
+  /* pointer-events: none; */
   width: 60%;
   max-height: 3.4em;
   height: fit-content;
@@ -125,11 +126,13 @@
   transition: max-height 0.5s ease-in, height 0.5s ease-in;
 }
 
+
 .expanded {
   max-height: 90em; 
 }
 
 .jobName{
+  font-size: 1.5em;
   text-wrap: nowrap;
   white-space: nowrap;
   margin-bottom: auto;
@@ -165,7 +168,7 @@
   color: white;
   font-size:4em;
   margin-top:1em;
-  margin-bottom:1em;
+  margin-bottom:.1em;
 }
 
 @media (max-width: 768px) {
@@ -176,6 +179,9 @@
     .dec{
       top: 6em;
       left: 15em;
+    }
+    .jobName{
+      font-size: 1em;
     }
 
     .jobName span{
@@ -200,7 +206,6 @@
     .p{
       padding: .1em;
       margin-left: .5em;
-      font-size: 1em;
     }
     .ol{
       width: auto;

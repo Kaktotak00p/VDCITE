@@ -38,15 +38,15 @@ const Header: React.FC<Props> = (props) => {
             <nav>
             {/* <Link href="/"> Home</Link>
             <Link href="/admin">Admin</Link> */}
-            <button onClick={() => i18next.changeLanguage('en')}>EN</button>
-            <button onClick={() => i18next.changeLanguage('ua')}>UA</button>
-            <button onClick={() => i18next.changeLanguage('ru')}>RU</button>
-            <ScrollLink targetId='Landing'>[ HOME ]</ScrollLink>
+            {/* <ScrollLink targetId='Landing'>[ HOME ]</ScrollLink> */}
             <ScrollLink targetId='Sec tion'>{t("header.ABOUT_US")}</ScrollLink>
             <ScrollLink targetId='Traffic'>{t("header.ADVANT")}</ScrollLink>
             <ScrollLink targetId='hh'>{t("header.VACAN")}</ScrollLink>
             <ScrollLink targetId='TSources'>{t("header.SOURCES")}</ScrollLink>
             <ScrollLink targetId='Contact'>{t("header.CONTACT")}</ScrollLink>
+            <button onClick={() => i18next.changeLanguage('en')}>[EN]</button>
+            <button onClick={() => i18next.changeLanguage('ua')}>[UA]</button>
+            <button onClick={() => i18next.changeLanguage('ru')}>[RU]</button>
             </nav>
         </header>
     );

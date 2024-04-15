@@ -21,16 +21,31 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: end;
-    gap: 2em;
+    gap: 0.5em;
   }
   .header nav a{
+    margin-left: 1em;
+    margin-right: 1em;
     font-size: 1em;
     pointer-events: all;
     transition: color .3s;
   }
+  .header nav button{
+    font-family: "Fifaks10dev1";
+    font-size: .8em;
+    pointer-events: all;
+    transition: color .3s;
+  }
+  .scrolled nav button{
+    margin-top: -2em;
+  }
 
   .header nav a:hover{
     color: rgb(var(--green));
+  }
+
+  .header nav button:hover{
+    color: rgb(var(--purple));
   }
 
 .traffhub {

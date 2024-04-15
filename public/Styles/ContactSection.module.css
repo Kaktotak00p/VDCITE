@@ -17,6 +17,7 @@
 
   .button {
     background-color: transparent;
+    text-decoration: underline rgb(var(--green));
     /* font-family: 'Fifaks10dev1', arial; */
     font-size: 2em;
     margin-bottom: auto;
@@ -140,7 +141,8 @@
   }
   
   .companyInfo {
-    font-size: .6em;
+    margin-top: -5em;
+    font-size: .8em;
     text-align: right;
   }
   
@@ -362,8 +364,19 @@
 
   
   @media (max-width:768px) {
+    .links{
+      justify-content: center;
+    }
+
+    .formheader{
+      margin-top: -6em;
+    }
+
     .formImage{
       display: none;
+    }
+    .contactButton{
+      text-decoration: underline rgb(var(--green));
     }
 
     .dec{
@@ -415,6 +428,7 @@
       font-size: 1em;
     }
     .companyInfo{
+      margin-top: 1em;
       text-align: center;
     }
     .company{

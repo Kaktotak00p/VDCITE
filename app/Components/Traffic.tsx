@@ -6,6 +6,7 @@ import CardGreen from '../pictures/CardGreenShort.png';
 
 import './i18n.js';
 import { useTranslation } from "react-i18next";
+import TypingAnimation from '../TypingAnimation/typingAnimation';
 
 
 const trafic: React.FC = () => {
@@ -16,8 +17,10 @@ const trafic: React.FC = () => {
                 <h1>{t("advantages.NAME")}</h1>
             </div>
                 <div className={Styles.cardGrid}>
-                    <h1 className={`mainText ${Styles.traffic}`} >://Traffic</h1>
-                    <h1 className={`mainText ${Styles.piki}`} >://♠</h1>
+                    <div>
+                        <TypingAnimation text="://TRAFFIC" typingSpeed={50} style={{color:'white'}}/>
+                        <TypingAnimation text="://♠" typingSpeed={50} />
+                    </div>
                         <div className={`${Styles.cardContainer} ${Styles.item1}`}>
                             <img className={Styles.card_bg} src="./partners/elements/CardGreenShort.png" alt="Descriptive Alt Text" />
                             <img className={Styles.innerImage} src="./dec/petals (3).png" ></img>

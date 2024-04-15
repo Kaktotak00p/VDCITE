@@ -2,8 +2,9 @@
 import React from 'react';
 import styles from '../../public/Styles/Section.module.css';
 
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 import './i18n.js';
+import TypingAnimation from '../TypingAnimation/typingAnimation';
 
 
 const TrafficSection: React.FC = () => {
@@ -11,11 +12,10 @@ const TrafficSection: React.FC = () => {
   return (
     <div className={styles.trafficContainer} id="Section">
       <div className={`${styles.header} mainText`} style={{color:"white"}}>
-        <h1>://TRAFFIC</h1>
+      <TypingAnimation text="://TRAFFIC" typingSpeed={50} style={{color:'white'}}/>
       </div>
       <div className={styles.content}>
-        <p>{t("advantages.ABOUT_US")};
-        </p>
+        <Trans i18nKey={"advantages.ABOUT_US"}/>
       </div>
       <div className={styles.footer}>
       <p style={{

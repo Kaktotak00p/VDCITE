@@ -5,9 +5,9 @@
   
   .header {
     font-family: "Fifaks10dev1";
-    font-size: .5em;
+    font-size: 1.5em;
     margin-bottom: 10em;
-    padding-left: 4em;
+    min-height: 1.5em;
   }
   
   .content {
