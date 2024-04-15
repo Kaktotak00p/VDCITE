@@ -5,6 +5,9 @@ import '../../public/Styles/globals.css';
 import TypingAnimation from '../TypingAnimation/typingAnimation';
 // import ScrollingBanner from '../rollingtext/rollingText';
 
+import { useTranslation } from "react-i18next";
+import './i18n.js';
+
 interface PartnerLogo {
     src: string;
     alt: string;
@@ -21,6 +24,7 @@ const logoData: PartnerLogo[] = [
 ];
 
 const Partners: React.FC = () => {
+    const { t } = useTranslation();
     const [visibleLogos, setVisibleLogos] = useState<PartnerLogo[]>([]);
     const [animate, setAnimate] = useState<boolean>(false);
 
@@ -66,7 +70,7 @@ const Partners: React.FC = () => {
                     flexDirection: "row",
                     alignItems: "center",
             }}>
-                <h1 className={styles.partners} >ПАРТНЕРЫ</h1>
+                <h1 className={styles.partners} >{t("Partners.NAME")}</h1>
             <img src='./dec/arrow (2).png' className={styles.arrow}></img>
             <img src='./dec/arrow (2).png' className={styles.arrow}></img>
             </div>

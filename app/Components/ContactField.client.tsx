@@ -1,6 +1,8 @@
 import React from 'react';
 import Styles from '../../public/Styles/ContactSection.module.css';
 import FileInput from './FileInput';
+import { useTranslation } from "react-i18next";
+import './i18n.js';
 
 interface ContactFieldProps {
   id: string;
@@ -11,6 +13,7 @@ interface ContactFieldProps {
 }
 
 const ContactField: React.FC<ContactFieldProps> = ({ id, label, type, value, onChange }) => {
+  const { t } = useTranslation();
   const isMessageField = type === 'message';
   const isFileField = type === 'file';
   
@@ -34,7 +37,7 @@ const ContactField: React.FC<ContactFieldProps> = ({ id, label, type, value, onC
           onChange={onChange as React.ChangeEventHandler<HTMLInputElement>}
           placeholder={label} // Placeholder won't actually work for file inputs but kept for consistency
           /> */}
-        <FileInput id={id} label="РЕЗЮМЕ" onChange={onChange as React.ChangeEventHandler<HTMLInputElement>}/>
+        <FileInput id={id} label={t("ContactForm.upload")} onChange={onChange as React.ChangeEventHandler<HTMLInputElement>}/>
           </>
       ) : (
         // Use input for other types, with label text as placeholder

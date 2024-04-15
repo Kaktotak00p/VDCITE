@@ -6,6 +6,9 @@ import '../../public/Styles/globals.css';
 import TypingAnimation from '../TypingAnimation/typingAnimation';
 // import ScrollingBanner from '../rollingtext/rollingText';
 
+import './i18n.js';
+import { useTranslation } from "react-i18next";
+
 const jobListings = [
   { title: 'Junior Media Buyer', description: "-МЕГА ВИСОКА бонусна сітка\n-Офісний/віддалений формат\n-Реальний вплив на робочий процес\n-Ідеально налагоджена інфраструктура\n-Все, що потрібно для твоєї комфортної роботи та розвитку\nГоловне завдання баєра в команді - заливатися в плюс, все інше беремо на себе\n\n✨Якщо ти справжній профі, який:\n- має досвід на позиції Media Buyer в вертикалі Gambling від 8 місяців\n-може похизуватися успішними кейсами та актуальною статистикою за останній час\n-працював з великими бюджетами\n-вміє шукати зв’язки та унікальні підходи\n\nТоді ми точно підходимо один одному!" },
   { title: 'Senior Media Buyer', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam odit ab corporis quaerat doloremque ut nisi optio. Voluptate, illum voluptatem?' },
@@ -16,6 +19,7 @@ const jobListings = [
 ];
 
 const HeadHunter = () => {
+    const { t } = useTranslation();
     const [visibleDescription, setVisibleDescription] = useState(Array(jobListings.length).fill(false));
 
     const toggleDescription = (index: number) => {
@@ -27,8 +31,8 @@ const HeadHunter = () => {
             {/* <ScrollingBanner text="://HeadHunter" className="mainText" /> */}
             <TypingAnimation text="://HeadHunter" typingSpeed={50} />
             <div className={Styles.mainContainer}>
-                <h1 className={Styles.hunt}>ОХОТА ЗА</h1>
-                <h1 className={Styles.heads}> ГОЛОВАМИ</h1>
+                <h1 className={Styles.hunt}>{t("headHunter.HUNT")}</h1>
+                <h1 className={Styles.heads}>{t("headHunter.HEADS")}</h1>
                 <img className={Styles.dec} src='./partners/elements/square(2).png' alt='Decorative' />
             </div>
             <div className={Styles.row} >
@@ -36,7 +40,7 @@ const HeadHunter = () => {
                 <div style={{
                     marginRight:"-15%"
                 }}>
-                <h2 className={Styles.vacancies}>ВАКАНСИИ:</h2>
+                <h2 className={Styles.vacancies}>{t("headHunter.VACANCIES")}:</h2>
                 <div className={Styles.ol}>
                     <ol>
                         {jobListings.map((job, index) => (
