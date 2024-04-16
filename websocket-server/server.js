@@ -7,6 +7,7 @@ const axios = require('axios');
 const fs = require('fs');
 const upload = multer({dest: 'uploads/'})
 const FormData = require('form-data');
+const filePath = 'vlitoCounter.txt';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -20,21 +21,44 @@ const server = app.listen(PORT, () => console.log(`Server running on port ${PORT
 // Set up WebSocket server
 const wss = new Server({ server });
 
-// Initialize the counter with the current Unix timestamp
-let vlitoCounter = Math.floor(Date.now());
+
+// Read vlitoCounter from file or initialize if not exists
+function readCounter() {
+  if (!fs.existsSync(filePath)) {
+      fs.writeFileSync(filePath, '0');
+      return 0;
+  }
+  return parseInt(fs.readFileSync(filePath, 'utf8'), 10);
+}
+
+// Write vlitoCounter to file
+function writeCounter(counter) {
+  fs.writeFileSync(filePath, counter.toString());
+}
+
+// Broadcast updated counter to all connected clients
+function broadcastCounter(counter) {
+  wss.clients.forEach(client => {
+    client.send(JSON.stringify({ vlitoCounter: counter }));
+  });
+}
+
+// Interval to update the counter and broadcast it
+let vlitoCounter = readCounter();
+setInterval(() => {
+  const randomNumber = Math.floor(Math.random() * 4) + 3; // Generates a random number between 3 and 6
+  vlitoCounter += randomNumber; // Adds the random number to vlitoCounter
+  writeCounter(vlitoCounter); // Write the updated counter to the file
+  broadcastCounter(vlitoCounter); // Broadcast the counter to all clients
+}, 3000);
 
 wss.on('connection', (ws) => {
-  // On connection, send the current value of the time counter
-  ws.send(JSON.stringify({ vlitoCounter }));
+  // On connection, send the current value of vlitoCounter
+  ws.send(JSON.stringify({ vlitoCounter: readCounter() }));
 
-  // Set an interval to update the time counter every second
-  const interval = setInterval(() => {
-    vlitoCounter = Math.floor(Date.now() / 100000);
-    ws.send(JSON.stringify({ vlitoCounter }));
-  }, 1000);
-
+  // Handle client disconnection
   ws.on('close', () => {
-    clearInterval(interval);
+      console.log('Client disconnected');
   });
 });
 

@@ -1,26 +1,39 @@
 "use client"
 import React, { useState } from 'react';
-import style from "../../public/Styles/fileInput.module.css"
+import style from "../../public/Styles/fileInput.module.css";
 
 interface FileInputProps {
     id: string;
     label: string;
-    onChange: (event: React.ChangeEvent<HTMLInputElement>) => void; // Define the type for the onChange prop
+    onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const FileInput: React.FC<FileInputProps> = ({ id, label, onChange }) => {
-    return (<div className={style.outerContainer}>
-        <label htmlFor={id} className={style.fileuploadcontainer}>
-            {label}
-            <input
-                id={id}
-                type="file"
-                onChange={onChange} // Use the passed down onChange function
-                className={style.hiddenEl} // This hides the actual input element
-                accept='.pdf'
-            />
-        </label>
-    </div>
+    const [fileName, setFileName] = useState("");
+
+    const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        onChange(event); // Call the passed onChange to handle any additional behaviors
+        const file = event.target.files ? event.target.files[0] : null;
+        if (file) {
+            setFileName(file.name);
+        } else {
+            setFileName(""); // Reset if no file is selected
+        }
+    };
+
+    return (
+        <div className={style.outerContainer}>
+            <label htmlFor={id} className={`${style.fileuploadcontainer} ${fileName ? style.greenButton : style.whiteButton}`}>
+                {fileName || label}
+                <input
+                    id={id}
+                    type="file"
+                    onChange={handleFileChange}
+                    className={style.hiddenEl}
+                    accept=".pdf"
+                />
+            </label>
+        </div>
     );
 };
 

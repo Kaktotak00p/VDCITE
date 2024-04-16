@@ -17,9 +17,9 @@
 }
 
 /* You might want to add :hover and :active pseudo-classes for better UX */
-.fileuploadcontainer:hover {
+/* .fileuploadcontainer:hover {
     background-color: rgb(var(--purple));
-}
+} */
 
 .hiddenEl{
     height: 3em;
@@ -34,6 +34,29 @@
 .outerContainer{
     font-family: "Fifaks10dev1";
 }
+
+.fileuploadcontainer {
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.whiteButton {
+    background-color: white;
+    color: black;
+    border: 2px solid black; /* Styling for when no file is uploaded */
+}
+
+.greenButton {
+    background-color: rgb(var(--green));
+    color: rgb(var(--background));
+    border: 2px solid darkgreen; /* Styling for when a file is uploaded */
+}
+
 @media (max-width:768px){
     .outerContainer{
         margin-top: .5em;
