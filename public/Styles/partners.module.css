@@ -33,6 +33,7 @@
 }
 
 .logoContainer {
+  pointer-events: none;
   position: relative;
   width: 15.625em;
   /* Adjust based on your frame size */
@@ -44,6 +45,7 @@
 }
 
 .frameImage {
+  pointer-events: none;
   width: 100%;
   /* Full width of the container */
   height: auto;

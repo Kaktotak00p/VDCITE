@@ -11,7 +11,7 @@ const ScrollLink: React.FC<ScrollLinkProps> = ({ targetId, children, className, 
   const scrollToTarget = () => {
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   };
 

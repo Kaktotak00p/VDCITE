@@ -1,4 +1,5 @@
 .tag_bg {
+    pointer-events: none;
     width: 100%;
     /* Adjust as necessary */
     height: auto;

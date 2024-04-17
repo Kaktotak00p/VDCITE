@@ -13,6 +13,7 @@
   }
   
   .card_bg {
+    pointer-events: none;
     width: 100%; /* Adjust as necessary */
     height: auto; /* Adjust if you need specific sizing or aspect ratios */
   }
@@ -37,7 +38,7 @@
   }
   
 .outerConatiner {
-  margin-top: 10em;
+  margin-top: 5em;
   margin-bottom: 10em;
 }
 
@@ -95,6 +96,7 @@
   }
 
   .innerImage {
+    pointer-events: none;
     z-index: 3;
     height: auto;
     width: 30%;

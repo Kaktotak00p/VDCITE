@@ -5,59 +5,12 @@ import ContactField from './ContactField.client';
 import axios from 'axios';
 import { useTranslation } from "react-i18next";
 import './i18n.js';
+import SlidingPanel from './slidingPanel';
 
 const ContactSection: React.FC = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
-  const [file, setFile] = useState<File | null>(null);
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    telegramNickname: '',
-    message: '',
-  });
 
-  const handleChange: React.ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement> = (e) => {
-    const target = e.target as HTMLInputElement;  // Cast to HTMLInputElement
-    if (target.type === 'file') {
-        // Handle file inputs with a type assertion
-        const file = target.files && target.files.length > 0 ? target.files[0] : null;
-        setFile(file);
-    } else {
-        // Handle other inputs (text, email, etc.)
-        setFormData({ ...formData, [target.id]: target.value });
-    }
-};
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-  
-    const dataToSend = new FormData();
-    // Append text fields to FormData
-    Object.entries(formData).forEach(([key, value]) => {
-      dataToSend.append(key, value);
-    });
-    // Append file to FormData if it exists
-    if (file) {
-      dataToSend.append('file', file);
-    }
-  
-    // Send the form data with the file
-    try {
-      const response = await axios({
-        method: 'post',
-        url: 'http://localhost:3001/send-to-telegram',
-        data: dataToSend,
-        headers: { 'Content-Type': 'multipart/form-data' },
-      });
-      console.log('Form successfully submitted:', response.data);
-      // Handle success, reset form, etc.
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      // Handle error
-    }
-  };
   return (<>
     <div className={styles.svgContainer}>
       <img src='./svg/stick3.svg' className='svg-img' />
@@ -103,74 +56,7 @@ const ContactSection: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className={`${styles.slidingPanel} ${isOpen ? styles.show : ''}`}>
-        <div className={styles.closeBtn} onClick={() => setIsOpen(false)}>&times;</div>
-        {/* <h1 style={{
-          margin: "1em"
-        }}>ЗАПОЛНИТЕ ФОРМУ</h1> */}
-        <div className={styles.svgContainer} style={{
-
-        }}>
-          <img src='./svg/stick3.svg' className='svg-img' />
-        </div>
-        <div className={styles.formheader}>
-          <img src='./dec/heart_contact.png' className={styles.heart} />
-        </div>
-        <form onSubmit={handleSubmit} className={`${styles.contactform} ${styles.row}`}>
-          <div>
-            <h1 className={styles.formlogo}>{t("ContactForm.FillForm")}</h1>
-            <button type="submit" className={`${styles.button} ${styles.submitButton}`}>{t("ContactForm.submit")}</button>
-          </div>
-          <div className={styles.singleLines}>
-            <ContactField
-              id="firstName"
-              label="First name"
-              type="text"
-              value={formData.firstName}
-              onChange={handleChange}
-            />
-            <ContactField
-              id="lastName"
-              label="Last name"
-              type="text"
-              value={formData.lastName}
-              onChange={handleChange}
-            />
-            <ContactField
-              id="email"
-              label="Email"
-              type="email"
-              value={formData.email}
-              onChange={handleChange}
-            />
-            <ContactField
-              id="telegramNickname"
-              label="Telegram Nickname"
-              type="text"
-              value={formData.telegramNickname}
-              onChange={handleChange}
-            />
-            <ContactField
-              id="message"
-              label="Message"
-              type="message"
-              value={formData.message}
-              onChange={handleChange}
-            />
-            <ContactField
-              id="file"
-              label="file"
-              type="file"
-              value={formData.firstName}
-              onChange={handleChange}
-            />
-          </div>
-        </form>
-        <img className={styles.dec} src="./dec/logo/1.png" />
-        <div className={styles.footer}>
-          <h1>TRAFFHUB</h1>
-        </div>
-      </div>
+        <SlidingPanel isOpen={isOpen} setIsOpen={setIsOpen}/>
     </div>
   </>
   );

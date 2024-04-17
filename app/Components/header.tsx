@@ -39,7 +39,7 @@ const Header: React.FC<Props> = (props) => {
             {/* <Link href="/"> Home</Link>
             <Link href="/admin">Admin</Link> */}
             {/* <ScrollLink targetId='Landing'>[ HOME ]</ScrollLink> */}
-            <ScrollLink targetId='Sec tion'>{t("header.ABOUT_US")}</ScrollLink>
+            <ScrollLink targetId='Section'>{t("header.ABOUT_US")}</ScrollLink>
             <ScrollLink targetId='Traffic'>{t("header.ADVANT")}</ScrollLink>
             <ScrollLink targetId='hh'>{t("header.VACAN")}</ScrollLink>
             <ScrollLink targetId='TSources'>{t("header.SOURCES")}</ScrollLink>

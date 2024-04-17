@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 'use client'
-import React from 'react';
+import React, { useState } from 'react';
 import Style from '../../public/Styles/Landing.module.css';
 import '../../public/Styles/globals.css';
 import UserCountDisplay from './reactivetag';
@@ -8,11 +8,14 @@ import ScrollLink from './ScrollLink';
 
 import { useTranslation } from "react-i18next";
 import './i18n.js';
+import SlidingPanel from './slidingPanel';
 
 
 
 const landing = () => {
   const { t } = useTranslation();
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <div className={Style.outerConatiner} id="Landing">
@@ -47,7 +50,9 @@ const landing = () => {
               </div>
               <p className={Style.descrright}>{t("landing.RIGHTDOWN")}</p>
               {/* <button className={Style.button}>[CLICK,ПОСМОТРЕТЬ]</button> */}
-              <ScrollLink targetId='Contact' className={Style.button}>{t("landing.BUTTON")}</ScrollLink>
+              {/* <ScrollLink targetId='Contact' className={Style.button}>{t("landing.BUTTON")}</ScrollLink> */}
+              <button className={Style.button} onClick={() => setIsOpen(true)}>{t("landing.BUTTON")}</button>
+              <SlidingPanel isOpen={isOpen} setIsOpen={setIsOpen}/>
             </div>
           </div>
         </div>

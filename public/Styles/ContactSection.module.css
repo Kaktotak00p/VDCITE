@@ -356,6 +356,7 @@
 }
 
 .dec{
+  pointer-events: none;
   margin-top: -5em;
   margin-left: 4em;
   width: auto;

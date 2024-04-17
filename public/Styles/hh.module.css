@@ -6,6 +6,7 @@
   }
   
   .cardContainer img {
+
     width: 100%; /* Adjust as necessary */
     height: auto; /* Adjust if you need specific sizing or aspect ratios */
   }
@@ -103,6 +104,7 @@
 }
 
 .img{
+  pointer-events: none;
   align-self:baseline;
   margin-top: -4%;
   margin-left: -25%;
@@ -140,6 +142,7 @@
 }
 
 .dec{
+  pointer-events: none;
   position: absolute;
   top: -2.5em;
   right: -10em;

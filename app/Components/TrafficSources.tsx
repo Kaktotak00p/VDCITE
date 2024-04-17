@@ -10,7 +10,7 @@ import './i18n.js';
 const TrafSources: React.FC = () => {
     const { t } = useTranslation();
     return (
-        <div className={Styles.outerContainer} id="TSources">
+        <div className={Styles.outerContainer}>
             <div className={Styles.row}>
                 <TypingAnimation text='://TrafficSources' typingSpeed={50} />
             </div>
@@ -23,7 +23,7 @@ const TrafSources: React.FC = () => {
                     }} />
                 </div>
                 <div className={`${Styles.imageContainer} ${Styles.row}`}>
-                    <img className={Styles.logoBorder} src='./partners/elements/traffSourcesborder.png' />
+                    <img className={Styles.logoBorder} src='./partners/elements/traffSourcesborder.png' id="TSources"/>
                     {/* Each set now includes an outer frame image and an inner logo image */}
                     <div className={Styles.logoContainer}>
                         <img className={Styles.logoImage} src='./partners/elements/tt.png' alt='Лого компаний'></img>

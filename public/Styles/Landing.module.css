@@ -94,8 +94,9 @@
 
 
 .imageContainer img {
-  width: 80%;
-  min-width: 70%;
+  pointer-events: none;
+  width: 10em;
+  min-width: 10em;
   /* This makes the image responsive */
   height: auto;
   margin-left:-10%;
