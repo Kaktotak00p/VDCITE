@@ -70,7 +70,7 @@ const resources = {
         },
         header: {
             "ABOUT_US": "[ О НАС ]",
-            "ADVANT": "[ ПРЕИМУЩЕСТВА ]",
+            "ADVANT": "[ ПЕРЕВАГИ ]",
             "VACAN": "[ ВАКАНСII ]",
             "SOURCES": "[ ДЖЕРЕЛА ]",
             "CONTACT": "[ CONTACT ]",
@@ -129,7 +129,7 @@ const resources = {
         },
         header: {
             "ABOUT_US": "[ О НАС ]",
-            "ADVANT": "[ ПЕРЕВАГИ ]",
+            "ADVANT": "[ ПРЕИМУЩЕСТВА ]",
             "VACAN": "[ ВАКАНСИИ ]",
             "SOURCES": "[ ИСТОЧНИКИ ]",
             "CONTACT": "[ CONTACT ]",

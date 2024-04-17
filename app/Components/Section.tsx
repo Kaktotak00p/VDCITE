@@ -15,7 +15,9 @@ const TrafficSection: React.FC = () => {
       <TypingAnimation text="://TRAFFIC" typingSpeed={50} style={{color:'white'}}/>
       </div>
       <div className={styles.content}>
-        <Trans i18nKey={"advantages.ABOUT_US"}/>
+        <p>
+          <Trans i18nKey={"advantages.ABOUT_US"}/>
+        </p>
       </div>
       <div className={styles.footer}>
       <p style={{

@@ -38,6 +38,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'RadioTechnika';
+  src: url('../fonts/Radiotechnika.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --purple: 255, 66, 218;
   /* --green: 209, 253, 0; */
@@ -49,9 +56,10 @@
 }
 
 body {
-  font-size: 1vw;
+  max-width: 100%;
+  /* font-size: 1vw; */
   width: auto;
-  overflow-x: hidden;
+  overflow-x:hidden;
   margin-top: 2em;
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background));
@@ -74,8 +82,8 @@ h1{
   font-size: 3em;
 }
 
-p{
-  font-family: 'Avenir Next Condensed', arial;
+p, h1, h2{
+  font-family: 'Radiotechnika', regular;
 }
 
 @media (max-width: 768px){

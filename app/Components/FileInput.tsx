@@ -25,12 +25,16 @@ const FileInput: React.FC<FileInputProps> = ({ id, label, onChange }) => {
         <div className={style.outerContainer}>
             <label htmlFor={id} className={`${style.fileuploadcontainer} ${fileName ? style.greenButton : style.whiteButton}`}>
                 {fileName || label}
+                {/* <img src='./dec/heart (1).png' style={{
+                    width:"auto",
+                    height:"4em"
+                }}/> */}
                 <input
                     id={id}
                     type="file"
                     onChange={handleFileChange}
                     className={style.hiddenEl}
-                    accept=".pdf"
+                    accept=".pdf, .docx, .doc"
                 />
             </label>
         </div>

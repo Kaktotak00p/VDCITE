@@ -34,6 +34,9 @@
     font-size: 1em;
   }
   .header nav button{
+    margin-right: 2em;
+    margin-left: 3em;
+    color: rgb(var(--green));
     font-family: "Fifaks10dev1";
     pointer-events: all;
     transition: color .3s;
@@ -58,7 +61,7 @@
   }
 
   .header nav button:hover{
-    color: rgb(var(--purple));
+    color: white;
   }
 
 .traffhub {

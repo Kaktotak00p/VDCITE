@@ -8,9 +8,9 @@ import { useTranslation } from "react-i18next";
 
 
 const jobListings = [
-  { title: 'Junior Media Buyer', description: "-МЕГА ВИСОКА бонусна сітка\n-Офісний/віддалений формат\n-Реальний вплив на робочий процес\n-Ідеально налагоджена інфраструктура\n-Все, що потрібно для твої комфортної роботи та розвитку\nГоловне завдання баєра в команді - заливатися в плюс, все інше беремо на себе" },
-  { title: 'Senior Media Buyer', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam odit ab corporis quaerat doloremque ut nisi optio. Voluptate, illum voluptatem?' },
-  { title: 'Senior Media Buyer', description: 'Consectetur adipiscing elit.' },
+  { title: 'JUNIOR MEDIA BUYER', description: "-МЕГА ВИСОКА бонусна сітка\n-Офісний/віддалений формат\n-Реальний вплив на робочий процес\n-Ідеально налагоджена інфраструктура\n-Все, що потрібно для твої комфортної роботи та розвитку\nГоловне завдання баєра в команді - заливатися в плюс, все інше беремо на себе" },
+  { title: 'JUNIOR MEDIA BUYER', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam odit ab corporis quaerat doloremque ut nisi optio. Voluptate, illum voluptatem?' },
+  { title: 'JUNIOR MEDIA BUYER', description: 'Consectetur adipiscing elit.' },
   // Add more job listings as needed
 ];
 const HeadHunter = () => {
@@ -52,7 +52,7 @@ const HeadHunter = () => {
                                         </p>
                                         <div className={`${Styles.description} ${visibleDescription[index] ? Styles.expanded : ''}`}>
                                             <p className={`${Styles.decrHeader} ${visibleDescription[index] ? Styles.hidden : ''}`}>ОПИСАНИЕ:</p>
-                                            <p className={Styles.p}>{renderDescription(job.description)}</p>
+                                            <p className={`${Styles.p} ${!visibleDescription[index] ? Styles.hidden : ''}`}>{renderDescription(job.description)}</p>
                                         </div>
                                         <button className={Styles.button} onClick={() => toggleDescription(index)} style={{alignSelf:"end"}}>[ Вакансия ]</button>
                                     </div>

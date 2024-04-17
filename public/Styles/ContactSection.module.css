@@ -37,6 +37,7 @@
   }
   
 .formlogo{
+  color: white;
   font-size: 4em;
   white-space: nowrap;
   margin-left: 5em;
@@ -103,6 +104,7 @@
   } */
   
   .email {
+    color: rgb(var(--green));
     font-size: 1em;
   }
   
@@ -212,15 +214,17 @@
   }
   
   .contactfield textarea{
-    height: 5em;
+    height: 8em;
     border-radius: .3em;
     width: 60em;
     padding: .1em;
-    margin: .5em 2em;
+    /* margin: .5em 2em; */
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: .5em;
+    margin-top: 2.5em;
     background-color: transparent;
-    border-top: .1em solid rgb(var(--green)); 
-    border-right: .1em solid rgb(var(--green)); 
-    border-left: .1em solid rgb(var(--green)); 
+    border: .1em solid rgb(var(--green)); 
     color: grey; /* Neon green text */
     outline: none;
     resize: none;
@@ -360,7 +364,7 @@
 
 .singleLines{
   margin-left: -15em;
-  margin-top: 5em;
+  /* margin-top: 5em; */
   width: 60%;
 }
 
@@ -379,8 +383,21 @@
 
   
   @media (max-width:768px) {
+    .contactInfo{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     .links{
-      justify-content: center;
+      text-align: center;
+      margin-top: 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .links h2{
+      margin-right: 0;
     }
 
     .formheader{
@@ -431,10 +448,6 @@
       text-align: center;
     }
   
-    .contactInfo, .socialAndCompany {
-      align-items: center;
-      /* margin-bottom: 20px; */
-    }
   
     .logo{
       margin: 0;

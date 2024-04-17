@@ -31,7 +31,6 @@ const landing = () => {
           <div className={Style.imageContainer}>
             <img style={{
               marginBottom:"-7%",
-              width:"50em",
               zIndex:"0"
             }} 
              src="./partners/elements/makakich.png" alt="Media Buying Company" />
@@ -52,11 +51,11 @@ const landing = () => {
               {/* <button className={Style.button}>[CLICK,ПОСМОТРЕТЬ]</button> */}
               {/* <ScrollLink targetId='Contact' className={Style.button}>{t("landing.BUTTON")}</ScrollLink> */}
               <button className={Style.button} onClick={() => setIsOpen(true)}>{t("landing.BUTTON")}</button>
-              <SlidingPanel isOpen={isOpen} setIsOpen={setIsOpen}/>
             </div>
           </div>
         </div>
       </div>
+              <SlidingPanel isOpen={isOpen} setIsOpen={setIsOpen}/>
     </>
   )
 };

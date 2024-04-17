@@ -12,7 +12,7 @@
   }
   
   .content {
-    font-family: "Avenir Next Condensed";
+    /* font-family: "Avenir Next Condensed"; */
     font-size: 1em;
     white-space: nowrap; 
     width: min-content;
@@ -35,7 +35,7 @@
   .dec{
     position: absolute;
     pointer-events: none;
-    top: -9em;
+    top: -5em;
     right: -57em;
     width: auto;
     height: 13em;
@@ -51,13 +51,22 @@
     font-size: 1em;
   }
 
+  .content{
+    min-width: 80%;
+  }
+
+  .content p{
+    white-space: normal;
+    min-width: 80%;
+  }
+
     .content,
     .footer{
         margin-left: 1em;
     }
 
     .dec{
-      top: 0em;
+      top: -3em;
       right: -20em;
     }
 }
