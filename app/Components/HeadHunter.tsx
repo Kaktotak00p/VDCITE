@@ -51,6 +51,7 @@ const HeadHunter = () => {
                                             <span style={{color:"rgb(var(--green))", fontSize:".5em", fontFamily:"Fifaks10dev1", marginRight:"1em"}}>://{index} </span>{job.title}
                                         </p>
                                         <div className={`${Styles.description} ${visibleDescription[index] ? Styles.expanded : ''}`}>
+                                            <p className={`${Styles.decrHeader} ${visibleDescription[index] ? Styles.hidden : ''}`}>ОПИСАНИЕ:</p>
                                             <p className={Styles.p}>{renderDescription(job.description)}</p>
                                         </div>
                                         <button className={Styles.button} onClick={() => toggleDescription(index)} style={{alignSelf:"end"}}>[ Вакансия ]</button>

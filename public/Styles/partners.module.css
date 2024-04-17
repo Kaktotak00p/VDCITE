@@ -142,6 +142,7 @@
 }
 
 .arrow{
+  pointer-events: none;
   margin-top: -3em;
   margin-left: -1.5em;
   width:auto;

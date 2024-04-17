@@ -62,7 +62,7 @@ const Partners: React.FC = () => {
                     alignItems: "center",
             }}>
             {/* <ScrollingBanner text="://Partners" style={{paddingBottom:"3em"}} className='mainText'/> */}
-            <TypingAnimation text="://Partners" typingSpeed={50} style={{paddingBottom:"3em"}}/>
+            <TypingAnimation text="://Partners" typingSpeed={50}/>
             </div>
             <div className={styles.mainContainer}>
                 <div style={{

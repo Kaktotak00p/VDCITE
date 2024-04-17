@@ -95,10 +95,10 @@
 
 .imageContainer img {
   pointer-events: none;
-  width: 10em;
-  min-width: 10em;
-  /* This makes the image responsive */
+  width: auto;
+  max-width: 80vh;
   height: auto;
+  max-height: 80vh;
   margin-left:-10%;
 }
 
@@ -109,8 +109,9 @@
   align-items: flex-end;
   position: relative;
   /* Crucial for positioning the column */
-  max-width: 50%;
-  height: 40em;
+  max-width: 60em;
+  height: 80dvh;
+  max-height: 100%;
 }
 
 .row{

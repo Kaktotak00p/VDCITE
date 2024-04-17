@@ -7,12 +7,16 @@
     padding: .4em;
   }
   
-  .contactInfo {
+  /* .contactInfo {
     margin-left: -2em;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     align-items: center;
+  } */
+
+    .contactInfo {
+    margin-left: -2em;
   }
 
   .button {
@@ -77,7 +81,7 @@
     padding: 0;
     margin-left: auto;
     margin-right: auto;
-    text-decoration: underline rgb(var(--green));
+    text-decoration: underline rgb(189, 253, 0);
   }
 
   .contactLabel {
@@ -88,7 +92,7 @@
     align-items: center;
   }
   
-  .contactLabel::after {
+  /* .contactLabel::after {
     content: '';
     display: block;
     width: 10em;
@@ -96,7 +100,7 @@
     background-color: rgb(var(--green));
     margin-left: 1%;
     margin-right: 1%;
-  }
+  } */
   
   .email {
     font-size: 1em;
@@ -109,6 +113,7 @@
   }
   
   .socialAndCompany {
+    margin-top: 2em;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -123,17 +128,26 @@
   }
 
   .links {
+    font-weight: bold;
+    margin-top: -5em;
     margin-left: -2em;
+  }
+  .links h2{
+    /* margin-left: 2.4em; */
+    margin-bottom: .5em;
+  }
+
+  .links div{
     display: flex;
     flex-direction: row;
     margin-bottom: 1.2em;
     align-items: end;
   }
   
-  .links a {
+  .links div a {
     color: white;
     text-decoration: none;
-    margin: 0 .5em;
+    margin: 0 1em;
   }
 
   .links h2{

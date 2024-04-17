@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 'use client'
 import React from 'react';
 import Styles from '../../public/Styles/Traffic.module.css';

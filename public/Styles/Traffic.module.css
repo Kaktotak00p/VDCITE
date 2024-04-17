@@ -21,19 +21,20 @@
   .overlayTextPurple {
     font-family: "Fifaks10dev1";
     font-size: 1.5em;
+    width: 11em;
     position: absolute;
-    top: 75%; /* Adjust these values to position the text as desired */
-    left: 37%;
-    transform: translate(-50%, -50%); /* Centers the text */
+    top: 70%; /* Adjust these values to position the text as desired */
+    left: 46%;
+    transform: translate(-50%, -50%); 
     color: black; /* Choose text color that stands out over your image */
   }
   .overlayTextGreen {
     font-family: "Fifaks10dev1";
     font-size: 1.5em;
     position: absolute;
-    top: 80%; /* Adjust these values to position the text as desired */
+    top: 70%; /* Adjust these values to position the text as desired */
     left: 37%;
-    transform: translate(-50%, -50%); /* Centers the text */
+    transform: translate(-50%, -50%); 
     color: black; /* Choose text color that stands out over your image */
   }
   

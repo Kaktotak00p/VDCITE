@@ -19,7 +19,8 @@ const TrafSources: React.FC = () => {
                     <h1>{t("Sources.NAME")}</h1>
                     <img src='./dec/skull (2).png' style={{
                         width: "auto",
-                        height: "3em"
+                        height: "3em",
+                        pointerEvents:"none"
                     }} />
                 </div>
                 <div className={`${Styles.imageContainer} ${Styles.row}`}>

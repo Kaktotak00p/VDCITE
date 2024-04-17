@@ -30,14 +30,27 @@
     pointer-events: all;
     transition: color .3s;
   }
+  .currentLang{
+    font-size: 1em;
+  }
   .header nav button{
     font-family: "Fifaks10dev1";
-    font-size: .8em;
     pointer-events: all;
     transition: color .3s;
   }
-  .scrolled nav button{
-    margin-top: -2em;
+  .scrolled nav .currentLang{
+    margin-top: -1.49em;
+  }
+
+
+  .scrolled nav .langDropDown{
+    font-size: .8em;
+    margin-top: -1em;
+  }
+
+  .langDropDown{
+    display: flex;
+    flex-direction: column;
   }
 
   .header nav a:hover{

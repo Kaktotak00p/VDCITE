@@ -17,6 +17,10 @@ const ContactSection: React.FC = () => {
     </div>
     <div className={styles.container} id="Contact">
       <div className={styles.column}>
+        {/* <div className={styles.contactInfo}>
+          <div className={styles.contactLabel}>CONTACT US</div>
+          <div className={styles.email}>TRAFFHUB@GMAIL.COM</div>
+        </div> */}
         <div className={styles.contactInfo}>
           <div className={styles.contactLabel}>CONTACT US</div>
           <div className={styles.email}>TRAFFHUB@GMAIL.COM</div>
@@ -24,10 +28,17 @@ const ContactSection: React.FC = () => {
         <div className={styles.logo}>
           <button className={`${styles.button} ${styles.contactButton}`} onClick={() => setIsOpen(true)} >CONTACT</button>
         </div>
-        <div className={styles.links}>
+        {/* <div className={styles.links}>
           <h2>SOCIAL</h2>
           <a href=""><img src='./partners/elements/tg.png' /></a>
           <a href=""><img src='./partners/elements/inst.png' /></a>
+        </div> */}
+        <div className={styles.links}>
+          <h2>SOCIAL</h2>
+          <div>
+          <a href=""><img src='./partners/elements/tg.png' /></a>
+          <a href="https://www.instagram.com/traffhub.ua?igsh=NXRiNTN5MGdmbzZm" target='_blank' rel="noopener noreferrer"><img src='./partners/elements/inst.png' /></a>
+          </div>
         </div>
         {/* <div className={styles.links}>
           <h2>Discover <br/>mode</h2>

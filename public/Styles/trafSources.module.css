@@ -13,7 +13,7 @@
 }
 
 .imageContainer {
-    min-width: 35%;
+    min-width: 50%;
     flex-shrink: 0;
     margin-left: 2em;
 
@@ -39,8 +39,8 @@
 .logoImage {
   position: absolute;
   transform: rotate(30deg);
-  width: 8em; /* Adjust for size inside the frame */
-  height: 8em; /* Adjust for size inside the frame */
+  width: 10em; /* Adjust for size inside the frame */
+  height: 10em; /* Adjust for size inside the frame */
   z-index: 2; /* Ensure logo appears above the frame image */
   transition: transform 0.3s ease-in-out;
 }
@@ -55,9 +55,10 @@
 }
 
 .logoBorder{
+  pointer-events: none;
   position: absolute;
   width: auto;
-  height: 45em;
+  height: 55em;
 }
 
 .textContainer{
