@@ -32,6 +32,7 @@
 }
 
 .outerContainer{
+    font-size: 1vw;
     margin-right: 1.2em;
     font-family: "Fifaks10dev1";
 }
@@ -47,6 +48,9 @@
 }
 
 .whiteButton {
+    font-size: 1vw;
+    width: 10vw;
+    height: 5vh;
     background-color: white;
     color: black;
     border: 2px solid black; /* Styling for when no file is uploaded */
@@ -59,9 +63,14 @@
 }
 
 @media (max-width:768px){
+    .whiteButton{
+        margin-right: -15vw;
+        font-size: 2vw;
+        width: 30vw;
+    }
     .outerContainer{
         margin-top: .5em;
-        margin-right: 1em;
+        margin-right: 4.4em;
     }
 }
   

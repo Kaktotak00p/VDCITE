@@ -77,9 +77,10 @@
     }
 
     .dec{
-      width: 20em;
+      width: 35vw;
       top: -3em;
-      right: -20em;
+      /* right: -20em; */
+      left: 60vw;
     }
 }
   

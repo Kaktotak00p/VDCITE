@@ -16,7 +16,7 @@
   } */
 
     .contactInfo {
-    margin-left: -2em;
+    /* margin-left: -2em; */
   }
 
   .button {
@@ -47,6 +47,9 @@
 }
 
   .submitButton{
+    font-family: "Radiotechnika";
+    white-space: nowrap;
+    margin-top: -.5em;
     color: rgb(var(--green));
     text-decoration: underline;
     padding:  0em .5em;
@@ -89,6 +92,7 @@
   }
 
   .contactLabel {
+    font-family: "Radiotechnika";
     text-wrap: nowrap;
     font-size: 1em;
     font-weight: bold;
@@ -112,8 +116,9 @@
   }
   
   .logo {
-    margin-left: 7em;
-    font-size: 3em;
+    font-size: 3vw;
+    margin-left: 10em;
+    /* font-size: 3em; */
     font-weight: bold;
   }
   
@@ -135,7 +140,7 @@
   .links {
     font-weight: bold;
     margin-top: -5em;
-    margin-left: -2em;
+    /* margin-left: -2em; */
   }
   .links h2{
     /* margin-left: 2.4em; */
@@ -163,6 +168,10 @@
     margin-top: -5em;
     font-size: .8em;
     text-align: right;
+  }
+
+  .companyInfo p{
+    /* margin-right: 3em; */
   }
   
   .company {
@@ -217,15 +226,15 @@
   }
   
   .contactfield textarea{
-    height: 8em;
+    height: 15vh;
     border-radius: .3em;
-    width: 60em;
+    width: 70vw;
     padding: .1em;
     /* margin: .5em 2em; */
     margin-left: 2em;
     margin-right: 2em;
     margin-bottom: .5em;
-    margin-top: 2.5em;
+    margin-top: 4vh;
     background-color: transparent;
     border: .1em solid rgb(var(--green)); 
     color: grey; /* Neon green text */
@@ -260,7 +269,8 @@
     }
 
     .footer{
-      color: white;
+      font-size: 1vw;
+      color: rgb(var(--green));
       position: fixed;
       bottom: 0;
       border-top: .1em solid grey;
@@ -278,6 +288,7 @@
     }
 
   .slidingPanel { /* Note: Using camelCase for consistency with CSS Modules convention */
+    font-size: 1vw;
     position: fixed;
     top: 0;
     left: 0;
@@ -295,11 +306,12 @@
   }
   
   .closeBtn { /* camelCase naming */
+    font-size: 3vw;
     position: absolute;
-    top: 1.2em;
-    right: 1.2em;
+    top: .8em;
+    right: .8em;
     cursor: pointer;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     color: rgb(var(--green));
   }
   
@@ -371,7 +383,7 @@
 }
 
 .singleLines{
-  margin-left: -15em;
+  margin-left: -10em;
   /* margin-top: 5em; */
   width: 60%;
   max-width: 100vw;
@@ -386,13 +398,22 @@
 .dec{
   pointer-events: none;
   margin-top: -5em;
-  margin-left: 4em;
+  margin-left: 1em;
   width: auto;
   height: 5em;
 }
 
   
   @media (max-width:768px) {
+    .contactfield input[type="text"],
+    .contactfield input[type="email"]{
+      margin-right: -10vw;
+      width: 90vw;
+    }
+
+    .leftText{
+      font-size: 3vw;
+    }
     .contactInfo{
       display: flex;
       flex-direction: column;
@@ -426,7 +447,7 @@
       margin-left:auto;
       margin-right:auto;
       width: auto;
-      height: 10em;
+      height: 20em;
     }
 
     .label{
@@ -439,7 +460,7 @@
     }
 
     .singleLines{
-      font-size: 1.3em;
+      font-size: 3vw;
       width: 125%;
       margin-top: 1em;
       margin-left: -10em;
@@ -460,6 +481,7 @@
   
   
     .logo{
+      font-size: 10vw;
       margin: 0;
     }
     .button{
@@ -478,6 +500,7 @@
     }
 
     .formlogo{
+      margin-top: 1em;
       margin-left: auto;
       text-align: end;
       width: 100%;
@@ -486,11 +509,25 @@
     }
     .submitButton{
       margin-right: 2.3em;
-      font-size: 3em;
+      font-size: 2.5em;
     }
     
     .contactfield textarea{
-      max-width: 60%;
+      width: 90vw;
+      margin-right: -10vw;
+    }
+
+    .closeBtn{
+      font-size: 10vw;
+    }
+
+    .heart{
+      display: none;
+    }
+
+    .footer{
+      margin-bottom: 2em;
+      font-size: 3vw;
     }
   }
   

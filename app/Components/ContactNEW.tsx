@@ -36,8 +36,8 @@ const ContactSection: React.FC = () => {
         <div className={styles.links}>
           <h2>SOCIAL</h2>
           <div>
-          <a href=""><img src='./partners/elements/tg.png' /></a>
-          <a href="https://www.instagram.com/traffhub.ua?igsh=NXRiNTN5MGdmbzZm" target='_blank' rel="noopener noreferrer"><img src='./partners/elements/inst.png' /></a>
+            <a href=""><img src='./partners/elements/tg.png' /></a>
+            <a href="https://www.instagram.com/traffhub.ua?igsh=NXRiNTN5MGdmbzZm" target='_blank' rel="noopener noreferrer"><img src='./partners/elements/inst.png' /></a>
           </div>
         </div>
         {/* <div className={styles.links}>
@@ -67,8 +67,8 @@ const ContactSection: React.FC = () => {
           </p>
         </div>
       </div>
-        <SlidingPanel isOpen={isOpen} setIsOpen={setIsOpen}/>
     </div>
+      <SlidingPanel isOpen={isOpen} setIsOpen={setIsOpen} />
   </>
   );
 };

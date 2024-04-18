@@ -21,7 +21,7 @@ const UserCountDisplay: React.FC = () => {
     <div className={Style.tagContainer}>
         <img src='/dec/DecorPlashka.png' className={Style.tag_bg} alt="Background" />
         <img className={Style.dec} src="/dec/logo/bibizyan.png" alt="Logo" />
-        <h2 className={Style.overlayText}>ARBITRAGE TRAFFIC</h2>
+        <h2 className={Style.overlayText}>FTD COUNT</h2>
         <p className={Style.overlayText}>{vlitoCounter}</p>
     </div>
   );

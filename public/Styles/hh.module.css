@@ -186,6 +186,9 @@
 }
 
 @media (max-width: 768px) {
+  .outerContainer{
+    font-size: 3vw;
+  }
   .mainContainer{
     margin-left: 10em;
   }
@@ -194,6 +197,7 @@
     }
 
     .dec{
+      display: none;
       top: 6em;
       left: 13em;
     }
