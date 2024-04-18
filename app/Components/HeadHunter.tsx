@@ -7,13 +7,19 @@ import './i18n.js';
 import { useTranslation } from "react-i18next";
 
 
-const jobListings = [
-  { title: 'JUNIOR MEDIA BUYER', description: "-МЕГА ВИСОКА бонусна сітка\n-Офісний/віддалений формат\n-Реальний вплив на робочий процес\n-Ідеально налагоджена інфраструктура\n-Все, що потрібно для твої комфортної роботи та розвитку\nГоловне завдання баєра в команді - заливатися в плюс, все інше беремо на себе" },
-  { title: 'JUNIOR MEDIA BUYER', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam odit ab corporis quaerat doloremque ut nisi optio. Voluptate, illum voluptatem?' },
-  { title: 'JUNIOR MEDIA BUYER', description: 'Consectetur adipiscing elit.' },
-  // Add more job listings as needed
-];
+// const jobListings = [
+//   { title: 'JUNIOR MEDIA BUYER', description: "-МЕГА ВИСОКА бонусна сітка\n-Офісний/віддалений формат\n-Реальний вплив на робочий процес\n-Ідеально налагоджена інфраструктура\n-Все, що потрібно для твої комфортної роботи та розвитку\nГоловне завдання баєра в команді - заливатися в плюс, все інше беремо на себе" },
+//   { title: 'JUNIOR MEDIA BUYER', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam odit ab corporis quaerat doloremque ut nisi optio. Voluptate, illum voluptatem?' },
+//   { title: 'JUNIOR MEDIA BUYER', description: 'Consectetur adipiscing elit.' },
+//   // Add more job listings as needed
+// ];
 const HeadHunter = () => {
+    const jobListings = [
+        { title: 'JUNIOR MEDIA BUYER', description: "-МЕГА ВИСОКА бонусна сітка\n-Офісний/віддалений формат\n-Реальний вплив на робочий процес\n-Ідеально налагоджена інфраструктура\n-Все, що потрібно для твої комфортної роботи та розвитку\nГоловне завдання баєра в команді - заливатися в плюс, все інше беремо на себе" },
+        { title: 'JUNIOR MEDIA BUYER', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam odit ab corporis quaerat doloremque ut nisi optio. Voluptate, illum voluptatem?' },
+        { title: 'JUNIOR MEDIA BUYER', description: 'Consectetur adipiscing elit.' },
+        // Add more job listings as needed
+      ];
     const { t } = useTranslation();
     const [visibleDescription, setVisibleDescription] = useState(Array(jobListings.length).fill(false));
 
