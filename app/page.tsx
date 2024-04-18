@@ -19,6 +19,7 @@ import Link from 'next/link';
 
 
 const Home: NextPage = () => {
+  
   return (
     <RootLayout>
     <img src='./svg/stick1.svg' className={Styles.svgleft}/>

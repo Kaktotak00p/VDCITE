@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 'use client'
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Style from '../../public/Styles/Landing.module.css';
 import '../../public/Styles/globals.css';
 import UserCountDisplay from './reactivetag';
@@ -13,6 +13,19 @@ import SlidingPanel from './slidingPanel';
 
 
 const landing = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    function adjustZoomForSafari() {
+      const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+      if (isSafari) {
+        // Cast to any to bypass TypeScript error
+        (document.body.style as any).zoom = '0.9';
+      }
+    }
+
+    adjustZoomForSafari();
+    
+  }, []);
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 

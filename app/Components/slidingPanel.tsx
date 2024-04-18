@@ -69,7 +69,7 @@ const SlidingPanel: React.FC<SlidingPanelProps> = ({ isOpen, setIsOpen }) => {
           <img src='./dec/heart_contact.png' className={styles.heart} />
         </div>
         <form onSubmit={handleSubmit} className={`${styles.contactform} ${styles.row}`}>
-          <div>
+          <div className={styles.leftText}>
             <h1 className={styles.formlogo}>{t("ContactForm.FillForm")}</h1>
             <button type="submit" className={`${styles.button} ${styles.submitButton}`}>{t("ContactForm.submit")}</button>
           </div>

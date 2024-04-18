@@ -18,7 +18,7 @@ const trafic: React.FC = () => {
                 <h1>{t("advantages.NAME")}</h1>
             </div>
                 <div className={Styles.cardGrid}>
-                    <div>
+                    <div className={Styles.textContainer}>
                         <TypingAnimation text="://TRAFFIC" typingSpeed={50} style={{color:'white'}}/>
                         <TypingAnimation text="://♠" typingSpeed={50} />
                     </div>

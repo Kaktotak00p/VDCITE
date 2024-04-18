@@ -1,8 +1,9 @@
 .company{ 
-  font-size: 5em;
+  font-size: 4em;
   text-align: left;
 }
 .mainContainer {
+  /* font-size: 2vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +11,9 @@
   /* Background color */
   color: white;
   /* Text color */
-  margin: 2.5em;
+  margin-top: 3vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
   margin-bottom: 2em;
   border-radius: 1em;
   padding: 3em;
@@ -19,6 +22,7 @@
 }
 
 .textContainer {
+  font-size: 1vw;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -40,6 +44,7 @@
 
 
 .footer {
+  font-size: 1vw;
   width: 40em;
   height: auto;
   position: absolute;
@@ -96,9 +101,9 @@
 .imageContainer img {
   pointer-events: none;
   width: auto;
-  max-width: 80vh;
+  max-width: 100%;
   height: auto;
-  max-height: 80vh;
+  max-height: 100%;
   margin-left:-10%;
 }
 
@@ -127,7 +132,7 @@
 }
 
 .mediabuy{
-  font-size: 4em;
+  font-size: 3.5em;
   text-align:right;
 }
 
@@ -135,12 +140,13 @@
 @media (max-width: 768px) {
   .company{
     text-align: left;
-    font-size: 3em;
+    font-size: 8em;
     margin-right: -1em;
   }
 
   .descrleft{
-    margin-left: 2em;
+    font-size: 5em;
+    margin-left: 5.5em;
   }
 
   .descrright{
@@ -150,7 +156,7 @@
   }
 
   .mediabuy{
-    font-size: 3em;
+    font-size: 7em;
   }
 
   .outerContainer {
@@ -159,10 +165,10 @@
   }
 
   .mainContainer {
+    margin-top: 5em;
     flex-direction: column;
     align-items: center;
     height: auto;
-    margin: 0;
     padding: 1em;
     border: none;
   }
@@ -189,7 +195,7 @@
   }
 
   .imageContainer {
-    margin-top: 25em;
+    margin-top: 17em;
     /* width: 50%; */
     max-width: max-content;
     height: auto;
@@ -223,9 +229,10 @@
   }
 
   .footer {
+    font-size: 1em;
     position: absolute;
     top: 30em;
-    left: 1em;
+    left: -1em;
     width: 100%;
     padding-top: 1em;
     justify-content: center;

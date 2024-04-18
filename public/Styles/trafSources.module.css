@@ -39,8 +39,8 @@
 .logoImage {
   position: absolute;
   transform: rotate(30deg);
-  width: 10em; /* Adjust for size inside the frame */
-  height: 10em; /* Adjust for size inside the frame */
+  width: 10vw; /* Adjust for size inside the frame */
+  height: 10vw; /* Adjust for size inside the frame */
   z-index: 2; /* Ensure logo appears above the frame image */
   transition: transform 0.3s ease-in-out;
 }
@@ -69,9 +69,19 @@
 }
 
 @media (max-width: 768px){
+  .logoBorder{
+    width: 100vw;
+    height: 70%;
+  }
+
+  .logoImage{
+    width: 16vw;
+    height: 16vw;
+  }
   .imageContainer{
+    margin-left: -.1em;
     margin-top: 5em;
-    max-width: 100%;
+    /* max-width: 100%; */
   }
 
   .textContainer{

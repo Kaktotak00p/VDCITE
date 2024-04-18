@@ -37,10 +37,13 @@
   }
   
 .formlogo{
+  text-align: right;
+  width: 50vw;
   color: white;
   font-size: 4em;
   white-space: nowrap;
-  margin-left: 5em;
+  /* margin-left: 5em; */
+  margin-left: 1vw;
 }
 
   .submitButton{
@@ -257,6 +260,7 @@
     }
 
     .footer{
+      color: white;
       position: fixed;
       bottom: 0;
       border-top: .1em solid grey;
@@ -320,8 +324,12 @@
     gap: 1.2em; 
     margin: auto;
   }
+  .leftText{
+    font-size: 1vw;
+  }
 
   .svgContainer {
+    font-size: 1vh;
     margin-top: 4em;
     pointer-events: none;
     width: auto; /* Set to the original width of the SVG */
@@ -366,6 +374,8 @@
   margin-left: -15em;
   /* margin-top: 5em; */
   width: 60%;
+  max-width: 100vw;
+  max-height: 80vh;
 }
 
 .messageContainer{

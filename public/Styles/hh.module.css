@@ -20,9 +20,8 @@
     /* Add more styling here for text appearance: font size, font family, etc. */
   }
   
-.outerConatiner {
-  margin-top: var(--global-margin);
-  margin-bottom: var(--global-margin);
+.outerContainer {
+  font-size: 1vw;
 }
 
 .layoutContainer {
@@ -143,7 +142,7 @@
 }
 
 .decrHeader{
-  margin-top: .5em;
+  margin-top: .3em;
   font-size: 1.5em;
   margin-bottom: .1em;
   color: white;

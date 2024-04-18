@@ -56,11 +56,12 @@
 }
 
 body {
+  backface-visibility: hidden;
+  perspective: none;
   max-width: 100%;
   /* font-size: 1vw; */
   width: auto;
   overflow-x:hidden;
-  margin-top: 2em;
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background));
 }
