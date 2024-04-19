@@ -19,7 +19,7 @@ const HeadHunter = () => {
         { title: 'JUNIOR MEDIA BUYER', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam odit ab corporis quaerat doloremque ut nisi optio. Voluptate, illum voluptatem?' },
         { title: 'JUNIOR MEDIA BUYER', description: 'Consectetur adipiscing elit.' },
         // Add more job listings as needed
-      ];
+    ];
     const { t } = useTranslation();
     const [visibleDescription, setVisibleDescription] = useState(Array(jobListings.length).fill(false));
 
@@ -46,21 +46,23 @@ const HeadHunter = () => {
             </div>
             <div className={Styles.row} >
                 <img className={Styles.img} src='./partners/elements/005.png' alt='Decorative' />
-                <div style={{ marginRight:"-15%" }}>
+                <div style={{ marginRight: "-15%" }}>
                     <h2 className={Styles.vacancies}>{t("headHunter.VACANCIES")}:</h2>
                     <div className={Styles.ol}>
                         <ol>
                             {jobListings.map((job, index) => (
                                 <li key={index} className={Styles.layoutContainer}>
                                     <div className={`${Styles.row} ${Styles.entry}`}>
-                                        <p className={`${Styles.p} ${Styles.jobName}`} style={{textAlign:'left'}}>
-                                            <span style={{color:"rgb(var(--green))", fontSize:".5em", fontFamily:"Fifaks10dev1", marginRight:"1em"}}>://{index} </span>{job.title}
-                                        </p>
-                                        <div className={`${Styles.description} ${visibleDescription[index] ? Styles.expanded : ''}`}>
-                                            <p className={`${Styles.decrHeader} ${visibleDescription[index] ? Styles.hidden : ''}`}>ОПИСАНИЕ:</p>
-                                            <p className={`${Styles.p} ${!visibleDescription[index] ? Styles.hidden : ''}`}>{renderDescription(job.description)}</p>
+                                        <div className={Styles.mobileColumn}>
+                                            <p className={`${Styles.p} ${Styles.jobName}`} style={{ textAlign: 'left' }}>
+                                                <span style={{ color: "rgb(var(--green))", fontSize: ".5em", fontFamily: "Fifaks10dev1", marginRight: "1em" }}>://{index} </span>{job.title}
+                                            </p>
+                                            <div className={`${Styles.description} ${visibleDescription[index] ? Styles.expanded : ''}`}>
+                                                <p className={`${Styles.decrHeader} ${visibleDescription[index] ? Styles.hidden : ''}`}>ОПИСАНИЕ:</p>
+                                                <p className={`${Styles.p} ${!visibleDescription[index] ? Styles.hidden : ''}`}>{renderDescription(job.description)}</p>
+                                            </div>
                                         </div>
-                                        <button className={Styles.button} onClick={() => toggleDescription(index)} style={{alignSelf:"end"}}>[ Вакансия ]</button>
+                                        <button className={Styles.button} onClick={() => toggleDescription(index)} style={{ alignSelf: "end" }}>[ Вакансия ]</button>
                                     </div>
                                 </li>
                             ))}
