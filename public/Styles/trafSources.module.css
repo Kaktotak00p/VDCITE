@@ -16,7 +16,7 @@
     min-width: 50%;
     flex-shrink: 0;
     margin-left: 2em;
-
+    
     display: flex; /* Align the logo containers in a row */
     justify-content: center; /* Center the logo containers */
 }

@@ -23,7 +23,7 @@ const Home: NextPage = () => {
   
   return (
     <RootLayout>
-    <HeadManager/>
+    {/* <HeadManager/> */}
     <img src='./svg/stick1.svg' className={Styles.svgleft}/>
     <img src='./svg/stick2.svg' className={Styles.svgright}/>
     <Header/>

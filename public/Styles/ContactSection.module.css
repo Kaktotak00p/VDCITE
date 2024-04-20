@@ -341,9 +341,9 @@
   }
 
   .svgContainer {
-    min-height: 300px;
+    min-height: 200px;
     font-size: 1vh;
-    max-height: 400px;
+    max-height: 40px;
     margin-top: -3em;
     pointer-events: none;
     width: auto; /* Set to the original width of the SVG */
@@ -356,7 +356,7 @@
     position: absolute;
     top: 50%;  /* Center the SVG in the container */
     left: 50%; /* Center the SVG in the container */
-    transform: translate(-50%, -50%) scale(6); /* Adjust scale as needed */
+    transform: translate(-50%, -50%) scale(5.5); /* Adjust scale as needed */
     transform-origin: center; /* Ensures the SVG scales from its center */
 }
 
@@ -486,11 +486,11 @@
     }
 
     .svgContainer{
-      margin-top: -15em;
+      margin-top: -8em;
     }
 
     .formlogo{
-      margin-top: 1em;
+      margin-top: 2em;
       margin-left: auto;
       text-align: end;
       width: 100%;

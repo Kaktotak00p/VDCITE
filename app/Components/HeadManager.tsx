@@ -1,4 +1,4 @@
-"use effect"
+"use client"
 import React, { useEffect } from 'react';
 
 const HeadManager = () => {
@@ -15,11 +15,11 @@ const HeadManager = () => {
       
       if (isSafari()) {
         if (existingMeta) {
-          existingMeta.content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no";
+          existingMeta.content = "width=device-width, maximum-scale=1.0, user-scalable=no";
         } else {
           const meta = document.createElement('meta');
           meta.name = "viewport";
-          meta.content = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no";
+          meta.content = "width=device-width,  maximum-scale=1.0, user-scalable=no";
           document.getElementsByTagName('head')[0].appendChild(meta);
         }
       } else if (existingMeta) {
