@@ -59,7 +59,7 @@ html, body{
   min-height: 1200px;
 }
 body {
-  aspect-ratio: 16/9;
+  /* aspect-ratio: 16/9; */
   backface-visibility: hidden;
   perspective: none;
   max-width: 100%;

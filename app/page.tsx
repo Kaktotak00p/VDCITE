@@ -15,7 +15,7 @@ import RootLayout from './layout';
 import Header from './Components/header';
 import TrafficSection from './Components/Section';
 import Link from 'next/link';
-
+// import "normalize.css"
 
 
 const Home: NextPage = () => {

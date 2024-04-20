@@ -3,7 +3,6 @@
   text-align: left;
 }
 .mainContainer {
-  min-height: 120px;
   /* font-size: 2vh; */
   display: flex;
   justify-content: center;
@@ -20,7 +19,7 @@
   padding: 3em;
   border: rgb(var(--green)) .2em solid;
   height: 85vh;
-  min-height: 800px;
+  min-height: 600px;
 }
 
 .textContainer {
@@ -197,6 +196,7 @@
   }
 
   .imageContainer {
+    margin-left: -3em;
     margin-top: 5em;
     margin-bottom: 7em;
     /* width: 50%; */
@@ -234,8 +234,8 @@
   .footer {
     font-size: 1em;
     position: absolute;
-    top: 100em;
-    left: 0.1em;
+    top: 84em;
+    left: 0em;
     width: 100%;
     padding-top: 1em;
     justify-content: center;
