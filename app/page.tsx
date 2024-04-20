@@ -15,6 +15,7 @@ import RootLayout from './layout';
 import Header from './Components/header';
 import TrafficSection from './Components/Section';
 import Link from 'next/link';
+import HeadManager from './Components/HeadManager';
 // import "normalize.css"
 
 
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
   
   return (
     <RootLayout>
+    <HeadManager/>
     <img src='./svg/stick1.svg' className={Styles.svgleft}/>
     <img src='./svg/stick2.svg' className={Styles.svgright}/>
     <Header/>
