@@ -343,7 +343,8 @@
   .svgContainer {
     min-height: 300px;
     font-size: 1vh;
-    margin-top: 4em;
+    max-height: 400px;
+    margin-top: -3em;
     pointer-events: none;
     width: auto; /* Set to the original width of the SVG */
     height: 25em; /* Set to the original height of the SVG */

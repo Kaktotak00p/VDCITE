@@ -22,7 +22,7 @@ const landing = () => {
     
       if (isSafari && isMobile) {
         // If Safari on mobile device, set zoom to 0.8
-        (document.body.style as any).zoom = '0.5';
+        // (document.body.style as any).zoom = '0.5';
       } else if (isSafari) {
         // If Safari on desktop, set zoom to 0.9
         (document.body.style as any).zoom = '0.9';
