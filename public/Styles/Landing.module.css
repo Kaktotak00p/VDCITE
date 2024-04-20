@@ -3,6 +3,7 @@
   text-align: left;
 }
 .mainContainer {
+  min-height: 120px;
   /* font-size: 2vh; */
   display: flex;
   justify-content: center;
@@ -19,6 +20,7 @@
   padding: 3em;
   border: rgb(var(--green)) .2em solid;
   height: 85vh;
+  min-height: 800px;
 }
 
 .textContainer {
@@ -232,7 +234,7 @@
   .footer {
     font-size: 1em;
     position: absolute;
-    top: 88em;
+    top: 100em;
     left: 0.1em;
     width: 100%;
     padding-top: 1em;

@@ -1,15 +1,20 @@
 .svgleft{
-position: absolute;
-top: 70em;
-left: -47em;
-pointer-events: none;
+    display: none;
+    position: absolute;
+    transform: scale(1) translate(50%, 50%);
+    left: -95%;
+    top: 100%;
+    pointer-events: none;
 }
 
 .svgright{
-    pointer-events: none;
+    display: none;
     position: absolute;
-    top: 125em;
-    right: -47em;
+    transform: scale(.2) translate(50%, 50%);
+    pointer-events: none;
+    top: -150%;
+    right: -35%;
+    
 }
 
 @media (max-width:768px){

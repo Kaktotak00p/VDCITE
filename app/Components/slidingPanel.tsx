@@ -61,7 +61,7 @@ const SlidingPanel: React.FC<SlidingPanelProps> = ({ isOpen, setIsOpen }) => {
           margin: "1em"
         }}>ЗАПОЛНИТЕ ФОРМУ</h1> */}
         <div className={styles.svgContainer} style={{
-
+          marginLeft:"-18em"
         }}>
           <img src='./svg/stick3.svg' className='svg-img' />
         </div>

@@ -194,6 +194,9 @@
 }
 
 @media (max-width: 768px) {
+  .jobNameExpanded{
+    margin-top: .7em;
+  }
   .mobileColumn{
     flex-direction: column;
   }
@@ -204,7 +207,13 @@
     margin-left: 10em;
   }
     .layoutContainer {
-      width: 32em;
+      margin-left: 2em;
+      padding-left: 2em;
+      margin-top: -.1em;
+      border-top: solid grey .15em;
+      border-bottom: solid grey .15em;
+      width: 40em;
+      padding-left: 3em;
       flex-direction: column;
     }
 
@@ -233,12 +242,25 @@
 
     .vacancies{
       font-size: 3em;
-      margin-left: .5em;
+      margin-left: 1em;
     }
 
     .p{
       padding: .1em;
-      margin-left: .5em;
+      margin-left: 2em;
+    }
+
+    .description{
+      width: 30em;
+      overflow-x: visible;
+    }
+
+    .description .p{
+      /* max-width: 70%; */
+      /* padding-left: 3em; */
+      /* margin-right: -20em; 
+      /* width: 100%; */
+      margin-top: 2em;
     }
     .ol{
       width: auto;
@@ -249,7 +271,6 @@
     }
   
     .row {
-      /* margin-left: -2.2em; */
       width: 90%; 
     }
 
@@ -261,11 +282,10 @@
     }
 
     .entry{
-      margin: auto;
+      border: 0;
+      /* margin: auto; */
       padding-top: .2em;
       padding-bottom: .2em;
-      border-top: solid whitesmoke .2em;
-      border-bottom: solid whitesmoke .2em;
       gap: 0em;
     }
   

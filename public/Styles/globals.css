@@ -54,7 +54,10 @@
   --background: 02,02,02;
   --global-margin: 20em;
 }
-
+html, body{
+  height: 110%;
+  min-height: 1200px;
+}
 body {
   aspect-ratio: 16/9;
   backface-visibility: hidden;
@@ -88,8 +91,31 @@ p, h1, h2{
   font-family: 'Radiotechnika', regular;
 }
 
+.svgleft{
+  position: absolute;
+  transform: scale(.15);
+  left: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.svgright{
+  position: absolute;
+  transform: scale(.15) ;
+  pointer-events: none;
+  bottom: 0;
+  right: 0;
+  
+}
+
 @media (max-width: 768px){
+  .svgleft,
+  .svgright{
+      display: none;
+  }
   body{
+    width: 100%;
+    overflow-x: hidden;
     font-size: 3vw;
   }
 

@@ -40,6 +40,7 @@
   }
   
 .outerConatiner {
+  position: relative;
   margin-top: 5em;
   margin-bottom: 10em;
 }

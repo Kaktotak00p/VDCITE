@@ -341,11 +341,12 @@
   }
 
   .svgContainer {
+    min-height: 300px;
     font-size: 1vh;
     margin-top: 4em;
     pointer-events: none;
     width: auto; /* Set to the original width of the SVG */
-    height: 8em; /* Set to the original height of the SVG */
+    height: 25em; /* Set to the original height of the SVG */
     position: relative; /* This enables absolute positioning for contained elements */
     overflow: hidden; /* This ensures the SVG does not spill out if it's larger than the container */
 }
@@ -354,21 +355,7 @@
     position: absolute;
     top: 50%;  /* Center the SVG in the container */
     left: 50%; /* Center the SVG in the container */
-    transform: translate(-50%, -50%) scaleX(7) scaleY(4.5); /* Adjust scale as needed */
-    transform-origin: center; /* Ensures the SVG scales from its center */
-}
-  .svgButton {
-    margin-top: 3em;
-    pointer-events: none;
-    width: auto; /* Set to the original width of the SVG */
-    position: relative; /* This enables absolute positioning for contained elements */
-}
-
-.svgButton   img {
-    position: absolute;
-    top: 50%;  /* Center the SVG in the container */
-    left: 50%; /* Center the SVG in the container */
-    transform: translate(-50%, -50%) scaleX(7) scaleY(4.5); /* Adjust scale as needed */
+    transform: translate(-50%, -50%) scale(6); /* Adjust scale as needed */
     transform-origin: center; /* Ensures the SVG scales from its center */
 }
 

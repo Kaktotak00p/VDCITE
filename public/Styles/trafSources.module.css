@@ -39,8 +39,8 @@
 .logoImage {
   position: absolute;
   transform: rotate(30deg);
-  width: 10vw; /* Adjust for size inside the frame */
-  height: 10vw; /* Adjust for size inside the frame */
+  width: 8vw; /* Adjust for size inside the frame */
+  height: 8vw; /* Adjust for size inside the frame */
   z-index: 2; /* Ensure logo appears above the frame image */
   transition: transform 0.3s ease-in-out;
 }

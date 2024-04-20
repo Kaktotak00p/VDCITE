@@ -16,14 +16,21 @@ const landing = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     function adjustZoomForSafari() {
-      const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-      if (isSafari) {
-        // Cast to any to bypass TypeScript error
+      const userAgent = navigator.userAgent;
+      const isSafari = /^((?!chrome|android).)*safari/i.test(userAgent);
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(userAgent);
+    
+      if (isSafari && isMobile) {
+        // If Safari on mobile device, set zoom to 0.8
+        (document.body.style as any).zoom = '0.5';
+      } else if (isSafari) {
+        // If Safari on desktop, set zoom to 0.9
         (document.body.style as any).zoom = '0.9';
       }
     }
-
+    
     adjustZoomForSafari();
+    
     
   }, []);
   const { t } = useTranslation();

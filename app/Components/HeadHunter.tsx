@@ -54,7 +54,7 @@ const HeadHunter = () => {
                                 <li key={index} className={Styles.layoutContainer}>
                                     <div className={`${Styles.row} ${Styles.entry}`}>
                                         <div className={Styles.mobileColumn}>
-                                            <p className={`${Styles.p} ${Styles.jobName}`} style={{ textAlign: 'left' }}>
+                                            <p className={`${Styles.p} ${Styles.jobName} ${visibleDescription[index] ? Styles.jobNameExpanded : ''}`} style={{ textAlign: 'left' }}>
                                                 <span style={{ color: "rgb(var(--green))", fontSize: ".5em", fontFamily: "Fifaks10dev1", marginRight: "1em" }}>://{index} </span>{job.title}
                                             </p>
                                             <div className={`${Styles.description} ${visibleDescription[index] ? Styles.expanded : ''}`}>
