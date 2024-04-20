@@ -8,7 +8,7 @@ const UserCountDisplay: React.FC = () => {
   const [vlitoCounter, setVlitoCounter] = useState(0);
 
   // Using useEffect to ensure WebSocket is used client-side
-  const { sendMessage, lastMessage } = useWebSocket('ws://localhost:3001', {
+  const { sendMessage, lastMessage } = useWebSocket('ws://164.132.200.91:3001', {
     onMessage: (e) => {
       const messageData = JSON.parse(e.data);
       if (messageData.vlitoCounter !== undefined) {
