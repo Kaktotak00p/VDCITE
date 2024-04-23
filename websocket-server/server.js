@@ -11,12 +11,13 @@ const filePath = 'vlitoCounter.txt';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+const HOST = process.env.HOST;
 
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
 
 // Start the Express server
-const server = app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+const server = app.listen(PORT, HOST, () => console.log(`Server running on port ${PORT}, ${HOST}`));
 
 // Set up WebSocket server
 const wss = new Server({ server });

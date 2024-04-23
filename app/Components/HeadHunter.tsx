@@ -59,7 +59,7 @@ const HeadHunter = () => {
                                             </p>
                                             <div className={`${Styles.description} ${visibleDescription[index] ? Styles.expanded : ''}`}>
                                                 <p className={`${Styles.decrHeader} ${visibleDescription[index] ? Styles.hidden : ''}`}>ОПИСАНИЕ:</p>
-                                                <p className={`${Styles.p} ${!visibleDescription[index] ? Styles.hidden : ''}`}>{renderDescription(job.description)}</p>
+                                                <p className={`${Styles.p} ${Styles.jobDescr} ${!visibleDescription[index] ? Styles.hidden : ''}`}>{renderDescription(job.description)}</p>
                                             </div>
                                         </div>
                                         <button className={Styles.button} onClick={() => toggleDescription(index)} style={{ alignSelf: "end" }}>[ Вакансия ]</button>

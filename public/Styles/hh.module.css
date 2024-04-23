@@ -102,6 +102,10 @@
   color: white;
 }
 
+.jobDescr{
+  padding-left: 1em;
+}
+
 .img{
   pointer-events: none;
   align-self:baseline;
@@ -143,6 +147,8 @@
 }
 
 .decrHeader{
+  padding-left: 3.5em;
+  text-align: center;
   /* margin-top: .3em; */
   font-size: 1.5em;
   margin-bottom: .1em;
@@ -196,6 +202,9 @@
 @media (max-width: 768px) {
   .jobNameExpanded{
     margin-top: .7em;
+  }
+  .jobDescr{
+    padding-left: 0;
   }
 
   .expanded{
@@ -281,6 +290,7 @@
     }
 
     .decrHeader{
+      text-align: left;
       display: none;
       opacity: 0;
       pointer-events: none;
