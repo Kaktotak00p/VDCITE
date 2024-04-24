@@ -13,7 +13,7 @@ const ContactSection: React.FC = () => {
 
   return (<>
     <div className={styles.svgContainer} style={{
-      marginLeft:"-30em"
+      marginLeft: "-30em"
     }}>
       <img src='./svg/stick3.svg' className='svg-img' />
     </div>
@@ -26,9 +26,6 @@ const ContactSection: React.FC = () => {
         <div className={styles.contactInfo}>
           <div className={styles.contactLabel}>CONTACT US</div>
           <div className={styles.email}>TRAFFHUB@GMAIL.COM</div>
-        </div>
-        <div className={styles.logo}>
-          <button className={`${styles.button} ${styles.contactButton}`} onClick={() => setIsOpen(true)} >CONTACT</button>
         </div>
         {/* <div className={styles.links}>
           <h2>SOCIAL</h2>
@@ -50,14 +47,11 @@ const ContactSection: React.FC = () => {
           <a href="/media">/ MEDIA</a>
         </div> */}
       </div>
+        <div className={styles.logo}>
+          <button className={`${styles.button} ${styles.contactButton}`} onClick={() => setIsOpen(true)} >CONTACT</button>
+          </div>
       <div className={styles.socialAndCompany}>
-        {/* <div className={styles.social}>
-          <span>SOCIAL - </span>
-          <a href="http://example.com"><img src="/path-to-your-icon/telegram.svg" alt="Telegram" /></a>
-          <a href="http://instagram.com"><img src="/path-to-your-icon/instagram.svg" alt="Instagram" /></a>
-          <a href="http://facebook.com"><img src="/path-to-your-icon/facebook.svg" alt="Facebook" /></a>
-        </div> */}
-        <div className={styles.companyInfo}>
+          <div className={styles.companyInfo}>
           <h2 className={styles.company}>TRAFFHUB</h2>
           <p style={{
             color: "grey"
@@ -68,9 +62,15 @@ const ContactSection: React.FC = () => {
             <span style={{ color: "white" }}>TRAFFHUB.</span>
           </p>
         </div>
+        {/* <div className={styles.social}>
+          <span>SOCIAL - </span>
+          <a href="http://example.com"><img src="/path-to-your-icon/telegram.svg" alt="Telegram" /></a>
+          <a href="http://instagram.com"><img src="/path-to-your-icon/instagram.svg" alt="Instagram" /></a>
+          <a href="http://facebook.com"><img src="/path-to-your-icon/facebook.svg" alt="Facebook" /></a>
+        </div> */}
       </div>
     </div>
-      <SlidingPanel isOpen={isOpen} setIsOpen={setIsOpen} />
+    <SlidingPanel isOpen={isOpen} setIsOpen={setIsOpen} />
   </>
   );
 };

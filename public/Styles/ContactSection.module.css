@@ -117,7 +117,7 @@
   
   .logo {
     font-size: 3vw;
-    margin-left: 10em;
+    /* margin-left: 10em; */
     /* font-size: 3em; */
     font-weight: bold;
   }
@@ -226,7 +226,7 @@
   }
   
   .contactfield textarea{
-    height: 20vh;
+    height: 15vh;
     border-radius: .3em;
     width: 70vw;
     padding: .1em;
@@ -329,12 +329,12 @@
 
   .column {
     height: auto;
-    width: 80%;
-    margin: 20em;
+    /* width: 80%; */
+    /* margin: 20em; */
     display: flex;
     flex-direction: column;
-    gap: 1.2em; 
-    margin: auto;
+    gap: 10em; 
+    /* margin: auto; */
   }
   .leftText{
     font-size: 1vw;
@@ -399,6 +399,11 @@
       width: 90vw;
     }
 
+    .column{
+      gap: 1em;
+      flex-direction: column-reverse;
+    }
+
     .leftText{
       margin-left: -.5em;
       margin-top: -9.2em;
@@ -422,13 +427,14 @@
     }
 
     .formheader{
-      margin-top: -6em;
+      margin-top: 9em;
     }
 
     .formImage{
       display: none;
     }
     .contactButton{
+      color: rgb(var(--green));
       text-decoration: underline rgb(var(--green));
     }
 
@@ -465,7 +471,7 @@
       margin: 0;
   }
     .container {
-      flex-direction: column;
+      flex-direction: column-reverse;
       text-align: center;
     }
   
@@ -480,6 +486,9 @@
     .companyInfo{
       margin-top: 1em;
       text-align: center;
+    }
+    .companyInfo p{
+      margin-bottom: 2em;
     }
     .company{
       text-align: center;

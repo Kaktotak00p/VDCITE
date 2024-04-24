@@ -3,28 +3,33 @@ import React from 'react';
 interface ScrollLinkProps {
   targetId: string;
   children: React.ReactNode;
-  className?: string; // Optional prop for CSS class names
-  style?: React.CSSProperties; // Optional prop for inline styles
+  onClick?: () => void;
+  block?: 'start' | 'center' | 'end' | 'nearest'; // New prop for scroll alignment
+  className?: string;
+  style?: React.CSSProperties;
 }
 
-const ScrollLink: React.FC<ScrollLinkProps> = ({ targetId, children, className, style }) => {
+const ScrollLink: React.FC<ScrollLinkProps> = ({ targetId, children, onClick, block = 'center', className, style }) => {
   const scrollToTarget = () => {
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'start' });
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: window.innerWidth <= 768 ? 'start' : block, // Use 'start' on mobile unless overridden
+        inline: 'start'
+      });
     }
+    onClick?.();
   };
 
   return (
     <a
       onClick={scrollToTarget}
-      className={className} // Apply the className prop
+      className={className}
       style={{
         cursor: 'pointer',
-        // textDecoration: 'underline',
-        whiteSpace: 'nowrap',
         fontFamily: 'Fifaks10Dev1',
-        ...style, // Spread the style prop to include additional styles
+        ...style,
       }}
     >
       {children}

@@ -58,6 +58,7 @@
   }
 
   .content{
+    width: 94%;
     min-width: 80%;
   }
 
@@ -78,7 +79,7 @@
 
     .dec{
       width: 35vw;
-      top: -3em;
+      /* top: -3em; */
       /* right: -20em; */
       left: 60vw;
     }

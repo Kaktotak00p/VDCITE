@@ -25,23 +25,12 @@ const Header: React.FC<Props> = (props) => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    useEffect(() => {
-        if (isMenuOpen) {
-            document.body.classList.add('no-scroll');
-        } else {
-            document.body.classList.remove('no-scroll');
-        }
-        return () => {
-            document.body.classList.remove('no-scroll');
-        };
-    }, [isMenuOpen]);
-
-
     const toggleLanguages = () => setShowLanguages(!showLanguages);
     const changeLanguage = (lang: string) => {
         i18next.changeLanguage(lang);
         setShowLanguages(false);
     };
+    const closeMenu = () => setIsMenuOpen(false); // Toggle the mobile menu
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen); // Toggle the mobile menu
 
     const headerClass = isScrolled ? `${styles.header} ${styles.scrolled}` : styles.header;
@@ -50,11 +39,11 @@ const Header: React.FC<Props> = (props) => {
         <header className={headerClass}>
             <div className={`${styles.traffhub}`}>TRAFFHUB</div>
             <nav className={`${isMenuOpen ? styles.navActive : ''} ${!isMenuOpen ? styles.hidden : ''}`}>
-                <ScrollLink targetId='Section'>{t("header.ABOUT_US")}</ScrollLink>
-                <ScrollLink targetId='Traffic'>{t("header.ADVANT")}</ScrollLink>
-                <ScrollLink targetId='hh'>{t("header.VACAN")}</ScrollLink>
-                <ScrollLink targetId='TSources'>{t("header.SOURCES")}</ScrollLink>
-                <ScrollLink targetId='Contact'>{t("header.CONTACT")}</ScrollLink>
+                <ScrollLink targetId='Section' onClick={closeMenu} block='start'>{t("header.ABOUT_US")}</ScrollLink>
+                <ScrollLink targetId='Traffic' onClick={closeMenu}>{t("header.ADVANT")}</ScrollLink>
+                <ScrollLink targetId='hh' onClick={closeMenu}>{t("header.VACAN")}</ScrollLink>
+                <ScrollLink targetId='TSources' onClick={closeMenu} block='start'>{t("header.SOURCES")}</ScrollLink>
+                <ScrollLink targetId='Contact' onClick={closeMenu}>{t("header.CONTACT")}</ScrollLink>
             </nav>
 
             {showLanguages ? (

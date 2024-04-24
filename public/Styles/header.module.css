@@ -24,6 +24,7 @@
 }
 
 .langDropDown {
+  font-family: "Fifaks10dev1";
   white-space: nowrap;
   margin-right: 3em;
   margin-bottom: -3em;
@@ -49,6 +50,8 @@
 }
 
 .navActive {
+  position:fixed;
+  top: 0;
   font-size: 2em;
   display: flex; /* Show nav when menu is active */
   flex-direction: column;
@@ -77,8 +80,11 @@
     align-content: center;
   }
 
-  .scrolled nav .currentLang{
-    /* margin-top: -.3em; */
+  .scrolled nav{
+    margin-top: -.3em;
+  }
+  .scrolled .currentLang{
+    margin-top: -1.2em;
   }
 }
 
@@ -93,7 +99,8 @@
 }
 
 .currentLang {
-  margin-bottom: -.9em;
+  font-family: "Fifaks10dev1";
+  margin-bottom: -1em;
   margin-right: 3em;
   white-space: nowrap;
   color: rgb(var(--green));
@@ -134,10 +141,15 @@
     flex-direction: row;
   }
   .langDropDown{
+    margin-right: -2em;
+    font-size: 1.6em;
     /* margin-top: 3em; */
     z-index: 6;
   }
   .currentLang{
+    margin-top: -.85em;
+    font-size: 1.6em;
+    margin-right: -2em;
     z-index: 6;
   }
   .traffhub{

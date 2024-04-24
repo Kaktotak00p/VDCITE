@@ -86,7 +86,7 @@
     /* margin-top: 1em; */
     /* border: 2px solid #4CAF50*/
     color: rgb(var(--green)); /* Text color */
-    padding: .8em 1.2em; /* Padding */
+    padding: .8em 1.2em;
     cursor: pointer;
     transition: all 0.3s ease;
   }
@@ -227,7 +227,7 @@
       margin-top: -.1em;
       border-top: solid grey .15em;
       border-bottom: solid grey .15em;
-      width: 32em;
+      width: 100vw;
       padding-left: 3em;
       flex-direction: column;
     }
