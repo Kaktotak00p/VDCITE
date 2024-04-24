@@ -7,7 +7,7 @@ import './i18n.js';
 import i18next from 'i18next';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Import icons for menu
 
-interface Props {}
+interface Props { }
 
 const Header: React.FC<Props> = (props) => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -35,7 +35,7 @@ const Header: React.FC<Props> = (props) => {
             document.body.classList.remove('no-scroll');
         };
     }, [isMenuOpen]);
-    
+
 
     const toggleLanguages = () => setShowLanguages(!showLanguages);
     const changeLanguage = (lang: string) => {
@@ -49,26 +49,26 @@ const Header: React.FC<Props> = (props) => {
     return (
         <header className={headerClass}>
             <div className={`${styles.traffhub}`}>TRAFFHUB</div>
-            <div className={styles.menuIcon} onClick={toggleMenu}>
-                {isMenuOpen ? <FaTimes /> : <FaBars />}
-            </div>
             <nav className={`${isMenuOpen ? styles.navActive : ''} ${!isMenuOpen ? styles.hidden : ''}`}>
                 <ScrollLink targetId='Section'>{t("header.ABOUT_US")}</ScrollLink>
                 <ScrollLink targetId='Traffic'>{t("header.ADVANT")}</ScrollLink>
                 <ScrollLink targetId='hh'>{t("header.VACAN")}</ScrollLink>
                 <ScrollLink targetId='TSources'>{t("header.SOURCES")}</ScrollLink>
                 <ScrollLink targetId='Contact'>{t("header.CONTACT")}</ScrollLink>
-                
-                {showLanguages ? (
-                    <div className={styles.langDropDown}>
-                        <button onClick={() => changeLanguage('en')}>[ EN ]</button>
-                        <button onClick={() => changeLanguage('ua')}>[ UA ]</button>
-                        <button onClick={() => changeLanguage('ru')}>[ RU ]</button>
-                    </div>
-                ) : (
-                    <button onClick={toggleLanguages} className={styles.currentLang}>[ {i18n.language.toUpperCase()} ]</button>
-                )}
             </nav>
+
+            {showLanguages ? (
+                <div className={styles.langDropDown}>
+                    <button onClick={() => changeLanguage('en')}>[ EN ]</button>
+                    <button onClick={() => changeLanguage('ua')}>[ UA ]</button>
+                    <button onClick={() => changeLanguage('ru')}>[ RU ]</button>
+                </div>
+            ) : (
+                <button onClick={toggleLanguages} className={styles.currentLang}>[ {i18n.language.toUpperCase()} ]</button>
+            )}
+            <div className={styles.menuIcon} onClick={toggleMenu}>
+                {isMenuOpen ? <FaTimes /> : <FaBars />}
+            </div>
         </header>
     );
 };

@@ -24,6 +24,8 @@
 }
 
 .langDropDown {
+  white-space: nowrap;
+  margin-right: 3em;
   margin-bottom: -3em;
   display: flex;
   flex-direction: column;
@@ -91,6 +93,9 @@
 }
 
 .currentLang {
+  margin-bottom: -.9em;
+  margin-right: 3em;
+  white-space: nowrap;
   color: rgb(var(--green));
   font-size: 1em;
 }
@@ -129,7 +134,11 @@
     flex-direction: row;
   }
   .langDropDown{
-    margin-top: 3em;
+    /* margin-top: 3em; */
+    z-index: 6;
+  }
+  .currentLang{
+    z-index: 6;
   }
   .traffhub{
     margin-left: .1em;
