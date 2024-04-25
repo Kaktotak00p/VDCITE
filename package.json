@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "concurrently \"next start\" \"PORT=3001 cd websocket-server && node server.js\"",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {

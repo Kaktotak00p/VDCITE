@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "concurrently \"PORT=3001 node server.js\" \" cd .. && next start\""
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "dependencies": {
     "axios": "^1.6.8",
     "body-parser": "^1.20.2",
+    "concurrently": "^8.2.2",
     "express": "^4.19.1",
     "form-data": "^4.0.0",
     "ws": "^8.16.0"
