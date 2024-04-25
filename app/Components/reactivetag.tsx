@@ -10,7 +10,6 @@ const UserCountDisplay: React.FC = () => {
     const fetchCounter = async () => {
       try {
         const response = await fetch(`http://127.1.2.99:3000/api/counter`);
-        console.log(`http://${process.env.HOST}:${process.env.port}/api/counter`);
         const data = await response.json();
         setVlitoCounter(data.vlitoCounter);
       } catch (error) {
