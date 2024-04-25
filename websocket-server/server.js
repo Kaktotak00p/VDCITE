@@ -19,6 +19,12 @@ app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, "..", "out")))
 
+app.get('/api/counter', (req, res) => {
+  const currentCounter = readCounter();
+  res.json({ vlitoCounter: currentCounter });
+});
+
+
 // Start the Express server
 const server = app.listen(PORT, HOST, () => console.log(`Server running on port ${PORT}, ${HOST}`));
 
