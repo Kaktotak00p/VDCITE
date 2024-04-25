@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"PORT=3001 node server.js\" \" cd .. && next start\""
+    "start": " npm install && concurrently \"PORT=3001 node server.js\" \" cd .. && next start\""
   },
   "keywords": [],
   "author": "",
