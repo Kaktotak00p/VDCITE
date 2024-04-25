@@ -44,7 +44,7 @@ const SlidingPanel: React.FC<SlidingPanelProps> = ({ isOpen, setIsOpen }) => {
     try {
       const response = await axios({
         method: 'post',
-        url: 'http://164.132.200.91:3001/send-to-telegram',
+        url: 'https://nastoligr.com/send-to-telegram',
         data: dataToSend,
         headers: { 'Content-Type': 'multipart/form-data' },
       });
