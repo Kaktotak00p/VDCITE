@@ -9,7 +9,7 @@ const UserCountDisplay: React.FC = () => {
   useEffect(() => {
     const fetchCounter = async () => {
       try {
-        const response = await fetch(`http://nastoligr.com/api/counter`);
+        const response = await fetch(`https://nastoligr.com/api/counter`);
         const data = await response.json();
         setVlitoCounter(data.vlitoCounter);
       } catch (error) {
