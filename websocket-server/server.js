@@ -8,6 +8,7 @@ const fs = require('fs');
 const upload = multer({dest: 'uploads/'})
 const FormData = require('form-data');
 const filePath = 'vlitoCounter.txt';
+const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -15,6 +16,8 @@ const HOST = process.env.HOST;
 
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
+
+app.use(express.static(path.join(__dirname, "..", "out")))
 
 // Start the Express server
 const server = app.listen(PORT, HOST, () => console.log(`Server running on port ${PORT}, ${HOST}`));
@@ -61,6 +64,10 @@ wss.on('connection', (ws) => {
   ws.on('close', () => {
       console.log('Client disconnected');
   });
+});
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'out', 'index.html'));
 });
 
 // Route for sending messages to Telegram
