@@ -107,9 +107,9 @@ app.post('/send-to-telegram', upload.single('file'), async (req, res) => {
 // Route for checking the server status
 app.get('/', (req, res) => res.send('WebSocket server is running'));
 
-// Add CORS middleware for development purposes
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*'); // Allow any domain during development
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-  next();
-});
+// comented for the prod branch
+// app.use((req, res, next) => {
+//   res.header('Access-Control-Allow-Origin', '*'); // Allow any domain during development
+//   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+//   next();
+// });
