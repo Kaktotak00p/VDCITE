@@ -69,6 +69,11 @@
 }
 
 @media (max-width: 768px){
+  .outerContainer{
+    padding-top: 0;
+    margin-top: 10em;
+  }
+
   .logoBorder{
     width: 100vw;
     height: 70%;
