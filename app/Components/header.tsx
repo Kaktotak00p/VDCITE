@@ -15,15 +15,15 @@ const Header: React.FC<Props> = (props) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage burger menu visibility
     const { t, i18n } = useTranslation();
 
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         const offset = window.scrollY > 20;
-    //         setIsScrolled(offset);
-    //     };
+    useEffect(() => {
+        const handleScroll = () => {
+            const offset = window.scrollY > 20;
+            setIsScrolled(offset);
+        };
 
-    //     window.addEventListener('scroll', handleScroll);
-    //     return () => window.removeEventListener('scroll', handleScroll);
-    // }, []);
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     const toggleLanguages = () => setShowLanguages(!showLanguages);
     const changeLanguage = (lang: string) => {

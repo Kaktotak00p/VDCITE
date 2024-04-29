@@ -14,10 +14,10 @@ import SlidingPanel from './slidingPanel';
 
 const landing = () => {
   useEffect(() => {
-    document.body.scrollIntoView({
-      block:"start",
-      inline:"start"
-    });
+    // document.body.scrollIntoView({
+    //   block:"start",
+    //   inline:"start"
+    // });
     function adjustZoomForSafari() {
       const userAgent = navigator.userAgent;
       const isSafari = /^((?!chrome|android).)*safari/i.test(userAgent);
