@@ -50,17 +50,17 @@
 }
 
 .navActive {
-  position:fixed;
   top: 0;
   font-size: 2em;
   display: flex; /* Show nav when menu is active */
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-around;
   padding-top: 4em;
+  padding-bottom: 5.5em;
   background: rgba(0, 0, 0, 0.9);
   height: 100vh;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 6;
