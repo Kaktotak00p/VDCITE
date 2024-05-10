@@ -109,13 +109,16 @@ const SlidingPanel: React.FC<SlidingPanelProps> = ({ isOpen, setIsOpen }) => {
               value={formData.message}
               onChange={handleChange}
             />
+            <div className={styles.lowerCont}>
+            <button type="submit" className={`${styles.button} ${styles.submitButtonLower}`}>{t("ContactForm.submit")}</button>
             <ContactField
               id="file"
               label="file"
               type="file"
               value={formData.firstName}
               onChange={handleChange}
-            />
+              />
+              </div>
           </div>
         </form>
         <img className={styles.dec} src="./dec/logo/1.png" />
