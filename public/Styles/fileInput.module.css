@@ -18,15 +18,10 @@
     transition: background-color 0.5s ease;
 }
 
-/* You might want to add :hover and :active pseudo-classes for better UX */
-/* .fileuploadcontainer:hover {
-    background-color: rgb(var(--purple));
-} */
-
 .hiddenEl{
     height: 3em;
-    width: 20em;
-    left: 9.9em;
+    width: 15em;
+    left: 7.5em;
     top: 1em;
     transform: translate(-50%, -50%);
     position: absolute;
