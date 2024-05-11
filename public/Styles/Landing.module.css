@@ -220,7 +220,7 @@
 
   .column {
     margin-left: 2em;
-    margin-top: 3em;
+    margin-top: 8em;
     position: relative;
     max-width: 100%;
     display: flex;
@@ -240,7 +240,7 @@
   .footer {
     font-size: 1em;
     position: absolute;
-    top: 80em;
+    top: 85em;
     left: 0em;
     width: 100%;
     padding-top: 1em;
