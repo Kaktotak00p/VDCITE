@@ -25,7 +25,7 @@ const ContactSection: React.FC = () => {
         </div> */}
         <div className={styles.contactInfo}>
           <div className={styles.contactLabel}>CONTACT US</div>
-          <div className={styles.email}>TRAFFHUB@GMAIL.COM</div>
+          <div className={styles.email}><a href='mailto:TRAFFHUB@GMAIL.COM'>TRAFFHUB@GMAIL.COM</a></div>
         </div>
         {/* <div className={styles.links}>
           <h2>SOCIAL</h2>
