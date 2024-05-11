@@ -19,7 +19,7 @@
   padding: 3em;
   border: rgb(var(--green)) .2em solid;
   height: 85vh;
-  min-height: 600px;
+  min-height: 550px;
 }
 
 .textContainer {

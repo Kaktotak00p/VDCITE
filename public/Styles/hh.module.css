@@ -223,12 +223,11 @@
     .layoutContainer {
       margin-right: 0;
       margin-left: -2em;
-      padding-left: 2em;
+      padding-left: 2.5em;
       margin-top: -.1em;
       border-top: solid grey .15em;
       border-bottom: solid grey .15em;
       width: 100vw;
-      padding-left: 3em;
       flex-direction: column;
     }
 
@@ -266,7 +265,7 @@
     }
 
     .description{
-      width: 30em;
+      width: 25em;
       overflow-x: visible;
     }
 

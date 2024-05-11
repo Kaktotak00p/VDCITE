@@ -1,8 +1,10 @@
 .fileuploadcontainer {
     /* font-family: "Fifaks10dev1"; */
     align-items: center;
+    text-align: center;
+    white-space: nowrap;
     justify-content: center;
-    width: 20em;
+    width: 15em;
     position: relative;
     color: rgb(var(--background));
     display: flex;
@@ -16,15 +18,10 @@
     transition: background-color 0.5s ease;
 }
 
-/* You might want to add :hover and :active pseudo-classes for better UX */
-/* .fileuploadcontainer:hover {
-    background-color: rgb(var(--purple));
-} */
-
 .hiddenEl{
     height: 3em;
-    width: 20em;
-    left: 9.9em;
+    width: 15em;
+    left: 7.5em;
     top: 1em;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -37,19 +34,10 @@
     font-family: "Fifaks10dev1";
 }
 
-.fileuploadcontainer {
-    display: block;
-    padding: 10px 20px;
-    text-align: center;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
 
 .whiteButton {
     font-size: 1vw;
-    width: 10vw;
+    /* width: 10vw; */
     height: 5vh;
     background-color: white;
     color: black;
