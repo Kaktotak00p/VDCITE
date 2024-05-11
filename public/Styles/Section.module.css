@@ -1,4 +1,6 @@
 .trafficContainer {
+  padding-top: 6em;
+  margin-top: -6em;
   /* font-size: 1vw; */
     color: #fff;
     font-family: 'Consolas', 'Monaco', monospace;
