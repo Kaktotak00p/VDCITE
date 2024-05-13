@@ -12,11 +12,12 @@ const ContactSection: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (<>
-    <div className={styles.svgContainer} style={{
+    {/* <div className={styles.svgContainer} style={{
       marginLeft: "-30em"
     }}>
       <img src='./svg/stick3.svg' className='svg-img' />
-    </div>
+    </div> */}
+    <img src='./svg/stick3.png' />
     <div className={styles.container} id="Contact">
       <div className={styles.column}>
         {/* <div className={styles.contactInfo}>

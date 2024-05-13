@@ -72,11 +72,8 @@ const SlidingPanel: React.FC<SlidingPanelProps> = ({ isOpen, setIsOpen }) => {
       {/* <h1 style={{
           margin: "1em"
         }}>ЗАПОЛНИТЕ ФОРМУ</h1> */}
-      <div className={styles.svgContainer} style={{
-        marginLeft: "-18em"
-      }}>
-        <img src='./svg/stick3.svg' className='svg-img' />
-      </div>
+      
+        <img src='./svg/stick3.png' className='svg-img' />
       <div className={styles.formheader}>
         <img src='./dec/heart_contact.png' className={styles.heart} />
       </div>
