@@ -5,6 +5,7 @@ import '../../public/Styles/globals.css';
 import TypingAnimation from '../TypingAnimation/typingAnimation';
 import './i18n.js';
 import { useTranslation } from "react-i18next";
+import SlidingPanel from './slidingPanel';
 
 
 // const jobListings = [
@@ -22,6 +23,7 @@ const HeadHunter = () => {
     ];
     const { t } = useTranslation();
     const [visibleDescription, setVisibleDescription] = useState(Array(jobListings.length).fill(false));
+    const [isOpen, setIsOpen] = useState(false);
 
     const toggleDescription = (index: number) => {
         setVisibleDescription(visibleDescription.map((item, idx) => idx === index ? !item : item));
@@ -37,40 +39,46 @@ const HeadHunter = () => {
     };
 
     return (
-        <div className={Styles.outerContainer} id="hh">
-            <TypingAnimation text="://HeadHunter" typingSpeed={50} />
-            <div className={Styles.mainContainer}>
-                <h1 className={Styles.hunt}>{t("headHunter.HUNT")}</h1>
-                <h1 className={Styles.heads}>{t("headHunter.HEADS")}</h1>
-                <img className={Styles.dec} src='./partners/elements/square(2).png' alt='Decorative' />
-            </div>
-            <div className={Styles.row} >
-                <img className={Styles.img} src='./partners/elements/005.png' alt='Decorative' />
-                <div style={{ marginRight: "-15%" }}>
-                    <h2 className={Styles.vacancies}>{t("headHunter.VACANCIES")}:</h2>
-                    <div className={Styles.ol}>
-                        <ol>
-                            {jobListings.map((job, index) => (
-                                <li key={index} className={Styles.layoutContainer}>
-                                    <div className={`${Styles.row} ${Styles.entry}`}>
-                                        <div className={Styles.mobileColumn}>
-                                            <p className={`${Styles.p} ${Styles.jobName} ${visibleDescription[index] ? Styles.jobNameExpanded : ''}`} style={{ textAlign: 'left' }}>
-                                                <span style={{ color: "rgb(var(--green))", fontSize: ".5em", fontFamily: "Fifaks10dev1", marginRight: "1em" }}>://{index} </span>{job.title}
-                                            </p>
-                                            <div className={`${Styles.description} ${visibleDescription[index] ? Styles.expanded : ''}`}>
-                                                <p className={`${Styles.decrHeader} ${visibleDescription[index] ? Styles.hidden : ''}`}>ОПИСАНИЕ:</p>
-                                                <p className={`${Styles.p} ${Styles.jobDescr} ${!visibleDescription[index] ? Styles.hidden : ''}`}>{renderDescription(job.description)}</p>
+        <>
+            <div className={Styles.outerContainer} id="hh">
+                <TypingAnimation text="://HeadHunter" typingSpeed={50} />
+                <div className={Styles.mainContainer}>
+                    <h1 className={Styles.hunt}>{t("headHunter.HUNT")}</h1>
+                    <h1 className={Styles.heads}>{t("headHunter.HEADS")}</h1>
+                    <img className={Styles.dec} src='./partners/elements/square(2).png' alt='Decorative' />
+                </div>
+                <div className={Styles.row} >
+                    <img className={Styles.img} src='./partners/elements/005.png' alt='Decorative' />
+                    <div style={{ marginRight: "-15%" }}>
+                        <h2 className={Styles.vacancies}>{t("headHunter.VACANCIES")}:</h2>
+                        <div className={Styles.ol}>
+                            <ol>
+                                {jobListings.map((job, index) => (
+                                    <li key={index} className={Styles.layoutContainer}>
+                                        <div className={`${Styles.row} ${Styles.entry}`}>
+                                            <div className={Styles.mobileColumn}>
+                                                <p className={`${Styles.p} ${Styles.jobName} ${visibleDescription[index] ? Styles.jobNameExpanded : ''}`} style={{ textAlign: 'left' }}>
+                                                    <span style={{ color: "rgb(var(--green))", fontSize: ".5em", fontFamily: "Fifaks10dev1", marginRight: "1em" }}>://{index} </span>{job.title}
+                                                </p>
+                                                <div className={`${Styles.description} ${visibleDescription[index] ? Styles.expanded : ''}`}>
+                                                    <p className={`${Styles.decrHeader} ${visibleDescription[index] ? Styles.hidden : ''}`}>ОПИСАНИЕ:</p>
+                                                    <p className={`${Styles.p} ${Styles.jobDescr} ${!visibleDescription[index] ? Styles.hidden : ''}`}>{renderDescription(job.description)}</p>
+                                                </div>
+                                            </div>
+                                            <div className={Styles.buttonCol}>
+                                                <button className={Styles.button} onClick={() => toggleDescription(index)} >[ Вакансия ]</button>
+                                                <button className={`${Styles.button} ${!visibleDescription[index] ? Styles.hidden : ''}`} onClick={() => setIsOpen(true)} >[CONTACT US]</button>
                                             </div>
                                         </div>
-                                        <button className={Styles.button} onClick={() => toggleDescription(index)} style={{ alignSelf: "end" }}>[ Вакансия ]</button>
-                                    </div>
-                                </li>
-                            ))}
-                        </ol>
+                                    </li>
+                                ))}
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <SlidingPanel isOpen={isOpen} setIsOpen={setIsOpen}/>
+        </>
     );
 };
 

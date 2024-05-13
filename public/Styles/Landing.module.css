@@ -16,7 +16,10 @@
   margin-right: 1vw;
   margin-bottom: 2em;
   border-radius: 1em;
-  padding: 3em;
+  padding-left: 1.65em;
+  padding-right: 3em;
+  padding-top: 3em;
+  padding-bottom: 3em;
   border: rgb(var(--green)) .2em solid;
   height: 85vh;
   min-height: 550px;
@@ -134,7 +137,7 @@
 
 .mediabuy{
   font-size: 3.5em;
-  text-align:right;
+  /* text-align:right; */
 }
 
 
@@ -217,7 +220,7 @@
 
   .column {
     margin-left: 2em;
-    margin-top: 3em;
+    margin-top: 8em;
     position: relative;
     max-width: 100%;
     display: flex;
@@ -237,7 +240,7 @@
   .footer {
     font-size: 1em;
     position: absolute;
-    top: 80em;
+    top: 85em;
     left: 0em;
     width: 100%;
     padding-top: 1em;

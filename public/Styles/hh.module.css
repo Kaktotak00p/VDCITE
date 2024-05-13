@@ -31,6 +31,15 @@
     gap: auto; /* Adjust based on your design */
   }
 
+  .buttonCol{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12em; /*TODO: Исправить говнокод чтобы динамически изменялся отступ */
+  }
+
 .mainContainer {
   position: relative;
     display: flex;

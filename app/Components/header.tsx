@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import './i18n.js';
 import i18next from 'i18next';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Import icons for menu
+import SlidingPanel from './slidingPanel';
 
 interface Props { }
 
@@ -14,6 +15,7 @@ const Header: React.FC<Props> = (props) => {
     const [showLanguages, setShowLanguages] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage burger menu visibility
     const { t, i18n } = useTranslation();
+    const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -35,7 +37,7 @@ const Header: React.FC<Props> = (props) => {
 
     const headerClass = isScrolled ? `${styles.header} ${styles.scrolled}` : styles.header;
 
-    return (
+    return (<>
         <header className={headerClass}>
             <div className={`${styles.traffhub}`}>TRAFFHUB</div>
             <nav className={`${isMenuOpen ? styles.navActive : ''} ${!isMenuOpen ? styles.hidden : ''}`}>
@@ -44,6 +46,11 @@ const Header: React.FC<Props> = (props) => {
                 <ScrollLink targetId='hh' onClick={closeMenu}>{t("header.VACAN")}</ScrollLink>
                 <ScrollLink targetId='TSources' onClick={closeMenu} block='start'>{t("header.SOURCES")}</ScrollLink>
                 <ScrollLink targetId='Contact' onClick={closeMenu}>{t("header.CONTACT")}</ScrollLink>
+                <button onClick={() => setIsOpen(true)} className={`${styles.mobileOnly} ${styles.contactButton}`}>[ CONTACT US ]</button>
+                <div className={`${styles.mobileOnly} ${styles.socialLinks}`}>
+                    <a href=""><img src='./partners/elements/tg.png' /></a>
+                    <a href="https://www.instagram.com/traffhub.ua?igsh=NXRiNTN5MGdmbzZm" target='_blank' rel="noopener noreferrer"><img src='./partners/elements/inst.png' /></a>
+                </div>
             </nav>
 
             {showLanguages ? (
@@ -59,6 +66,8 @@ const Header: React.FC<Props> = (props) => {
                 {isMenuOpen ? <FaTimes /> : <FaBars />}
             </div>
         </header>
+        <SlidingPanel isOpen={isOpen} setIsOpen={setIsOpen} />
+    </>
     );
 };
 

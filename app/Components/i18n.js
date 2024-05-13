@@ -63,8 +63,8 @@ const resources = {
     translation: {
         landing: {
             "Dscr": "& Text text text Text Text text Text Text text",
-            "MEDIABUY": "МЕДІАБАІИНГОВА",
-            "COMPANY": "КОМПАНІЯ",
+            "MEDIABUY": "МЕДIАБАIИНГОВА",
+            "COMPANY": "КОМПАНIЯ",
             "RIGHTDOWN" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
             "BUTTON" : "[НАПИШIТЬ НАМ]",
         },

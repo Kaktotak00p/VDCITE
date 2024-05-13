@@ -35,6 +35,15 @@ const SlidingPanel: React.FC<SlidingPanelProps> = ({ isOpen, setIsOpen }) => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Check if any field is empty
+    const isAnyFieldEmpty = Object.values(formData).some(value => !value);
+
+    if (isAnyFieldEmpty) {
+      alert('Please fill in all the fields');
+      return;
+    }
+
     const dataToSend = new FormData();
     Object.entries(formData).forEach(([key, value]) => {
       dataToSend.append(key, value);
@@ -57,7 +66,6 @@ const SlidingPanel: React.FC<SlidingPanelProps> = ({ isOpen, setIsOpen }) => {
       console.error('Error submitting form:', error);
     }
   };
-
   return (<>
     <div className={`${styles.slidingPanel} ${isOpen ? styles.show : ''}`}>
       <div className={styles.closeBtn} onClick={() => setIsOpen(false)}>&times;</div>
