@@ -66,8 +66,8 @@ const HeadHunter = () => {
                                                 </div>
                                             </div>
                                             <div className={Styles.buttonCol}>
-                                                <button className={Styles.button} onClick={() => toggleDescription(index)} >[ Вакансия ]</button>
-                                                <button className={`${Styles.button} ${!visibleDescription[index] ? Styles.hidden : ''}`} onClick={() => setIsOpen(true)} >[CONTACT US]</button>
+                                                <button className={Styles.button} onClick={() => toggleDescription(index)} style={{marginBottom:"0"}} >[ Вакансия ]</button>
+                                                <button className={`${Styles.button} ${!visibleDescription[index] ? Styles.hidden : ''}`} style={{marginBottom:"0"}} onClick={() => setIsOpen(true)} >[CONTACT US]</button>
                                             </div>
                                         </div>
                                     </li>

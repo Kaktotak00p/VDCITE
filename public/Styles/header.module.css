@@ -47,6 +47,7 @@
 }
 
 .menuIcon {
+  color: rgb(var(--green));
   display: none; 
   cursor: pointer;
   font-size: 2em;

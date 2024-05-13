@@ -518,6 +518,7 @@
       margin: 0;
   }
     .container {
+      padding-bottom: 3em;
       flex-direction: column-reverse;
       text-align: center;
     }
